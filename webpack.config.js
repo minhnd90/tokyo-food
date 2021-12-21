@@ -1,40 +1,42 @@
 const path = require('path')
+const MiniCssExtractPlugin = require("mini-css-extract-plugin")
 
 const mainJS = require.resolve("./resource/index.js")
-const loaders = [
-    // Creates `style` nodes from JS strings
-    "style-loader",
-    // Translates CSS into CommonJS
+const outputFolder = 'docs';
+const postCSSLoader = {
+    loader: "postcss-loader",
+    options: { postcssOptions: { plugins: ['autoprefixer'] } }
+}
+const CSSLoader = [
     {
-        loader: "css-loader",
-        options: {
-            sourceMap: true
-        },
+        test: /\.s[ac]ss$/i,
+        use: [
+            MiniCssExtractPlugin.loader,
+            {
+                loader: "css-loader", // Translates CSS into CommonJS
+            },
+            // postCSSLoader,
+            {
+                loader: "sass-loader", // Compiles Sass to CSS
+            },
+        ],
     },
-    // Compiles Sass to CSS
-    {
-        loader: "sass-loader",
-        options: {
-            sourceMap: true
-        },
-    },
-]
+];
 
 const config = {
     mode: 'development',
     entry: [mainJS],
     output: {
-        path: path.resolve(__dirname, 'docs'),
+        path: path.resolve(__dirname, outputFolder),
         filename: 'app.js',
     },
     devtool: "source-map",
-    module: {
-        rules: [
-            {
-                test: /\.scss$/i,
-                use: loaders
-            },
-        ],
+    plugins: [new MiniCssExtractPlugin({ filename: 'app.css' })],
+    module: { rules: CSSLoader },
+    resolve: { symlinks: false },
+    cache: {
+        type: 'filesystem',
+        cacheDirectory: path.resolve(__dirname, '.cache'),
     },
 }
 

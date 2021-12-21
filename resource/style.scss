@@ -1,6 +1,4 @@
-@import "bootstrap";
-$body-color: red;
+@import 'variables';
+@import '~bootstrap/scss/bootstrap';
 
-body {
-  color: $body-color;
-}
+@import 'header';
