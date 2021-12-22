@@ -1,0 +1,47 @@
+$footer-opacity: 0.7 !default;
+footer.bg-dark {
+  color: $white;
+  padding-top: 3rem;
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  .footer-top {
+    margin-bottom: 0.75rem;
+  }
+  .footer-main {
+    .list-unstyled {
+      opacity: $footer-opacity;
+    }
+    .about {
+      @include media-breakpoint-up(lg) {
+        max-width: 270px;
+      }
+    }
+    .menu {
+      li {
+        margin-bottom: 0.5rem;
+      }
+    }
+  }
+  .footer-bottom {
+    opacity: $footer-opacity;
+  }
+}
+.footer-subscribe {
+  .input-group {
+    .form-control,
+    .btn {
+      border-radius: 50rem;
+      padding: #{$input-padding-y + 0.3125} 1rem;
+    }
+    .form-control {
+      @include media-breakpoint-up(lg) {
+        min-width: 300px;
+      }
+    }
+    .btn {
+      font-size: $font-size-sm;
+    }
+  }
+}

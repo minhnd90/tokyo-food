@@ -51,6 +51,9 @@
       display: flex;
       align-items: center;
       .nav-link {
+        &.hot {
+          color: $primary;
+        }
         &.hot,
         &.dropdown-category {
           font-size: $font-size-lg;

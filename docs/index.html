@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="app.css" />
   </head>
   <body>
+    <!-- Header -->
     <header>
       <nav class="navbar-top navbar navbar-expand-lg navbar-light bg-light">
         <div class="container">
@@ -60,7 +61,7 @@
           <div class="collapse navbar-collapse" id="mainNavbar">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle dropdown-category" href="#" id="dropdown-category" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <a class="nav-link dropdown-toggle dropdown-category me-2" href="#" id="dropdown-category" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   <svg xmlns="http://www.w3.org/2000/svg" class="icon-hamburger" width="16" height="12" viewBox="0 0 16 12" fill-rule="evenodd" clip-rule="evenodd">
                     <path d="M0.5 6C0.5 5.58579 0.835786 5.25 1.25 5.25H14.75C15.1642 5.25 15.5 5.58579 15.5 6C15.5 6.41421 15.1642 6.75 14.75 6.75H1.25C0.835786 6.75 0.5 6.41421 0.5 6Z" />
                     <path d="M0.5 1.5C0.5 1.08579 0.835786 0.75 1.25 0.75H14.75C15.1642 0.75 15.5 1.08579 15.5 1.5C15.5 1.91421 15.1642 2.25 14.75 2.25H1.25C0.835786 2.25 0.5 1.91421 0.5 1.5Z" />
@@ -71,11 +72,10 @@
                 <ul class="dropdown-menu" aria-labelledby="dropdown-category">
                   <li><a class="dropdown-item" href="#">Action</a></li>
                   <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><hr class="dropdown-divider" /></li>
                   <li><a class="dropdown-item" href="#">Something else here</a></li>
                 </ul>
               </li>
-              <li><hr class="dropdown-divider vertical" /></li>
+              <li><hr class="dropdown-divider vertical mx-2" /></li>
               <li class="nav-item">
                 <a class="nav-link" href="#">Video</a>
               </li>
@@ -83,33 +83,40 @@
                 <a class="nav-link" href="#">International Distributors</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link hot" href="#">Hot Deal</a>
+                <a class="nav-link hot" href="#">
+                  <span>Hot Deal</span>
+                  <svg class="align-top" width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M1 0C0.447715 0 0 0.447715 0 1V8C0 8.55229 0.447715 9 1 9H4V12L8 9H15C15.5523 9 16 8.55229 16 8V1C16 0.447715 15.5523 0 15 0H1Z" fill="var(--bs-red)" />
+                    <path d="M1.5 2V4.5M1.5 7V4.5M1.5 4.5H4.5M4.5 2V7" stroke="var(--bs-white)" />
+                    <path d="M6.5 6.5V2.5H9.5V6.5H6.5Z" stroke="var(--bs-white)" />
+                    <path d="M11 2.5H13M15 2.5H13M13 2.5V7" stroke="var(--bs-white)" />
+                  </svg>
+                </a>
               </li>
             </ul>
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-              <li><hr class="dropdown-divider vertical" /></li>
+              <li><hr class="dropdown-divider vertical mx-1" /></li>
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle dropdown-currency" href="#" id="dropdown-currency" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   <span>English - USD</span>
                 </a>
                 <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdown-currency">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><hr class="dropdown-divider" /></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  <li><a class="dropdown-item" href="#">Japanese Yen - JPY</a></li>
                 </ul>
               </li>
-              <li><hr class="dropdown-divider vertical" /></li>
+              <li><hr class="dropdown-divider vertical mx-1" /></li>
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle dropdown-language" href="#" id="dropdown-language" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   <span class="me-2">English</span>
                   <img src="images/eng.png" alt="English" />
                 </a>
                 <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdown-language">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><hr class="dropdown-divider" /></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">
+                      <span class="me-2">Japanese</span>
+                      <img src="images/eng.png" alt="Japanese" />
+                    </a>
+                  </li>
                 </ul>
               </li>
             </ul>
@@ -117,8 +124,74 @@
         </div>
       </nav>
     </header>
-    <main></main>
-    <footer></footer>
+    <!-- Main -->
+    <main class="layout-main">
+      <div class="banner"></div>
+    </main>
+    <!-- Footer -->
+    <footer class="bg-dark">
+      <div class="container">
+        <div class="footer-top row">
+          <div class="col-md-auto text-center mb-3">
+            <img src="images/tokyo-food-2.png" alt="Tokyo Food" />
+          </div>
+          <div class="col-auto mx-auto me-md-0 mb-3">
+            <form class="footer-subscribe d-flex align-items-center mb-0">
+              <label for="input-footer-subscribe" class="text-nowrap">Receive our newsletter</label>
+              <div class="input-group ms-4">
+                <input id="input-footer-subscribe" type="email" class="form-control" placeholder="Email address" aria-label="Subscribe" aria-describedby="button-footer-subscribe" />
+                <button class="btn btn-primary d-flex align-items-center" type="submit" id="button-footer-subscribe">Go</button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="footer-main row justify-content-between g-3">
+          <div class="about col-12 col-lg-auto">
+            <h6>Head Office</h6>
+            <ul class="list-unstyled">
+              <li>Unit A 37-41 Carbine Rd, Mt Wellington, Auckland, New Zealand</li>
+              <li>Phone: <a href="tel:64-9-570-5792">64-9-570-5792</a></li>
+              <li>Fax: 64-9-570-5798</li>
+              <li>Email: <a href="mailto:info@tokyofood.co.nz">info@tokyofood.co.nz</a></li>
+            </ul>
+          </div>
+          <div class="menu col-6 col-md-auto">
+            <h6>Contact Us</h6>
+            <ul class="list-unstyled">
+              <li><a href="#" title="#">Contact Us</a></li>
+              <li><a href="#" title="#">Find a Distributor</a></li>
+              <li><a href="#" title="#">Reach Out to Us</a></li>
+            </ul>
+          </div>
+          <div class="menu col-6 col-md-auto">
+            <h6>Customer Service</h6>
+            <ul class="list-unstyled">
+              <li><a href="#" title="#">Contact Us</a></li>
+              <li><a href="#" title="#">Find a Distributor</a></li>
+              <li><a href="#" title="#">Reach Out to Us</a></li>
+            </ul>
+          </div>
+          <div class="menu col-6 col-md-auto">
+            <h6>About Us</h6>
+            <ul class="list-unstyled">
+              <li><a href="#" title="#">Contact Us</a></li>
+              <li><a href="#" title="#">Find a Distributor</a></li>
+              <li><a href="#" title="#">Reach Out to Us</a></li>
+            </ul>
+          </div>
+          <div class="menu col-6 col-md-auto me-lg-5">
+            <h6>Our Products</h6>
+            <ul class="list-unstyled">
+              <li><a href="#" title="#">Contact Us</a></li>
+              <li><a href="#" title="#">Find a Distributor</a></li>
+              <li><a href="#" title="#">Reach Out to Us</a></li>
+            </ul>
+          </div>
+        </div>
+        <hr />
+        <div class="footer-bottom text-center pt-1 pb-4">&copy; TOKYO FOOD COMPANY LIMITED, New Zealand All Rights Reserved..<a href="#" title="#">Website Terms and Conditions</a> | <a href="#" title="#"></a>Privacy Policy</a></div>
+      </div>
+    </footer>
     <script src="app.js" defer></script>
   </body>
 </html>

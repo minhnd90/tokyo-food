@@ -12,13 +12,9 @@ const CSSLoader = [
         test: /\.s[ac]ss$/i,
         use: [
             MiniCssExtractPlugin.loader,
-            {
-                loader: "css-loader", // Translates CSS into CommonJS
-            },
-            postCSSLoader,
-            {
-                loader: "sass-loader", // Compiles Sass to CSS
-            },
+            { loader: "css-loader" }, // Translates CSS into CommonJS
+            // postCSSLoader,
+            { loader: "sass-loader" }, // Compiles Sass to CSS
         ],
     },
 ];
@@ -33,11 +29,8 @@ const config = {
     devtool: "source-map",
     plugins: [new MiniCssExtractPlugin({ filename: 'app.css' })],
     module: { rules: CSSLoader },
-    resolve: { symlinks: false },
-    cache: {
-        type: 'filesystem',
-        cacheDirectory: path.resolve(__dirname, '.cache'),
-    },
+    // resolve: { symlinks: false },
+    // cache: { type: 'filesystem', cacheDirectory: path.resolve(__dirname, '.cache') },
 }
 
 module.exports = config;
