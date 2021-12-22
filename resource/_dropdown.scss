@@ -7,8 +7,10 @@ $caret-bg: escape-svg($caret-icon) no-repeat !default;
   border-radius: 0;
 }
 .dropdown-toggle {
-  display: flex;
+  display: inline-flex;
   align-items: center;
+  color: var(--bs-body-color);
+
   &::after {
     content: '';
     display: block;

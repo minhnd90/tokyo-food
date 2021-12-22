@@ -7,6 +7,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,900&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+
     <link rel="stylesheet" href="app.css" />
   </head>
   <body>
@@ -126,7 +129,195 @@
     </header>
     <!-- Main -->
     <main class="layout-main">
-      <div class="banner"></div>
+      <div class="banner container my-4">
+        <div class="row g-4">
+          <div class="col-xl-8">
+            <div class="row g-4">
+              <div class="col">
+                <a class="btn btn-order-red patern-1" href="#">
+                  <svg width="22" height="18" viewBox="0 0 22 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M20.0591 1.86625C19.5498 1.29542 18.9287 0.835335 18.2342 0.514557C17.5398 0.193778 16.7868 0.0191473 16.022 0.00150064C15.2595 -0.014526 14.5015 0.122905 13.7931 0.405625C13.0847 0.688346 12.4404 1.11059 11.8985 1.64725L11.0005 2.5452L10.2974 1.84281C8.11038 -0.346399 4.55081 -0.530237 2.36819 1.43998C1.7993 1.95028 1.3404 2.5712 1.01955 3.26481C0.698689 3.95843 0.5226 4.71017 0.502036 5.47412C0.481472 6.23808 0.616865 6.9982 0.899944 7.70807C1.18302 8.41794 1.60785 9.06265 2.14846 9.60282L9.93997 17.3943C10.2214 17.6753 10.6028 17.833 11.0005 17.833C11.3982 17.833 11.7796 17.6753 12.0611 17.3943L19.6577 9.79764C21.8462 7.60843 22.0264 4.05033 20.0591 1.86625Z" fill="white" />
+                  </svg>
+                  <span class="ms-2">Order from Wishlish</span>
+                </a>
+              </div>
+              <div class="col">
+                <a class="btn btn-order-orange patern-2" href="#">
+                  <svg width="18" height="20" viewBox="0 0 18 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M4.81 0H13.191C16.28 0 18 1.78 18 4.83V15.16C18 18.26 16.28 20 13.191 20H4.81C1.77 20 0 18.26 0 15.16V4.83C0 1.78 1.77 0 4.81 0ZM5.08002 4.65999V4.64999H8.06902C8.50002 4.64999 8.85002 4.99999 8.85002 5.42899C8.85002 5.86999 8.50002 6.21999 8.06902 6.21999H5.08002C4.64902 6.21999 4.30002 5.86999 4.30002 5.43999C4.30002 5.00999 4.64902 4.65999 5.08002 4.65999ZM5.08002 10.74H12.92C13.35 10.74 13.7 10.39 13.7 9.95999C13.7 9.52999 13.35 9.17899 12.92 9.17899H5.08002C4.64902 9.17899 4.30002 9.52999 4.30002 9.95999C4.30002 10.39 4.64902 10.74 5.08002 10.74ZM5.08002 15.31H12.92C13.319 15.27 13.62 14.929 13.62 14.53C13.62 14.12 13.319 13.78 12.92 13.74H5.08002C4.78002 13.71 4.49002 13.85 4.33002 14.11C4.17002 14.36 4.17002 14.69 4.33002 14.95C4.49002 15.2 4.78002 15.35 5.08002 15.31Z" fill="white" />
+                  </svg>
+                  <span class="ms-2">Order from History</span>
+                </a>
+              </div>
+              <div class="col">
+                <a class="btn btn-order-brown patern-3" href="#">
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M2.54 0H5.92C7.33 0 8.46 1.15 8.46 2.561V5.97C8.46 7.39 7.33 8.53 5.92 8.53H2.54C1.14 8.53 0 7.39 0 5.97V2.561C0 1.15 1.14 0 2.54 0ZM2.54 11.4697H5.92C7.33 11.4697 8.46 12.6107 8.46 14.0307V17.4397C8.46 18.8497 7.33 19.9997 5.92 19.9997H2.54C1.14 19.9997 0 18.8497 0 17.4397V14.0307C0 12.6107 1.14 11.4697 2.54 11.4697ZM17.4601 0H14.0801C12.6701 0 11.5401 1.15 11.5401 2.561V5.97C11.5401 7.39 12.6701 8.53 14.0801 8.53H17.4601C18.8601 8.53 20.0001 7.39 20.0001 5.97V2.561C20.0001 1.15 18.8601 0 17.4601 0ZM14.0801 11.4697H17.4601C18.8601 11.4697 20.0001 12.6107 20.0001 14.0307V17.4397C20.0001 18.8497 18.8601 19.9997 17.4601 19.9997H14.0801C12.6701 19.9997 11.5401 18.8497 11.5401 17.4397V14.0307C11.5401 12.6107 12.6701 11.4697 14.0801 11.4697Z" fill="white" />
+                  </svg>
+                  <span class="ms-2">Order from Category</span>
+                </a>
+              </div>
+              <div class="col-12">
+                <div class="banner-1 rounded">
+                  <a href="#"><img class="img-fluid w-100 h-100" src="images/main-banner.png" alt="Main Banner" /></a>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="banner-infomation bg-light-yellow">
+                  <img class="w-100" src="images/banner-2-bg-center.png" alt="Infomation background" />
+                  <div class="infomation">
+                    <img class="ms-3" src="images/banner-2-img-icon.png" alt="Infomation" />
+                    <div class="text ms-3">
+                      <h4 class="text-brown">Infomation from TokyoFood</h4>
+                      <ul class="list-custom">
+                        <li>sed diam nonummy nibh euismod tincidunt ut laoreet dolore</li>
+                        <li>facilisis at vero eros et accumsan et iusto odio dignissim</li>
+                      </ul>
+                    </div>
+                    <div class="btn-banner-cta ms-auto me-3 d-flex align-items-center">
+                      <a class="btn btn-outline-primary rounded-pill" href="#">
+                        <span>more</span>
+                        <svg width="13" height="10" viewBox="0 0 13 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M8.25721 0.0346002C8.18108 0.069005 8.116 0.127267 8.07022 0.202017C8.02444 0.276767 8 0.364649 8 0.45455L8 9.54545C8 9.63535 8.02444 9.72324 8.07022 9.79799C8.11601 9.87274 8.18108 9.931 8.25722 9.9654C8.33336 9.9998 8.41714 10.0088 8.49796 9.99126C8.57879 9.97372 8.65303 9.93043 8.7113 9.86686L12.878 5.32141C12.9166 5.2792 12.9473 5.22909 12.9683 5.17395C12.9892 5.1188 13 5.05969 13 5C13 4.94031 12.9892 4.8812 12.9683 4.82606C12.9473 4.77091 12.9166 4.7208 12.878 4.6786L8.7113 0.133144C8.65303 0.0695715 8.57879 0.0262775 8.49796 0.00873659C8.41713 -0.00880434 8.33335 0.000196442 8.25721 0.0346002Z" fill="currentColor" />
+                          <path d="M9 5L0 5" stroke="currentColor" stroke-dasharray="1 1" />
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4">
+            <div class="row g-4">
+              <div class="col-lg-6 col-xl-12">
+                <div class="banner-2 rounded">
+                  <a href="#"><img class="img-fluid w-100 h-100" src="images/tokyo-sushi-bg.png" alt="Tokyo Sushi" /></a>
+                </div>
+              </div>
+              <div class="col-sm-6 col-lg-3 col-xl-6">
+                <div class="row g-4">
+                  <div class="col-lg-12 banner-3 rounded">
+                    <a href="#"><img class="img-fluid w-100 h-100" src="images/banner-3.png" alt="Banner" /></a>
+                  </div>
+                  <div class="col-lg-12 banner-4 rounded">
+                    <a href="#"><img class="img-fluid w-100 h-100" src="images/banner-4.png" alt="Banner" /></a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6 col-lg-3 col-xl-6">user</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="product-list">
+        <div class="container bg-white py-3">
+          <div class="table-header row mb-3">
+            <h5 class="col-auto">
+              <svg width="22" height="18" viewBox="0 0 22 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M20.0591 1.86625C19.5498 1.29542 18.9287 0.835335 18.2342 0.514557C17.5398 0.193778 16.7868 0.0191473 16.022 0.00150064C15.2595 -0.014526 14.5015 0.122905 13.7931 0.405625C13.0847 0.688346 12.4404 1.11059 11.8985 1.64725L11.0005 2.5452L10.2974 1.84281C8.11038 -0.346399 4.55081 -0.530237 2.36819 1.43998C1.7993 1.95028 1.3404 2.5712 1.01955 3.26481C0.698689 3.95843 0.5226 4.71017 0.502036 5.47412C0.481472 6.23808 0.616865 6.9982 0.899944 7.70807C1.18302 8.41794 1.60785 9.06265 2.14846 9.60282L9.93997 17.3943C10.2214 17.6753 10.6028 17.833 11.0005 17.833C11.3982 17.833 11.7796 17.6753 12.0611 17.3943L19.6577 9.79764C21.8462 7.60843 22.0264 4.05033 20.0591 1.86625Z" fill="var(--bs-red)" />
+              </svg>
+              <span>Sushi's favorite product</span>
+            </h5>
+            <div class="table-filter col-auto ms-auto">
+              <ul class="flex-row navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle dropdown-daterange" href="#" id="dropdown-daterange" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <span>Last 3 months</span>
+                  </a>
+                  <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdown-daterange">
+                    <li><a class="dropdown-item" href="#">Last 1 months</a></li>
+                  </ul>
+                </li>
+                <li><hr class="dropdown-divider vertical mx-3" /></li>
+                <li class="nav-item">
+                  <div class="input-group mb-3">
+                    <input type="text" class="datepicker form-control" placeholder="12/07/2021 - 06/08/2021" />
+                    <span class="input-group-text">
+                      <svg width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1.57715 7.83688H16.4304" stroke="#81848A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M12.7015 11.0914H12.7092" stroke="#81848A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M9.00372 11.0914H9.01144" stroke="#81848A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M5.29864 11.0914H5.30636" stroke="#81848A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M12.7015 14.3302H12.7092" stroke="#81848A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M9.00372 14.3302H9.01144" stroke="#81848A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M5.29864 14.3302H5.30636" stroke="#81848A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M12.3335 1.66669V4.58335" stroke="#81848A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M5.6665 1.66669V4.58335" stroke="#81848A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M12.5319 3.33337H5.4758C3.02856 3.33337 1.5 4.5915 1.5 6.90413V13.8638C1.5 16.2128 3.02856 17.5 5.4758 17.5H12.5242C14.9791 17.5 16.5 16.2346 16.5 13.922V6.90413C16.5077 4.5915 14.9868 3.33337 12.5319 3.33337Z" stroke="#81848A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                      </svg>
+                    </span>
+                  </div>
+                </li>
+                <li><hr class="dropdown-divider vertical mx-3" /></li>
+                <li class="nav-item dropdown">
+                  <span class="navbar-text">Sort by:</span>
+                  <a class="nav-link dropdown-toggle dropdown-language" href="#" id="dropdown-language" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <span class="me-2">Code Ascending</span>
+                  </a>
+                  <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdown-language">
+                    <li>
+                      <a class="dropdown-item" href="#">
+                        <span class="me-2">Code Ascending</span>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="table-body">
+            <div class="item row">
+              <div class="col-1">
+                <div class="product-thumbnail">
+                  <img src="images/product-01.png" alt="">
+                </div>
+              </div>
+              <div class="col">
+                <div class="product-code"></div>
+              </div>
+              <div class="col-1"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="top-brand bg-white py-3">
+        <div class="container">
+          <h5 class="text-uppercase mt-3 mb-4">Top brands</h5>
+          <div class="row row-cols-5 g-4 mb-5">
+            <div class="col">
+              <a class="brand" href="#"><img src="images/brand-1.png" alt="Brand" /></a>
+            </div>
+            <div class="col">
+              <a class="brand" href="#"><img src="images/brand-2.png" alt="Brand" /></a>
+            </div>
+            <div class="col">
+              <a class="brand" href="#"><img src="images/brand-3.png" alt="Brand" /></a>
+            </div>
+            <div class="col">
+              <a class="brand" href="#"><img src="images/brand-4.png" alt="Brand" /></a>
+            </div>
+            <div class="col">
+              <a class="brand" href="#"><img src="images/brand-5.png" alt="Brand" /></a>
+            </div>
+            <div class="col">
+              <a class="brand" href="#"><img src="images/brand-6.png" alt="Brand" /></a>
+            </div>
+            <div class="col">
+              <a class="brand" href="#"><img src="images/brand-7.png" alt="Brand" /></a>
+            </div>
+            <div class="col">
+              <a class="brand" href="#"><img src="images/brand-8.png" alt="Brand" /></a>
+            </div>
+            <div class="col">
+              <a class="brand" href="#"><img src="images/brand-9.png" alt="Brand" /></a>
+            </div>
+            <div class="col">
+              <a class="brand" href="#"><img src="images/brand-10.png" alt="Brand" /></a>
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
     <!-- Footer -->
     <footer class="bg-dark">
@@ -189,9 +380,17 @@
           </div>
         </div>
         <hr />
-        <div class="footer-bottom text-center pt-1 pb-4">&copy; TOKYO FOOD COMPANY LIMITED, New Zealand All Rights Reserved..<a href="#" title="#">Website Terms and Conditions</a> | <a href="#" title="#"></a>Privacy Policy</a></div>
+        <div class="footer-bottom text-center pt-1 pb-4">&copy; TOKYO FOOD COMPANY LIMITED, New Zealand All Rights Reserved..<a href="#" title="#">Website Terms and Conditions</a> | <a href="#" title="#">Privacy Policy</a></div>
       </div>
     </footer>
-    <script src="app.js" defer></script>
+    <script src="app.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+    <script defer>
+      jQuery(function () {
+        $('.datepicker').daterangepicker();
+      });
+    </script>
   </body>
 </html>

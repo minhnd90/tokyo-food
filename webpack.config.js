@@ -13,7 +13,7 @@ const CSSLoader = [
         use: [
             MiniCssExtractPlugin.loader,
             { loader: "css-loader" }, // Translates CSS into CommonJS
-            // postCSSLoader,
+            postCSSLoader,
             { loader: "sass-loader" }, // Compiles Sass to CSS
         ],
     },
@@ -29,7 +29,7 @@ const config = {
     devtool: "source-map",
     plugins: [new MiniCssExtractPlugin({ filename: 'app.css' })],
     module: { rules: CSSLoader },
-    // resolve: { symlinks: false },
+    resolve: { symlinks: false },
     // cache: { type: 'filesystem', cacheDirectory: path.resolve(__dirname, '.cache') },
 }
 

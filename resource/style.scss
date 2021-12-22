@@ -1,10 +1,11 @@
 @import 'variables';
-@import 'mixins';
 @import '~bootstrap/scss/bootstrap';
 
 //modules
 @import 'dropdown';
 
 //cpmponents
+@import 'layout';
 @import 'header';
 @import 'footer';
+@import 'banner';

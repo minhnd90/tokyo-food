@@ -1,0 +1,26 @@
+.layout-main {
+  background-color: $gray-200;
+}
+
+.brand {
+  border: 1px solid #cfd7e8;
+  border-radius: 5px;
+}
+.table-filter {
+  .nav-link {
+    color: var(--bs-body-color);
+  }
+}
+.datepicker {
+  &:focus {
+    box-shadow: none;
+  }
+  &,
+  & + .input-group-text {
+    border: 0;
+    background-color: transparent;
+    padding: 0.5rem 0;
+    // top: -2px;
+    position: relative;
+  }
+}

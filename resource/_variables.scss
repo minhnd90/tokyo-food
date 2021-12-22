@@ -3,16 +3,24 @@ $min-contrast-ratio: 2.5 !default;
 
 //Options
 $enable-caret: false !default;
+$enable-cssgrid: true;
 
 //Colors
 
+$gray-200: #e5e5e5 !default;
 $gray-500: #9ba0ac !default;
 $gray-600: #555555 !default;
 $gray-900: #2b2b2b !default;
 
+$light-yellow: #f4dfa7 !default;
 $orange: #f08701 !default;
 $dark-orange: #de5900 !default;
 $red: #d6353e !default;
+$brown: #833b0f !default;
+
+$btn-red: #ea4553 !default;
+$btn-orange: #f46803 !default;
+$btn-brown: #806565 !default;
 
 $primary: $orange !default;
 
