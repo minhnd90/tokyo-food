@@ -15,7 +15,7 @@ const CSSLoader = [
             {
                 loader: "css-loader", // Translates CSS into CommonJS
             },
-            // postCSSLoader,
+            postCSSLoader,
             {
                 loader: "sass-loader", // Compiles Sass to CSS
             },

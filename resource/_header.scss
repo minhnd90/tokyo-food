@@ -28,7 +28,6 @@
       padding-top: 0;
       padding-bottom: 0;
       line-height: 1;
-      font-size: $font-size-sm;
       .nav-item-icon {
         stroke: currentColor;
       }
@@ -51,8 +50,11 @@
     .nav-item {
       display: flex;
       align-items: center;
-      .nav-link:not(.hot):not(.dropdown-category) {
-        font-size: $font-size-sm;
+      .nav-link {
+        &.hot,
+        &.dropdown-category {
+          font-size: $font-size-lg;
+        }
       }
     }
   }

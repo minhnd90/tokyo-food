@@ -24,7 +24,7 @@
   "scripts": {
     "build": "webpack",
     "watch": "webpack --watch",
-    "serve": "serve docs"
+    "serve": "serve docs -p 3002"
   },
   "repository": {
     "type": "git",
