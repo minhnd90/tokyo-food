@@ -17,7 +17,7 @@
             <img src="images/tokyo-food.png" alt="Tokyo Food" />
           </a>
           <form class="header-search d-flex flex-grow-1 mb-0">
-            <div class="input-group ms-3">
+            <div class="input-group ms-4">
               <input type="search" class="form-control border-primary" placeholder="Search for products&hellip;" aria-label="Search" aria-describedby="button-header-search" />
               <button class="btn btn-primary d-flex align-items-center" type="submit" id="button-header-search">
                 <svg xmlns="http://www.w3.org/2000/svg" class="icon-search" width="16" height="16" viewBox="0 0 16 16" fill="none" stroke-linecap="round" stroke-linejoin="round">
@@ -28,7 +28,7 @@
               </button>
             </div>
           </form>
-          <ul class="navbar-nav ms-3 mb-2 mb-lg-0">
+          <ul class="navbar-nav ms-4 mb-2 mb-lg-0">
             <li class="nav-item">
               <a class="nav-link" href="#">
                 <svg xmlns="http://www.w3.org/2000/svg" class="nav-item-icon" width="26" height="26" viewBox="0 0 26 26" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
@@ -52,7 +52,7 @@
           </ul>
         </div>
       </nav>
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <nav class="navbar-main navbar navbar-expand-lg navbar-light bg-light">
         <div class="container">
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -60,19 +60,56 @@
           <div class="collapse navbar-collapse" id="mainNavbar">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Dropdown </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="nav-link dropdown-toggle dropdown-category" href="#" id="dropdown-category" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="icon-hamburger" width="16" height="12" viewBox="0 0 16 12" fill-rule="evenodd" clip-rule="evenodd">
+                    <path d="M0.5 6C0.5 5.58579 0.835786 5.25 1.25 5.25H14.75C15.1642 5.25 15.5 5.58579 15.5 6C15.5 6.41421 15.1642 6.75 14.75 6.75H1.25C0.835786 6.75 0.5 6.41421 0.5 6Z" />
+                    <path d="M0.5 1.5C0.5 1.08579 0.835786 0.75 1.25 0.75H14.75C15.1642 0.75 15.5 1.08579 15.5 1.5C15.5 1.91421 15.1642 2.25 14.75 2.25H1.25C0.835786 2.25 0.5 1.91421 0.5 1.5Z" />
+                    <path d="M0.5 10.5C0.5 10.0858 0.835786 9.75 1.25 9.75H14.75C15.1642 9.75 15.5 10.0858 15.5 10.5C15.5 10.9142 15.1642 11.25 14.75 11.25H1.25C0.835786 11.25 0.5 10.9142 0.5 10.5Z" />
+                  </svg>
+                  <span>Categories</span>
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="dropdown-category">
                   <li><a class="dropdown-item" href="#">Action</a></li>
                   <li><a class="dropdown-item" href="#">Another action</a></li>
                   <li><hr class="dropdown-divider" /></li>
                   <li><a class="dropdown-item" href="#">Something else here</a></li>
                 </ul>
               </li>
+              <li><hr class="dropdown-divider vertical" /></li>
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a class="nav-link" href="#">Video</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
+                <a class="nav-link" href="#">International Distributors</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link hot" href="#">Hot Deal</a>
+              </li>
+            </ul>
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li><hr class="dropdown-divider vertical" /></li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle dropdown-currency" href="#" id="dropdown-currency" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <span>English - USD</span>
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="dropdown-currency">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <li><hr class="dropdown-divider vertical" /></li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle dropdown-language" href="#" id="dropdown-language" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <span>English</span>
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="dropdown-language">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
               </li>
             </ul>
           </div>

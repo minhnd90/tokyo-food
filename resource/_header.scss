@@ -38,3 +38,22 @@
     }
   }
 }
+.navbar-main {
+  .navbar-nav {
+    .dropdown-category {
+      font-weight: 500;
+      color: $dark-orange;
+      .icon-hamburger {
+        fill: currentColor;
+        margin-right: 0.875rem;
+      }
+    }
+    .nav-item {
+      display: flex;
+      align-items: center;
+      .nav-link:not(.hot):not(.dropdown-category) {
+        font-size: $font-size-sm;
+      }
+    }
+  }
+}

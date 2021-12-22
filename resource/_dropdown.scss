@@ -1,0 +1,21 @@
+$caret-color: #747474;
+$caret-icon: url("data:image/svg+xml,<svg width='12' height='7' viewBox='0 0 12 7' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M11 1L6 6L1 1' stroke='#{$caret-color}' stroke-width='1.5'/></svg>") !default;
+$caret-bg: escape-svg($caret-icon) no-repeat !default;
+
+.dropdown-toggle {
+  display: flex;
+  align-items: center;
+  &::after {
+    content: '';
+    display: block;
+    margin-left: 0.5em;
+    background: $caret-bg;
+    width: 12px;
+    height: 7px;
+  }
+}
+.dropdown-divider.vertical {
+  width: 1px;
+  height: 1rem;
+  margin: 0.75rem 0;
+}
