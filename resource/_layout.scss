@@ -1,4 +1,4 @@
-.layout-main {
+main {
   background-color: #f2f6fc;
 }
 
@@ -58,8 +58,10 @@ input[type='number'] {
     .product-note,
     .product-quantity {
       display: flex;
-      align-items: flex-start;
+      align-items: flex-end;
       flex-wrap: wrap;
+      justify-content: flex-start;
+      flex-direction: column;
     }
   }
 }
@@ -84,7 +86,9 @@ input[type='number'] {
 }
 .product-code .code,
 .product-name .name,
-.product-price .price {
+.product-price .price,
+.puchase-date,
+.puchase-quantity {
   line-height: 2rem;
 }
 .btn-order {
@@ -94,4 +98,38 @@ input[type='number'] {
 }
 .text-gray {
   color: $gray-500;
+}
+.bg-lightyellow {
+  background-color: $light-yellow;
+}
+
+.bg-cat-1 {
+  background-color: $cat-1;
+}
+.bg-cat-2 {
+  background-color: $cat-2;
+}
+.bg-cat-3 {
+  background-color: $cat-3;
+}
+.bg-cat-4 {
+  background-color: $cat-4;
+}
+.bg-cat-5 {
+  background-color: $cat-5;
+}
+.bg-cat-6 {
+  background-color: $cat-6;
+}
+.bg-cat-7 {
+  background-color: $cat-7;
+}
+.bg-cat-8 {
+  background-color: $cat-8;
+}
+.bg-cat-9 {
+  background-color: $cat-9;
+}
+.bg-cat-10 {
+  background-color: $cat-10;
 }
