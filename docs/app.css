@@ -11597,12 +11597,18 @@ textarea.form-control-lg {
 }
 
 .layout-main {
-  background-color: #e5e5e5;
+  background-color: #f2f6fc;
 }
 
 .brand {
   border: 1px solid #cfd7e8;
   border-radius: 5px;
+  display: block;
+}
+.brand img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 
 .table-filter .nav-link {
@@ -11617,6 +11623,69 @@ textarea.form-control-lg {
   background-color: transparent;
   padding: 0.5rem 0;
   position: relative;
+}
+
+.product-thumbnail {
+  position: relative;
+  padding-bottom: 100%;
+  border-radius: 5px;
+}
+.product-thumbnail img {
+  position: absolute;
+  min-width: 100%;
+  height: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.form-control[type=number]::-webkit-inner-spin-button,
+.form-control[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.table-body .item .product-note,
+.table-body .item .product-quantity {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.product-note input {
+  line-height: 1;
+}
+
+.product-quantity input {
+  width: 40px;
+  line-height: 1;
+  text-align: center;
+}
+.product-quantity .btn-minus,
+.product-quantity .btn-plus {
+  width: 28px;
+  height: 28px;
+  background-color: #f2f6fc;
+}
+
+.product-code .code,
+.product-name .name,
+.product-price .price {
+  line-height: 2rem;
+}
+
+.btn-order {
+  line-height: 1;
+  display: flex;
+  align-items: center;
+}
+
+.text-gray {
+  color: #9ba0ac;
 }
 
 .navbar-top .navbar-brand img {
