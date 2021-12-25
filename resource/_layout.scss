@@ -81,3 +81,18 @@ input[type='number'] {
 .bg-cat-10 {
   background-color: $cat-10;
 }
+.fs-7 {
+  font-size: 12px;
+}
+.fw-500 {
+  font-weight: 500;
+}
+.breadcrumb {
+  line-height: 1;
+  color: #6c757d;
+  margin: 1rem 0;
+  a {
+    text-decoration: none;
+    color: #1c1c1c;
+  }
+}

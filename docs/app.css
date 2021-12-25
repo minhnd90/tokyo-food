@@ -11165,6 +11165,23 @@ textarea.form-control-lg {
   margin: 0.75rem 0;
 }
 
+.dropdown-category + .dropdown-menu {
+  min-width: 160px;
+}
+
+.category-banner {
+  position: relative;
+}
+
+.table-body {
+  padding: 0.875rem;
+}
+.table-body .item {
+  padding: 0.875rem 0;
+}
+.table-body .item:hover {
+  background-color: #fff;
+}
 .table-body .item .product-note,
 .table-body .item .product-quantity {
   display: flex;
@@ -11178,14 +11195,26 @@ textarea.form-control-lg {
   position: relative;
   padding-bottom: 100%;
   border-radius: 5px;
+  height: 0;
+  overflow: hidden;
 }
-.product-thumbnail img {
+.product-thumbnail a {
   position: absolute;
-  min-width: 100%;
+  inset: -1px;
+  overflow: hidden;
+}
+.product-thumbnail a img {
+  width: 100%;
   height: 100%;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  object-fit: cover;
+}
+
+.product-name a {
+  text-decoration: none;
+  color: var(--bs-body-color);
+}
+.product-name a:hover {
+  color: var(--bs-primary);
 }
 
 .product-note input {
@@ -11217,8 +11246,8 @@ textarea.form-control-lg {
 }
 
 .product-item .product-thumbnail {
-  border: 1px solid #cfd7e8;
   margin-bottom: 10px;
+  border: 1px solid #cfd7e8;
 }
 .product-item .product-thumbnail img {
   transition: transform 0.3s;
@@ -11248,7 +11277,7 @@ textarea.form-control-lg {
   background-image: url("data:image/svg+xml,%3csvg viewBox=%270 0 12 12%27 xmlns=%27http://www.w3.org/2000/svg%27%3e %3cpath d=%27M6 1.61803L6.87156 4.30041L6.98381 4.6459H7.34708H10.1675L7.88573 6.3037L7.59184 6.51722L7.7041 6.86271L8.57565 9.54508L6.29389 7.88729L6 7.67376L5.70611 7.88729L3.42435 9.54508L4.2959 6.86271L4.40816 6.51722L4.11426 6.3037L1.8325 4.6459H4.65292H5.01619L5.12844 4.30041L6 1.61803Z%27 stroke=%27%23ffb920%27 fill=%27none%27 /%3e%3c/svg%3e");
 }
 .product-item:hover .product-thumbnail img {
-  transform: translate(-50%, -50%) scale(1.1);
+  transform: scale(1.1);
 }
 .product-item .discount {
   background-color: #d65c35;
@@ -11483,6 +11512,24 @@ input[type=number] {
 
 .bg-cat-10 {
   background-color: #a1d7ff;
+}
+
+.fs-7 {
+  font-size: 12px;
+}
+
+.fw-500 {
+  font-weight: 500;
+}
+
+.breadcrumb {
+  line-height: 1;
+  color: #6c757d;
+  margin: 1rem 0;
+}
+.breadcrumb a {
+  text-decoration: none;
+  color: #1c1c1c;
 }
 
 .navbar-top .navbar-brand img {

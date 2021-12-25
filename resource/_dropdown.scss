@@ -25,3 +25,9 @@ $caret-bg: escape-svg($caret-icon) no-repeat !default;
   height: 1rem;
   margin: 0.75rem 0;
 }
+.dropdown-category + .dropdown-menu {
+  min-width: 160px;
+}
+.category-banner {
+  position: relative;
+}

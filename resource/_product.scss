@@ -7,7 +7,12 @@ $star-hover: url("data:image/svg+xml,#{$svg-string} #{$svg-path} stroke='#{$rate
 $rated: url("data:image/svg+xml,#{$svg-string} #{$svg-path} stroke='#{$rated-color}' fill='#{$rated-color}' /></svg>") !default;
 
 .table-body {
+  padding: 0.875rem;
   .item {
+    padding: 0.875rem 0;
+    &:hover {
+      background-color: $body-bg;
+    }
     .product-note,
     .product-quantity {
       display: flex;
@@ -23,13 +28,24 @@ $rated: url("data:image/svg+xml,#{$svg-string} #{$svg-path} stroke='#{$rated-col
   position: relative;
   padding-bottom: 100%;
   border-radius: 5px;
-  img {
+  height: 0;
+  overflow: hidden;
+  a {
     position: absolute;
-    min-width: 100%;
-    height: 100%;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    inset: -1px;
+    overflow: hidden;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}
+.product-name a {
+  text-decoration: none;
+  color: var(--bs-body-color);
+  &:hover {
+    color: var(--bs-primary);
   }
 }
 .product-note {
@@ -65,8 +81,8 @@ $rated: url("data:image/svg+xml,#{$svg-string} #{$svg-path} stroke='#{$rated-col
 }
 .product-item {
   .product-thumbnail {
-    border: 1px solid $border-color;
     margin-bottom: 10px;
+    border: $border-width solid $border-color;
     img {
       transition: transform 0.3s;
     }
@@ -97,7 +113,7 @@ $rated: url("data:image/svg+xml,#{$svg-string} #{$svg-path} stroke='#{$rated-col
   }
   &:hover {
     .product-thumbnail img {
-      transform: translate(-50%, -50%) scale(1.1);
+      transform: scale(1.1);
     }
   }
   .discount {
