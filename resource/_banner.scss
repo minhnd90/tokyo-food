@@ -61,3 +61,52 @@
     padding: 1rem;
   }
 }
+
+.banner-infomation,
+.banner-1,
+.banner-2,
+.banner-3,
+.banner-4 {
+  overflow: hidden;
+  border-radius: 5px;
+}
+
+.banner-1 img {
+  height: 280px;
+  object-fit: cover;
+}
+.banner-2 {
+  height: 240px;
+  object-fit: cover;
+}
+.banner-3 img {
+  height: 90px;
+  object-fit: cover;
+}
+.banner-4 img {
+  height: 100px;
+  object-fit: cover;
+}
+.banner-infomation > img,
+.banner-infomation .infomation {
+  height: 100px;
+  object-fit: cover;
+}
+.card-user {
+  height: 214px;
+}
+
+.profile {
+  transform: translateY(-37.5px);
+  flex: 1 1 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.profile .avatar {
+  width: 75px;
+  height: 75px;
+}
+.profile .quantity {
+  font-weight: 500;
+}

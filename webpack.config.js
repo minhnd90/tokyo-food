@@ -22,15 +22,12 @@ const CSSLoader = [
 const config = {
     mode: 'development',
     entry: [mainJS],
-    output: {
-        path: path.resolve(__dirname, outputFolder),
-        filename: 'app.js',
-    },
+    output: { path: path.resolve(__dirname, outputFolder), filename: 'app.js' },
     devtool: "source-map",
     plugins: [new MiniCssExtractPlugin({ filename: 'app.css' })],
     module: { rules: CSSLoader },
     resolve: { symlinks: false },
-    // cache: { type: 'filesystem', cacheDirectory: path.resolve(__dirname, '.cache') },
+    cache: { type: 'filesystem', cacheDirectory: path.resolve(__dirname, '.cache') },
 }
 
 module.exports = config;
