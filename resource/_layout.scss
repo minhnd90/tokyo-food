@@ -1,6 +1,9 @@
 main {
   background-color: $main-bg;
 }
+.layout-static {
+  background: linear-gradient(180deg, #ffe4c2 0%, rgba(250, 236, 218, 0.583333) 41.67%, rgba(242, 246, 252, 0) 100%) no-repeat top center / auto 300px;
+}
 
 .brand {
   border: 1px solid #cfd7e8;
@@ -38,6 +41,12 @@ main {
     -webkit-appearance: none;
     margin: 0;
   }
+}
+.bg-main {
+  background-color: $main-bg !important;
+}
+.bg-lightgray {
+  background-color: #edeef0 !important;
 }
 
 .btn-order {

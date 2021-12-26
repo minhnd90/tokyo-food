@@ -1,0 +1,25 @@
+.layout-static {
+  $nav-pills-link-active-color: $primary;
+  $nav-link-color: $headings-color;
+  .sidebar {
+    .nav-pills {
+      .nav-link {
+        border-radius: 0;
+        color: $nav-link-color;
+        text-align: left;
+        border-bottom: 1px solid $border-color;
+        &:last-child {
+          border: 0;
+        }
+      }
+      .nav-link.active,
+      .show > .nav-link {
+        color: $nav-pills-link-active-color;
+        background-color: transparent;
+      }
+    }
+  }
+}
+.table {
+  font-size: $font-size-base;
+}

@@ -8,8 +8,6 @@
     <link rel="preconnect" href="//fonts.gstatic.com" crossorigin />
     <link rel="stylesheet" href="//fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,900&display=swap" />
 
-    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
-
     <link rel="stylesheet" href="app.css" />
     <link rel="stylesheet" href="style.css" />
   </head>
@@ -135,11 +133,10 @@
       </nav>
     </header>
     <!-- Main -->
-    <main class="layout-category">
-      <div class="banner bg-lightyellow">
-        <div class="container">
-          <img class="img-fluid d-block ms-auto" src="images/category-banner.png" alt="Banner" />
-        </div>
+    <main class="layout-static">
+      <div class="banner position-relative">
+        <img class="img-fluid" src="images/bg-header.png" alt="Banner" />
+        <h3 class="position-absolute top-50 start-50 translate-middle text-uppercase">About TokyoFood</h3>
       </div>
       <div class="container mb-5">
         <nav aria-label="breadcrumb">
@@ -154,189 +151,88 @@
                 <span class="ms-1">Home</span>
               </a>
             </li>
-            <li class="breadcrumb-item active" aria-current="page">Sushi</li>
+            <li class="breadcrumb-item active" aria-current="page">About us</li>
           </ol>
         </nav>
-        <div class="bg-white row g-0">
-          <div class="col-auto border-end">
-            <div class="sidebar">
-              <h5 class="sidebar-header text-uppercase">Categories</h5>
-              <ul class="list-group category">
-                <li class="list-group-item py-2">
-                  <a href="javascript:void(0);" class="text-danger fw-500 fs-6">
-                    <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M0 21L6.60213 6.88265L10.2575 9.73428L21 0L11.7496 17.3034L8.42984 14.7158L0 21Z" fill="url(#paint0_linear_0_2338)" />
-                      <defs>
-                        <linearGradient id="paint0_linear_0_2338" x1="13.6249" y1="5.01958" x2="11.2912" y2="21.6449" gradientUnits="userSpaceOnUse">
-                          <stop stop-color="#FFD540" />
-                          <stop offset="1" stop-color="#FF7B00" />
-                        </linearGradient>
-                      </defs>
-                    </svg>
-                    <span>Sale of Today</span>
-                    <svg class="align-top" width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path fill-rule="evenodd" clip-rule="evenodd" d="M1 0C0.447715 0 0 0.447715 0 1V8C0 8.55229 0.447715 9 1 9H4V12L8 9H15C15.5523 9 16 8.55229 16 8V1C16 0.447715 15.5523 0 15 0H1Z" fill="var(--bs-red)"></path>
-                      <path d="M1.5 2V4.5M1.5 7V4.5M1.5 4.5H4.5M4.5 2V7" stroke="var(--bs-white)"></path>
-                      <path d="M6.5 6.5V2.5H9.5V6.5H6.5Z" stroke="var(--bs-white)"></path>
-                      <path d="M11 2.5H13M15 2.5H13M13 2.5V7" stroke="var(--bs-white)"></path>
-                    </svg>
-                  </a>
-                </li>
-                <li class="list-group-item active">
-                  <a href="categories.html">
-                    <span>Categories 1</span>
-                  </a>
-                  <a class="caret" data-bs-toggle="collapse" href="#category_1" aria-expanded="true" aria-controls="category_1"></a>
-                  <ul id="category_1" class="list-group sub-category show">
-                    <li class="list-group-item"><a href="products-list.html">Categories 1.1</a></li>
-                    <li class="list-group-item"><a href="products-list.html">Categories 1.2</a></li>
-                    <li class="list-group-item"><a href="products-list.html">Categories 1.3</a></li>
-                  </ul>
-                </li>
-                <li class="list-group-item"><a href="categories.html">Categories 2</a></li>
-                <li class="list-group-item"><a href="categories.html">Categories 3</a></li>
-                <li class="list-group-item"><a href="categories.html">Categories 4</a></li>
-              </ul>
+        <div class="row bg-white rounded">
+          <div class="sidebar col-auto border-end py-2">
+            <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+              <button class="nav-link active" id="v-pill-1-tab" data-bs-toggle="pill" data-bs-target="#v-pill-1" type="button" role="tab" aria-controls="v-pill-1" aria-selected="true">About TokyoFood</button>
+              <button class="nav-link" id="v-pill-2-tab" data-bs-toggle="pill" data-bs-target="#v-pill-2" type="button" role="tab" aria-controls="v-pill-2" aria-selected="false">Corporate Profile</button>
+              <button class="nav-link" id="v-pill-3-tab" data-bs-toggle="pill" data-bs-target="#v-pill-3" type="button" role="tab" aria-controls="v-pill-3" aria-selected="false">Organization</button>
+              <button class="nav-link" id="v-pill-4-tab" data-bs-toggle="pill" data-bs-target="#v-pill-4" type="button" role="tab" aria-controls="v-pill-4" aria-selected="false">Corporate History</button>
             </div>
           </div>
-          <div class="col">
-            <div class="category-banner">
-              <img class="w-100" src="images/categories-banner.png" alt="Banner" />
-              <div class="category-banner-desctiption">
-                <h2>Remedies</h2>
-                <p>Harnessing the healing power of the Australian bush Created by Ian White, a 5th generation Australian herbalist</p>
-              </div>
-            </div>
-            <div class="category-list p-4">
-              <div class="row g-4">
-                <div class="col-6">
-                  <a href="javascript:void(0);" class="category-item bg-cat-1">
-                    <div class="cat-detail">
-                      <h6 class="cat-name">Oshizushi</h6>
-                      <div class="cat-desc">Helps to soothe and create balance when you need it most. It has a calming effect.</div>
+          <div class="col py-3 px-4">
+            <div class="tab-content" id="v-pills-tabContent">
+              <div class="tab-pane fade show active" id="v-pill-1" role="tabpanel" aria-labelledby="v-pill-1-tab">
+                <h5 class="mb-3">Top Message</h5>
+                <div class="row g-5">
+                  <div class="col">
+                    <p>Since 1987, when we started our business, we've devoted ourselves to the development of food culture in New Zealand as a Japanese food pioneer carrying the company principle "Customer-first policy" at all times.</p>
+                    <p>As a pioneer who has started from scratch and built up the Japanese food distribution business here in New Zealand, we strongly feel from our experiencethat, in the world, there is high demand for Japanese food, and this demand is increasing and will be in the future. With many new customers registeringwith us every year, our client list now reaches over 2000, and we sincerely would like to express our appreciation to all our customers.</p>
+                    <p>In recent years, we have started to implement in Australia what we developed in New Zealand, which we are seeing growing the fruits steadily.</p>
+                    <p>We are proud of the role we play in supporting the Japanese food culture in Oceania region and will continue to strive as a "Total producer of Japanese food" who can "Run" "Hit" and "Field". TOKYO FOOD Group will unite and do our best for the spread of Japanese food to meet the expectations of our customers.</p>
+                    <p>We greatly appreciate your support, as always.</p>
+                  </div>
+                  <div class="col-auto">
+                    <div class="card border-0">
+                      <img src="images/managing-director.jpg" class="card-img-top" alt="Harumasa Murayama" />
+                      <div class="card-body bg-main border-top border-2 border-primary">
+                        <h6 class="card-title">Harumasa Murayama</h6>
+                        <p class="card-text">Managing director</p>
+                      </div>
                     </div>
-                    <div class="cat-image"><img src="images/img-cat-1.jpg" alt="img" /></div>
-                  </a>
+                  </div>
                 </div>
-                <div class="col-6">
-                  <a href="javascript:void(0);" class="category-item bg-cat-2">
-                    <div class="cat-detail">
-                      <h6 class="cat-name">Nigiri</h6>
-                      <div class="cat-desc">Helps to soothe and create balance when you need it most. It has a calming effect.</div>
-                    </div>
-                    <div class="cat-image"><img src="images/img-cat-2.jpg" alt="img" /></div>
-                  </a>
+                <h5 class="mb-3">Corporate Profile</h5>
+                <div class="table-responsive">
+                  <table class="table border-white">
+                    <tr>
+                      <th class="bg-lightgray fw-normal">Name</th>
+                      <td class="bg-main">TOKYO FOOD CO.,LTD</td>
+                    </tr>
+                    <tr>
+                      <th class="bg-lightgray fw-normal">Date of Establishment</th>
+                      <td class="bg-main">Established in April 1996, in operation since 1987</td>
+                    </tr>
+                    <tr>
+                      <th class="bg-lightgray fw-normal">Director(s)</th>
+                      <td class="bg-main">Harumasa Murayama, Managing Director</td>
+                    </tr>
+                    <tr>
+                      <th class="bg-lightgray fw-normal">Number of Employees</th>
+                      <td class="bg-main">188 (as of February 2017)</td>
+                    </tr>
+                    <tr>
+                      <th class="bg-lightgray fw-normal">Business Areas</th>
+                      <td class="bg-main">Importation, Wholesale and Retail of food, liquor and related consumerproducts</td>
+                    </tr>
+                    <tr>
+                      <th class="bg-lightgray fw-normal">Major Trading Areas</th>
+                      <td class="bg-main">Japan, China, Taiwan, Thailand, Vietnam, Singapore and U.S.A.</td>
+                    </tr>
+                    <tr>
+                      <th class="bg-lightgray fw-normal">Fiscal Term</th>
+                      <td class="bg-main">March</td>
+                    </tr>
+                    <tr>
+                      <th class="bg-lightgray fw-normal">Major Bank</th>
+                      <td class="bg-main">Westpac New Zealand Limite</td>
+                    </tr>
+                  </table>
                 </div>
-                <div class="col-6">
-                  <a href="javascript:void(0);" class="category-item bg-cat-3">
-                    <div class="cat-detail">
-                      <h6 class="cat-name">Oshizushi</h6>
-                      <div class="cat-desc">Supports the caregiver when they are feeling overwhelmed by the responsibility of looking after another.</div>
-                    </div>
-                    <div class="cat-image"><img src="images/img-cat-3.jpg" alt="img" /></div>
-                  </a>
-                </div>
-                <div class="col-6">
-                  <a href="javascript:void(0);" class="category-item bg-cat-4">
-                    <div class="cat-detail">
-                      <h6 class="cat-name">Temaki</h6>
-                      <div class="cat-desc">Helps to support and boost you through changing and challenging times</div>
-                    </div>
-                    <div class="cat-image"><img src="images/img-cat-4.jpg" alt="img" /></div>
-                  </a>
-                </div>
-                <div class="col-6">
-                  <a href="javascript:void(0);" class="category-item bg-cat-5">
-                    <div class="cat-detail">
-                      <h6 class="cat-name">Narezushi</h6>
-                      <div class="cat-desc">Helps to soothe and create balance when aGives clarity and focus when working, speaking, reading or studying.you need it most.</div>
-                    </div>
-                    <div class="cat-image"><img src="images/img-cat-5.jpg" alt="img" /></div>
-                  </a>
-                </div>
-                <div class="col-6">
-                  <a href="javascript:void(0);" class="category-item bg-cat-6">
-                    <div class="cat-detail">
-                      <h6 class="cat-name">Kakinoha-zushi</h6>
-                      <div class="cat-desc">Helps to support and boost you through changing and challenging times</div>
-                    </div>
-                    <div class="cat-image"><img src="images/img-cat-6.jpg" alt="img" /></div>
-                  </a>
-                </div>
-                <div class="col-6">
-                  <a href="javascript:void(0);" class="category-item bg-cat-7">
-                    <div class="cat-detail">
-                      <h6 class="cat-name">Chirashizushi</h6>
-                      <div class="cat-desc">Helps to soothe and create balance when aGives clarity and focus when working, speaking, reading or studying.you need it most.</div>
-                    </div>
-                    <div class="cat-image"><img src="images/img-cat-7.jpg" alt="img" /></div>
-                  </a>
-                </div>
-                <div class="col-6">
-                  <a href="javascript:void(0);" class="category-item bg-cat-8">
-                    <div class="cat-detail">
-                      <h6 class="cat-name">Abund</h6>
-                      <div class="cat-desc">Aids in releasing negative beliefs, family patterns, sabotage, and poverty consciousness.</div>
-                    </div>
-                    <div class="cat-image"><img src="images/img-cat-8.jpg" alt="img" /></div>
-                  </a>
-                </div>
-                <div class="col-6">
-                  <a href="javascript:void(0);" class="category-item bg-cat-9">
-                    <div class="cat-detail">
-                      <h6 class="cat-name">Creative</h6>
-                      <div class="cat-desc">Inspires creative and emotional expression and gives courage and clarity in public speaking and singing.</div>
-                    </div>
-                    <div class="cat-image"><img src="images/img-cat-9.jpg" alt="img" /></div>
-                  </a>
-                </div>
-                <div class="col-6">
-                  <a href="javascript:void(0);" class="category-item bg-cat-10">
-                    <div class="cat-detail">
-                      <h6 class="cat-name">Oshizushi</h6>
-                      <div class="cat-desc">Helps to soothe and create balance when you need it most. It has a calming effect.</div>
-                    </div>
-                    <div class="cat-image"><img src="images/img-cat-10.jpg" alt="img" /></div>
-                  </a>
+                <h5 class="mb-3">Top food group</h5>
+                <div class="row align-items-center">
+                  <img class="col-auto" src="images/food-group-1.jpg" alt="Food group" />
+                  <img class="col-auto" src="images/food-group-2.jpg" alt="Food group" />
+                  <img class="col-auto" src="images/food-group-3.jpg" alt="Food group" />
+                  <img class="col-auto" src="images/food-group-4.jpg" alt="Food group" />
                 </div>
               </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="top-brand bg-white py-3">
-        <div class="container">
-          <h5 class="text-uppercase mt-3 mb-4">Top brands</h5>
-          <div class="row row-cols-5 g-4 mb-5">
-            <div class="col">
-              <a class="brand" href="javascript:void(0);"><img src="images/brand-1.png" alt="Brand" /></a>
-            </div>
-            <div class="col">
-              <a class="brand" href="javascript:void(0);"><img src="images/brand-2.png" alt="Brand" /></a>
-            </div>
-            <div class="col">
-              <a class="brand" href="javascript:void(0);"><img src="images/brand-3.png" alt="Brand" /></a>
-            </div>
-            <div class="col">
-              <a class="brand" href="javascript:void(0);"><img src="images/brand-4.png" alt="Brand" /></a>
-            </div>
-            <div class="col">
-              <a class="brand" href="javascript:void(0);"><img src="images/brand-5.png" alt="Brand" /></a>
-            </div>
-            <div class="col">
-              <a class="brand" href="javascript:void(0);"><img src="images/brand-6.png" alt="Brand" /></a>
-            </div>
-            <div class="col">
-              <a class="brand" href="javascript:void(0);"><img src="images/brand-7.png" alt="Brand" /></a>
-            </div>
-            <div class="col">
-              <a class="brand" href="javascript:void(0);"><img src="images/brand-8.png" alt="Brand" /></a>
-            </div>
-            <div class="col">
-              <a class="brand" href="javascript:void(0);"><img src="images/brand-9.png" alt="Brand" /></a>
-            </div>
-            <div class="col">
-              <a class="brand" href="javascript:void(0);"><img src="images/brand-10.png" alt="Brand" /></a>
+              <div class="tab-pane fade" id="v-pill-2" role="tabpanel" aria-labelledby="v-pill-2-tab">Corporate Profile</div>
+              <div class="tab-pane fade" id="v-pill-3" role="tabpanel" aria-labelledby="v-pill-3-tab">Organization</div>
+              <div class="tab-pane fade" id="v-pill-4" role="tabpanel" aria-labelledby="v-pill-4-tab">Corporate History</div>
             </div>
           </div>
         </div>
@@ -408,8 +304,6 @@
     </footer>
     <script src="app.js"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
-    <script type="text/javascript" src="//cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
-    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
     <script type="text/javascript" src="script.js"></script>
   </body>
 </html>
