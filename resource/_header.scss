@@ -45,12 +45,16 @@
       .icon-hamburger {
         fill: currentColor;
         margin-right: 0.875rem;
+        @include media-breakpoint-down(lg) {
+          margin-right: 0;
+        }
       }
     }
     .nav-item {
       display: flex;
       align-items: center;
       .nav-link {
+        white-space: nowrap;
         &.hot {
           color: $primary;
         }
@@ -60,5 +64,34 @@
         }
       }
     }
+  }
+  .navbar-expand-lg {
+    position: relative;
+    .navbar-collapse {
+      @include media-breakpoint-down(lg) {
+        position: absolute;
+        background-color: #fff;
+        border-radius: 5px;
+        border: 1px solid $border-color;
+        right: 0;
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+        margin-top: 2px;
+        .navbar-nav {
+          padding: 0.25rem 1rem;
+          .nav-text {
+            padding: $nav-link-padding-y 0;
+            white-space: nowrap;
+          }
+        }
+      }
+    }
+  }
+}
+
+.navbar-toggler {
+  box-shadow: none !important;
+  border: 0;
+  .navbar-toggler-icon {
+    background: escape-svg($dot) no-repeat;
   }
 }

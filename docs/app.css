@@ -11157,14 +11157,36 @@ textarea.form-control-lg {
   display: block;
   margin-left: 0.5em;
   background: url("data:image/svg+xml,%3csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 16 16%27%3e%3cpath fill=%27none%27 stroke=%27%23747474%27 stroke-linecap=%27round%27 stroke-linejoin=%27round%27 stroke-width=%272%27 d=%27M2 5l6 6 6-6%27/%3e%3c/svg%3e") no-repeat;
-  width: 12px;
-  height: 7px;
+  width: 10px;
+  height: 10px;
+}
+@media (max-width: 991.98px) {
+  .dropdown-toggle::after {
+    display: none;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .dropdown-category .dropdown-toggle::after {
+    display: none;
+  }
 }
 
 .dropdown-divider.vertical {
   width: 1px;
   height: 1rem;
   margin: 0.75rem 0;
+}
+
+@media (max-width: 991.98px) {
+  .navbar-collapse .dropdown-divider.vertical {
+    width: 100%;
+    height: 1px;
+    margin: 0;
+  }
+}
+.navbar-collapse .d-lg-none .float-end {
+  margin-top: 3px;
 }
 
 .dropdown-category + .dropdown-menu {
@@ -11840,15 +11862,52 @@ main {
   fill: currentColor;
   margin-right: 0.875rem;
 }
+@media (max-width: 991.98px) {
+  .navbar-main .navbar-nav .dropdown-category .icon-hamburger {
+    margin-right: 0;
+  }
+}
 .navbar-main .navbar-nav .nav-item {
   display: flex;
   align-items: center;
+}
+.navbar-main .navbar-nav .nav-item .nav-link {
+  white-space: nowrap;
 }
 .navbar-main .navbar-nav .nav-item .nav-link.hot {
   color: #f08701;
 }
 .navbar-main .navbar-nav .nav-item .nav-link.hot, .navbar-main .navbar-nav .nav-item .nav-link.dropdown-category {
   font-size: 1rem;
+}
+.navbar-main .navbar-expand-lg {
+  position: relative;
+}
+@media (max-width: 991.98px) {
+  .navbar-main .navbar-expand-lg .navbar-collapse {
+    position: absolute;
+    background-color: #fff;
+    border-radius: 5px;
+    border: 1px solid #cfd7e8;
+    right: 0;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+    margin-top: 2px;
+  }
+  .navbar-main .navbar-expand-lg .navbar-collapse .navbar-nav {
+    padding: 0.25rem 1rem;
+  }
+  .navbar-main .navbar-expand-lg .navbar-collapse .navbar-nav .nav-text {
+    padding: 0.5rem 0;
+    white-space: nowrap;
+  }
+}
+
+.navbar-toggler {
+  box-shadow: none !important;
+  border: 0;
+}
+.navbar-toggler .navbar-toggler-icon {
+  background: url("data:image/svg+xml,%3csvg width=%2724%27 height=%2724%27 viewBox=%270 0 24 24%27 fill=%27none%27 xmlns=%27http://www.w3.org/2000/svg%27%3e%3cpath d=%27M12 15.75C12.8284 15.75 13.5 16.4216 13.5 17.25C13.5 18.0784 12.8284 18.75 12 18.75C11.1716 18.75 10.5 18.0784 10.5 17.25C10.5 16.4216 11.1716 15.75 12 15.75Z%27 fill=%27%23555555%27/%3e%3cpath d=%27M12 10.5C12.8284 10.5 13.5 11.1716 13.5 12C13.5 12.8284 12.8284 13.5 12 13.5C11.1716 13.5 10.5 12.8284 10.5 12C10.5 11.1716 11.1716 10.5 12 10.5Z%27 fill=%27%23555555%27/%3e%3cpath d=%27M12 5.25C12.8284 5.25 13.5 5.92157 13.5 6.75C13.5 7.57843 12.8284 8.25 12 8.25C11.1716 8.25 10.5 7.57843 10.5 6.75C10.5 5.92157 11.1716 5.25 12 5.25Z%27 fill=%27%23555555%27/%3e%3c/svg%3e") no-repeat;
 }
 
 footer.bg-dark {

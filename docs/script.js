@@ -11,6 +11,7 @@ jQuery(function () {
         }
     });
 });
+
 jQuery(function () {
     if (typeof $.prototype.slick !== 'function') { return }
     const related = $('.product-related .product-list');
@@ -50,3 +51,9 @@ jQuery(function () {
         thumnails.slick(thumnailOptions);
     }
 });
+
+jQuery(function () {
+    $(window).on('resize', function () {
+
+    })
+})
