@@ -59,9 +59,45 @@
     justify-content: center;
     font-size: 13px;
     background-color: $border-color;
-    transition: background-color 0.15s ease-in-out;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out;
   }
 }
 .accordion-body {
   background-color: $main-bg;
+}
+.flag {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  // border: 1px solid $border-color;
+  background-color: $main-bg;
+  border-radius: 5px;
+  padding: 15px 20px;
+  font-weight: 500;
+  color: $headings-color;
+  img {
+    margin-bottom: 10px;
+    width: 100%;
+  }
+}
+.pagination {
+  align-items: center;
+  justify-content: center;
+}
+.page-item {
+  .page-link {
+    border: 0;
+    border-radius: 50%;
+    box-shadow: none !important;
+    color: $headings-color;
+    margin: 0 5px !important;
+  }
+  &.prev,
+  &.next {
+    .page-link {
+      border-radius: 50rem;
+      padding-top: 0.5rem;
+      padding-bottom: 0.5rem;
+    }
+  }
 }

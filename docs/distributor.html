@@ -1,0 +1,295 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tokyo Food</title>
+    <link rel="preconnect" href="//fonts.googleapis.com" />
+    <link rel="preconnect" href="//fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="//fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,900&display=swap" />
+
+    <link rel="stylesheet" href="app.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <nav class="navbar-top navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+          <a class="navbar-brand" href="javascript:void(0);" title="Tokyo Food">
+            <img src="images/tokyo-food.png" alt="Tokyo Food" />
+          </a>
+          <form class="header-search d-flex flex-grow-1 mb-0">
+            <div class="input-group ms-4">
+              <input type="search" class="form-control border-primary" placeholder="Search for products&hellip;" aria-label="Search" aria-describedby="button-header-search" />
+              <button class="btn btn-primary d-flex align-items-center" type="submit" id="button-header-search">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon-search" width="16" height="16" viewBox="0 0 16 16" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M7.33317 12C9.9105 12 11.9998 9.91062 11.9998 7.33329C11.9998 4.75596 9.9105 2.66663 7.33317 2.66663C4.75584 2.66663 2.6665 4.75596 2.6665 7.33329C2.6665 9.91062 4.75584 12 7.33317 12Z" />
+                  <path d="M10.9624 10.9624L13.9999 13.9999" />
+                </svg>
+                <span>Search</span>
+              </button>
+            </div>
+          </form>
+          <ul class="navbar-nav ms-4 mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="javascript:void(0);">
+                <svg xmlns="http://www.w3.org/2000/svg" class="nav-item-icon" width="26" height="26" viewBox="0 0 26 26" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="13" cy="13" r="12.25"></circle>
+                  <path d="M13 16L13 15C13.7911 15 14.5645 14.7654 15.2223 14.3259C15.8801 13.8864 16.3928 13.2616 16.6955 12.5307C16.9983 11.7998 17.0775 10.9956 16.9231 10.2196C16.7688 9.44372 16.3878 8.73098 15.8284 8.17157C15.269 7.61216 14.5563 7.2312 13.7804 7.07686C13.0044 6.92252 12.2002 7.00173 11.4693 7.30448C10.7384 7.60723 10.1136 8.11993 9.67412 8.77772C9.2346 9.43552 9 10.2089 9 11"></path>
+                  <circle cx="13" r="0.75" cy="20.5"></circle>
+                </svg>
+                <span>Help</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="javascript:void(0);">
+                <svg xmlns="http://www.w3.org/2000/svg" class="nav-item-icon" width="26" height="26" viewBox="0 0 26 26" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M17 6.99092V5.78054C17 3.14054 14.8438 1 12.1846 1H5.81411C3.15616 1 1 3.14054 1 5.78054V20.2195C1 22.8595 3.15616 25 5.81411 25H12.1976C14.8491 25 17 22.8659 17 20.2337V19.0104" />
+                  <path d="M25.6668 13L10.3335 13.0286" />
+                  <path d="M22.3335 9L26.3335 12.9993L22.3335 17" />
+                </svg>
+                <span>Logout</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <nav class="navbar-main navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="mainNavbar">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle dropdown-category me-2" href="javascript:void(0);" id="dropdown-category" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="icon-hamburger" width="16" height="12" viewBox="0 0 16 12" fill-rule="evenodd" clip-rule="evenodd">
+                    <path d="M0.5 6C0.5 5.58579 0.835786 5.25 1.25 5.25H14.75C15.1642 5.25 15.5 5.58579 15.5 6C15.5 6.41421 15.1642 6.75 14.75 6.75H1.25C0.835786 6.75 0.5 6.41421 0.5 6Z" />
+                    <path d="M0.5 1.5C0.5 1.08579 0.835786 0.75 1.25 0.75H14.75C15.1642 0.75 15.5 1.08579 15.5 1.5C15.5 1.91421 15.1642 2.25 14.75 2.25H1.25C0.835786 2.25 0.5 1.91421 0.5 1.5Z" />
+                    <path d="M0.5 10.5C0.5 10.0858 0.835786 9.75 1.25 9.75H14.75C15.1642 9.75 15.5 10.0858 15.5 10.5C15.5 10.9142 15.1642 11.25 14.75 11.25H1.25C0.835786 11.25 0.5 10.9142 0.5 10.5Z" />
+                  </svg>
+                  <span>Categories</span>
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="dropdown-category">
+                  <li><a class="dropdown-item" href="javascript:void(0);">Categories 1</a></li>
+                  <li><a class="dropdown-item" href="javascript:void(0);">Categories 2</a></li>
+                  <li><a class="dropdown-item" href="javascript:void(0);">Categories 3</a></li>
+                  <li><a class="dropdown-item" href="javascript:void(0);">Categories 4</a></li>
+                  <li><a class="dropdown-item" href="javascript:void(0);">Categories 5</a></li>
+                  <li><a class="dropdown-item" href="javascript:void(0);">Categories 6</a></li>
+                  <li><a class="dropdown-item" href="javascript:void(0);">Categories 7</a></li>
+                  <li><a class="dropdown-item" href="javascript:void(0);">Categories 8</a></li>
+                  <li><a class="dropdown-item" href="javascript:void(0);">Categories 9</a></li>
+                </ul>
+              </li>
+              <li><hr class="dropdown-divider vertical mx-2" /></li>
+              <li class="nav-item">
+                <a class="nav-link" href="video.html">Video</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="javascript:void(0);">International Distributors</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link hot" href="javascript:void(0);">
+                  <span>Hot Deal</span>
+                  <svg class="align-top" width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M1 0C0.447715 0 0 0.447715 0 1V8C0 8.55229 0.447715 9 1 9H4V12L8 9H15C15.5523 9 16 8.55229 16 8V1C16 0.447715 15.5523 0 15 0H1Z" fill="var(--bs-red)" />
+                    <path d="M1.5 2V4.5M1.5 7V4.5M1.5 4.5H4.5M4.5 2V7" stroke="var(--bs-white)" />
+                    <path d="M6.5 6.5V2.5H9.5V6.5H6.5Z" stroke="var(--bs-white)" />
+                    <path d="M11 2.5H13M15 2.5H13M13 2.5V7" stroke="var(--bs-white)" />
+                  </svg>
+                </a>
+              </li>
+            </ul>
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li><hr class="dropdown-divider vertical mx-1" /></li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle dropdown-currency" href="javascript:void(0);" id="dropdown-currency" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <span>English - USD</span>
+                </a>
+                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdown-currency">
+                  <li><a class="dropdown-item" href="javascript:void(0);">Japanese - JPY</a></li>
+                </ul>
+              </li>
+              <li><hr class="dropdown-divider vertical mx-1" /></li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle dropdown-language" href="javascript:void(0);" id="dropdown-language" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <span class="me-2">English</span>
+                  <img src="images/eng.png" alt="English" />
+                </a>
+                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdown-language">
+                  <li>
+                    <a class="dropdown-item" href="javascript:void(0);">
+                      <span class="me-2">Japanese</span>
+                      <img src="images/jp.png" alt="Japanese" />
+                    </a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- Main -->
+    <main class="layout-static">
+      <div class="banner position-relative">
+        <img class="img-fluid" src="images/bg-header.png" alt="Banner" />
+        <h3 class="position-absolute top-50 start-50 translate-middle text-uppercase">International Distributors</h3>
+      </div>
+      <div class="container mb-5">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item">
+              <a href="/" class="d-flex align-items-center">
+                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M11.565 7.24341V12.5906H2.43457V7.24341" stroke="#6C6C6C" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M1.42017 6.75726V6.27114L6.99988 1.41003L12.5796 6.27114V6.75726" stroke="#6C6C6C" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M8.52126 6.75757H5.47778V10.1603H8.52126V6.75757Z" stroke="#6C6C6C" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+                <span class="ms-1">Home</span>
+              </a>
+            </li>
+            <li class="breadcrumb-item active" aria-current="page">About us</li>
+          </ol>
+        </nav>
+        <div class="row bg-white rounded">
+          <div class="col-12 py-3 px-4">
+            <h5 class="mb-3">Australian Bush Flower Essences Distributors</h5>
+            <p>Australian Bush Flower Essences can be found worldwide through our distributors.</p>
+            <p>Click in the flag below to reach our products.</p>
+            <div class="row row-cols-6 g-4">
+              <div class="col">
+                <div class="flag"><img src="images/flag-Australia.jpg" alt="Australia" />Australia</div>
+              </div>
+              <div class="col">
+                <div class="flag"><img src="images/flag-Argentina.jpg" alt="Argentina" />Argentina</div>
+              </div>
+              <div class="col">
+                <div class="flag"><img src="images/flag-Austria.jpg" alt="Austria" />Austria</div>
+              </div>
+              <div class="col">
+                <div class="flag"><img src="images/flag-Belgium.jpg" alt="Belgium" />Belgium</div>
+              </div>
+              <div class="col">
+                <div class="flag"><img src="images/flag-Brazil.jpg" alt="Brazil" />Brazil</div>
+              </div>
+              <div class="col">
+                <div class="flag"><img src="images/flag-Bulgaria.jpg" alt="Bulgaria" />Bulgaria</div>
+              </div>
+              <div class="col">
+                <div class="flag"><img src="images/flag-Canada.jpg" alt="Canada" />Canada</div>
+              </div>
+              <div class="col">
+                <div class="flag"><img src="images/flag-Canary-Islands.jpg" alt="Canary Islands" />Canary Islands</div>
+              </div>
+              <div class="col">
+                <div class="flag"><img src="images/flag-Chile.jpg" alt="Chile" />Chile</div>
+              </div>
+              <div class="col">
+                <div class="flag"><img src="images/flag-China.jpg" alt="China" />China</div>
+              </div>
+              <div class="col">
+                <div class="flag"><img src="images/flag-Colombia.jpg" alt="Colombia" />Colombia</div>
+              </div>
+              <div class="col">
+                <div class="flag"><img src="images/flag-Costa-Rica.jpg" alt="Costa Rica" />Costa Rica</div>
+              </div>
+            </div>
+            <nav class="mt-3">
+              <ul class="pagination">
+                <li class="page-item prev">
+                  <a class="page-link" href="#">
+                    <svg width="21" height="18" viewBox="0 0 21 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M9 17L1 9L9 1" stroke="#555555" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                      <path d="M20 9L1 9" stroke="#555555" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                  </a>
+                </li>
+                <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item next">
+                  <a class="page-link" href="#">
+                    <svg width="21" height="18" viewBox="0 0 21 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M12 1L20 9L12 17" stroke="#555555" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                      <path d="M1 9L20 9" stroke="#555555" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- Footer -->
+    <footer class="bg-dark">
+      <div class="container">
+        <div class="footer-top row">
+          <div class="col-md-auto text-center mb-3">
+            <img src="images/tokyo-food-2.png" alt="Tokyo Food" />
+          </div>
+          <div class="col-auto mx-auto me-md-0 mb-3">
+            <form class="footer-subscribe d-flex align-items-center mb-0">
+              <label for="input-footer-subscribe" class="text-nowrap">Receive our newsletter</label>
+              <div class="input-group ms-4">
+                <input id="input-footer-subscribe" type="email" class="form-control" placeholder="Email address" aria-label="Subscribe" aria-describedby="button-footer-subscribe" />
+                <button class="btn btn-primary d-flex align-items-center" type="submit" id="button-footer-subscribe">Go</button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="footer-main row justify-content-between g-3">
+          <div class="about col-12 col-lg-auto">
+            <h6>Head Office</h6>
+            <ul class="list-unstyled">
+              <li>Unit A 37-41 Carbine Rd, Mt Wellington, Auckland, New Zealand</li>
+              <li>Phone: <a href="tel:64-9-570-5792">64-9-570-5792</a></li>
+              <li>Fax: 64-9-570-5798</li>
+              <li>Email: <a href="mailto:info@tokyofood.co.nz">info@tokyofood.co.nz</a></li>
+            </ul>
+          </div>
+          <div class="menu col-6 col-md-auto">
+            <h6>Contact Us</h6>
+            <ul class="list-unstyled">
+              <li><a href="contact-us.html" title="#">Contact Us</a></li>
+              <li><a href="javascript:void(0);" title="#">Find a Distributor</a></li>
+              <li><a href="javascript:void(0);" title="#">Reach Out to Us</a></li>
+            </ul>
+          </div>
+          <div class="menu col-6 col-md-auto">
+            <h6>Customer Service</h6>
+            <ul class="list-unstyled">
+              <li><a href="javascript:void(0);" title="#">Contact Us</a></li>
+              <li><a href="javascript:void(0);" title="#">Find a Distributor</a></li>
+              <li><a href="javascript:void(0);" title="#">Reach Out to Us</a></li>
+            </ul>
+          </div>
+          <div class="menu col-6 col-md-auto">
+            <h6>About Us</h6>
+            <ul class="list-unstyled">
+              <li><a href="about.html" title="#">About Us</a></li>
+              <li><a href="javascript:void(0);" title="#">Find a Distributor</a></li>
+              <li><a href="javascript:void(0);" title="#">Reach Out to Us</a></li>
+            </ul>
+          </div>
+          <div class="menu col-6 col-md-auto me-lg-5">
+            <h6>Our Products</h6>
+            <ul class="list-unstyled">
+              <li><a href="javascript:void(0);" title="#">Contact Us</a></li>
+              <li><a href="javascript:void(0);" title="#">Find a Distributor</a></li>
+              <li><a href="javascript:void(0);" title="#">Reach Out to Us</a></li>
+            </ul>
+          </div>
+        </div>
+        <hr />
+        <div class="footer-bottom text-center pt-1 pb-4">&copy; TOKYO FOOD COMPANY LIMITED, New Zealand All Rights Reserved..<a href="javascript:void(0);" title="#">Website Terms and Conditions</a> | <a href="javascript:void(0);" title="#">Privacy Policy</a></div>
+      </div>
+    </footer>
+    <script src="app.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+  </body>
+</html>
