@@ -47,3 +47,7 @@ jQuery(function () {
         related.slick(relatedOptions);
     }
 });
+jQuery(function () {
+    if (typeof lightbox !== 'object') { return }
+    
+});

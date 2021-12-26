@@ -70,13 +70,18 @@
     background-color: currentColor;
   }
   .caret {
-    display: inline-block;
-    margin-left: 0.5em;
+    display: block;
     background: url('data:image/svg+xml,%3csvg width=%2712%27 height=%277%27 viewBox=%270 0 12 7%27 fill=%27none%27 xmlns=%27http://www.w3.org/2000/svg%27%3e%3cpath d=%27M11 1L6 6L1 1%27 stroke=%27%23747474%27 stroke-width=%271.5%27/%3e%3c/svg%3e') no-repeat center center;
     width: 34px;
     height: 34px;
     position: absolute;
     right: 0;
     top: 0;
+    padding: 0 !important;
+    background-color: transparent !important;
+    transition: transform 0.3s;
+    &.collapsed {
+      transform: rotate(-90deg);
+    }
   }
 }

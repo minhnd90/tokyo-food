@@ -1,0 +1,56 @@
+$btn-close: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='#fff'><path d='M.293.293a1 1 0 011.414 0L8 6.586 14.293.293a1 1 0 111.414 1.414L9.414 8l6.293 6.293a1 1 0 01-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 01-1.414-1.414L6.586 8 .293 1.707a1 1 0 010-1.414z'/></svg>") !default;
+.video-item {
+  .video-thumbnail {
+    position: relative;
+    padding-bottom: calc(2 / 3 * 100%);
+    border-radius: 5px;
+    height: 0;
+    overflow: hidden;
+    a {
+      position: absolute;
+      inset: -1px;
+      overflow: hidden;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.3s;
+        &:hover {
+          transform: scale(1.1);
+        }
+      }
+    }
+  }
+  .video-title a {
+    text-decoration: none;
+    color: $body-color;
+  }
+}
+
+.video-modal {
+  .modal-dialog {
+    max-width: fit-content;
+  }
+  .modal-body {
+    display: flex;
+  }
+  .btn-close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(50%, -50%);
+    border-radius: 50%;
+    padding: 0.5rem;
+    background: $gray-900 escape-svg($btn-close) center / $btn-close-width auto no-repeat;
+    opacity: 1;
+    &:hover {
+      opacity: 0.75;
+    }
+  }
+}
+.video-rating {
+  .star {
+    width: 15px;
+    height: 15px;
+  }
+}
