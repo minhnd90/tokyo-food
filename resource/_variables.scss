@@ -58,3 +58,7 @@ $cat-7: #ffcbed;
 $cat-8: #bcf4ae;
 $cat-9: #e5e9ec;
 $cat-10: #a1d7ff;
+
+$caret-color: #747474;
+$form-select-indicator-color: $caret-color;
+$caret-icon: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><path fill='none' stroke='#{$caret-color}' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M2 5l6 6 6-6'/></svg>") !default;

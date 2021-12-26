@@ -8,6 +8,7 @@
         color: $nav-link-color;
         text-align: left;
         border-bottom: 1px solid $border-color;
+        font-weight: 500;
         &:last-child {
           border: 0;
         }
@@ -22,4 +23,9 @@
 }
 .table {
   font-size: $font-size-base;
+}
+.form-select,
+.form-control {
+  border: 0;
+  background-color: #e8ebf1;
 }
