@@ -182,3 +182,33 @@ $caret: url("data:image/svg+xml,<svg viewBox='0 0 12 7' fill='none' xmlns='http:
     font-size: 0.875rem;
   }
 }
+.thumbnail-list {
+  width: calc(60px + var(--bs-gutter-x));
+  .img-thumbnail {
+    padding: 0;
+    border: 1px solid $border-color;
+    border-radius: 5px;
+    &.slick-current {
+      border-color: $primary;
+    }
+  }
+  .slick-arrow {
+    border: 0;
+    border-radius: 50%;
+    font-size: 0;
+    padding: 1rem;
+    background: transparent escape-svg($caret) no-repeat center center / 1rem;
+    margin: 0 auto;
+    display: block;
+    &.slick-prev {
+      transform: rotate(-180deg);
+    }
+    &.slick-next {
+      margin-top: -0.5rem;
+    }
+  }
+}
+
+.thumbnailModal .modal-dialog {
+  max-width: 80vh;
+}

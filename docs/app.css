@@ -11485,6 +11485,37 @@ textarea.form-control-lg {
   font-size: 0.875rem;
 }
 
+.thumbnail-list {
+  width: calc(60px + var(--bs-gutter-x));
+}
+.thumbnail-list .img-thumbnail {
+  padding: 0;
+  border: 1px solid #cfd7e8;
+  border-radius: 5px;
+}
+.thumbnail-list .img-thumbnail.slick-current {
+  border-color: #f08701;
+}
+.thumbnail-list .slick-arrow {
+  border: 0;
+  border-radius: 50%;
+  font-size: 0;
+  padding: 1rem;
+  background: transparent url("data:image/svg+xml,%3csvg viewBox=%270 0 12 7%27 fill=%27none%27 xmlns=%27http://www.w3.org/2000/svg%27%3e%3cpath d=%27M11 1L6 6L1 1%27 stroke=%27%23cfd7e8%27 stroke-width=%271%27/%3e%3c/svg%3e") no-repeat center center/1rem;
+  margin: 0 auto;
+  display: block;
+}
+.thumbnail-list .slick-arrow.slick-prev {
+  transform: rotate(-180deg);
+}
+.thumbnail-list .slick-arrow.slick-next {
+  margin-top: -0.5rem;
+}
+
+.thumbnailModal .modal-dialog {
+  max-width: 80vh;
+}
+
 .video-item .video-thumbnail {
   position: relative;
   padding-bottom: 66.6666666667%;
