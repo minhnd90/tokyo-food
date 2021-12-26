@@ -25,8 +25,10 @@ $primary: $orange !default;
 
 $input-placeholder-color: $gray-500 !default;
 
-$border-color: #cfd7e8;
-$main-bg: #f2f6fc;
+$border-color: #cfd7e8 !default;
+$main-bg: #f2f6fc !default;
+$body-color: $gray-600 !default;
+$headings-color: $gray-900 !default; 
 
 //Font size
 $font-size-root: 16px !default;

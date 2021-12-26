@@ -8,7 +8,7 @@
     <link rel="preconnect" href="//fonts.gstatic.com" crossorigin />
     <link rel="stylesheet" href="//fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,900&display=swap" />
 
-    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
 
     <link rel="stylesheet" href="app.css" />
     <link rel="stylesheet" href="style.css" />
@@ -135,7 +135,7 @@
       </nav>
     </header>
     <!-- Main -->
-    <main class="layout-category">
+    <main class="layout-product">
       <div class="banner bg-lightyellow">
         <div class="container">
           <img class="d-block ms-auto" src="images/category-banner.png" alt="Banner" />
@@ -154,151 +154,191 @@
                 <span class="ms-1">Home</span>
               </a>
             </li>
-            <li class="breadcrumb-item active" aria-current="page">Sushi</li>
+            <li class="breadcrumb-item"><a href="products-list.html">Sushi</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Kirei Uni HISHIO Japanese Sea Urchin Sauce 390g</li>
           </ol>
         </nav>
-        <div class="bg-white row g-0">
-          <div class="col-auto border-end">
-            <div class="sidebar">
-              <h5 class="sidebar-header text-uppercase">Categories</h5>
-              <ul class="list-group category">
-                <li class="list-group-item py-2">
-                  <a href="javascript:void(0);" class="text-danger fw-500 fs-6">
-                    <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M0 21L6.60213 6.88265L10.2575 9.73428L21 0L11.7496 17.3034L8.42984 14.7158L0 21Z" fill="url(#paint0_linear_0_2338)" />
-                      <defs>
-                        <linearGradient id="paint0_linear_0_2338" x1="13.6249" y1="5.01958" x2="11.2912" y2="21.6449" gradientUnits="userSpaceOnUse">
-                          <stop stop-color="#FFD540" />
-                          <stop offset="1" stop-color="#FF7B00" />
-                        </linearGradient>
-                      </defs>
-                    </svg>
-                    <span>Sale of Today</span>
-                    <svg class="align-top" width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path fill-rule="evenodd" clip-rule="evenodd" d="M1 0C0.447715 0 0 0.447715 0 1V8C0 8.55229 0.447715 9 1 9H4V12L8 9H15C15.5523 9 16 8.55229 16 8V1C16 0.447715 15.5523 0 15 0H1Z" fill="var(--bs-red)"></path>
-                      <path d="M1.5 2V4.5M1.5 7V4.5M1.5 4.5H4.5M4.5 2V7" stroke="var(--bs-white)"></path>
-                      <path d="M6.5 6.5V2.5H9.5V6.5H6.5Z" stroke="var(--bs-white)"></path>
-                      <path d="M11 2.5H13M15 2.5H13M13 2.5V7" stroke="var(--bs-white)"></path>
-                    </svg>
-                  </a>
-                </li>
-                <li class="list-group-item active">
-                  <a href="categories.html">
-                    <span>Categories 1</span>
-                  </a>
-                  <a class="caret" data-bs-toggle="collapse" href="#category_1" aria-expanded="true" aria-controls="category_1"></a>
-                  <ul id="category_1" class="list-group sub-category show">
-                    <li class="list-group-item"><a href="products-list.html">Categories 1.1</a></li>
-                    <li class="list-group-item"><a href="products-list.html">Categories 1.2</a></li>
-                    <li class="list-group-item"><a href="products-list.html">Categories 1.3</a></li>
-                  </ul>
-                </li>
-                <li class="list-group-item"><a href="categories.html">Categories 2</a></li>
-                <li class="list-group-item"><a href="categories.html">Categories 3</a></li>
-                <li class="list-group-item"><a href="categories.html">Categories 4</a></li>
-              </ul>
+        <div class="product-detail bg-white p-4">
+          <div class="row mb-5">
+            <div class="col-1">
+              <img class="img-thumbnail mb-2" src="images/img-pro-1.jpg" alt="Kirei Kaki Sauce - HISHIO Oyster Sauce 390g" />
+              <img class="img-thumbnail mb-2" src="images/img-pro-1.jpg" alt="Kirei Kaki Sauce - HISHIO Oyster Sauce 390g" />
+              <img class="img-thumbnail mb-2" src="images/img-pro-1.jpg" alt="Kirei Kaki Sauce - HISHIO Oyster Sauce 390g" />
             </div>
-          </div>
-          <div class="col">
-            <div class="category-banner">
-              <img class="w-100" src="images/categories-banner.png" alt="Banner" />
-              <div class="category-banner-desctiption">
-                <h2>Remedies</h2>
-                <p>Harnessing the healing power of the Australian bush Created by Ian White, a 5th generation Australian herbalist</p>
+            <div class="col-4">
+              <img class="img-thumbnail w-100" src="images/img-pro-1.jpg" alt="Kirei Kaki Sauce - HISHIO Oyster Sauce 390g" />
+            </div>
+            <div class="col">
+              <h4 class="product-name">Kirei Kaki Sauce - HISHIO Oyster Sauce 390g</h4>
+              <div class="product-rating mb-4">
+                <span class="star rated"></span>
+                <span class="star rated"></span>
+                <span class="star rated"></span>
+                <span class="star"></span>
+                <span class="star"></span>
+                <span class="fs-7 ms-3">3 reviews</span>
+              </div>
+              <div class="product-code mb-4">Code: <span class="text-primary">#AA0000</span> &VerticalSeparator; Mamasan</div>
+              <div class="product-price mb-4">
+                <span class="price text-danger align-middle fs-3 lh-1">$6.80</span>
+                <del class="price-old align-middle ms-1 fs-6">$7.55</del>
+              </div>
+              <div class="product-quantity mb-4">
+                <div class="d-flex align-items-center">
+                  <button class="btn btn-minus rounded-circle d-flex align-items-center justify-content-center px-0">-</button>
+                  <input class="form-control quantity mx-2" min="0" name="quantity" value="1" type="number" />
+                  <button class="btn btn-plus rounded-circle d-flex align-items-center justify-content-center px-0">+</button>
+                  <span class="ms-3">240 products available</span>
+                </div>
+              </div>
+              <hr />
+              <div class="product-actions row">
+                <div class="col"><a class="btn w-100 btn-primary" href="javascript:void(0)">Buy now</a></div>
+                <div class="col">
+                  <a class="btn w-100 btn-outline-dark" href="javascript:void(0)">
+                    <svg width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M19.1519 4.66568L17.3655 11.9896L15.0433 9.66736L16.1598 8.55091L11.2474 7.25584L12.5425 12.1682L13.659 11.0517L15.6686 13.0614H5.84383C5.48657 13.0614 5.21862 12.8381 5.12931 12.5255L2.62847 2.2095L1.46737 2.07553C1.1101 2.03087 0.797499 1.67361 0.842157 1.27169C0.886815 0.914425 1.24408 0.60182 1.646 0.646478L3.29834 0.825109C3.61094 0.869767 3.87889 1.09306 3.92355 1.40566L4.5041 3.77253H18.3927C18.616 3.77253 18.8393 3.86184 18.9732 4.04047C19.1519 4.2191 19.1965 4.44239 19.1519 4.66568Z" fill="currentColor" />
+                      <path d="M8.03104 13.8206C7.45048 13.8206 7.00391 14.2671 7.00391 14.8477C7.00391 15.4282 7.45048 15.8748 8.03104 15.8748C8.61159 15.8748 9.05817 15.4282 9.05817 14.8477C9.10282 14.2671 8.61159 13.8206 8.03104 13.8206Z" fill="currentColor" />
+                      <path d="M14.3279 13.8206C13.7474 13.8206 13.3008 14.2671 13.3008 14.8477C13.3008 15.4282 13.7474 15.8748 14.3279 15.8748C14.9085 15.8748 15.355 15.4282 15.355 14.8477C15.355 14.2671 14.9085 13.8206 14.3279 13.8206Z" fill="currentColor" />
+                    </svg>
+                    <span>Add to Cart</span>
+                  </a>
+                </div>
+                <div class="col">
+                  <a class="btn w-100 btn-outline-primary" href="javascript:void(0)">
+                    <svg width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill="currentColor" d="M16.5493 2.05519C16.1249 1.57949 15.6073 1.19609 15.0285 0.928777C14.4498 0.661462 13.8223 0.515936 13.185 0.50123C12.5495 0.487875 11.9179 0.6024 11.3276 0.838001C10.7373 1.0736 10.2003 1.42547 9.74872 1.87269L9.00043 2.62098L8.41449 2.03565C6.59198 0.211314 3.62567 0.0581151 1.80682 1.69996C1.33275 2.12521 0.950337 2.64265 0.682956 3.22066C0.415574 3.79867 0.268833 4.42512 0.251697 5.06175C0.23456 5.69838 0.347387 6.33182 0.583287 6.92337C0.819186 7.51493 1.1732 8.05219 1.62372 8.50233L8.11664 14.9952C8.35118 15.2294 8.66903 15.3609 9.00043 15.3609C9.33182 15.3609 9.64967 15.2294 9.88422 14.9952L16.2148 8.66468C18.0385 6.84034 18.1887 3.87525 16.5493 2.05519Z" />
+                    </svg>
+                    <span>Add to Wishlish</span>
+                  </a>
+                </div>
               </div>
             </div>
-            <div class="category-list p-4">
-              <div class="row g-4">
-                <div class="col-6">
-                  <a href="javascript:void(0);" class="category-item bg-cat-1">
-                    <div class="cat-detail">
-                      <h6 class="cat-name">Oshizushi</h6>
-                      <div class="cat-desc">Helps to soothe and create balance when you need it most. It has a calming effect.</div>
-                    </div>
-                    <div class="cat-image"><img src="images/img-cat-1.jpg" alt="img" /></div>
-                  </a>
-                </div>
-                <div class="col-6">
-                  <a href="javascript:void(0);" class="category-item bg-cat-2">
-                    <div class="cat-detail">
-                      <h6 class="cat-name">Nigiri</h6>
-                      <div class="cat-desc">Helps to soothe and create balance when you need it most. It has a calming effect.</div>
-                    </div>
-                    <div class="cat-image"><img src="images/img-cat-2.jpg" alt="img" /></div>
-                  </a>
-                </div>
-                <div class="col-6">
-                  <a href="javascript:void(0);" class="category-item bg-cat-3">
-                    <div class="cat-detail">
-                      <h6 class="cat-name">Oshizushi</h6>
-                      <div class="cat-desc">Supports the caregiver when they are feeling overwhelmed by the responsibility of looking after another.</div>
-                    </div>
-                    <div class="cat-image"><img src="images/img-cat-3.jpg" alt="img" /></div>
-                  </a>
-                </div>
-                <div class="col-6">
-                  <a href="javascript:void(0);" class="category-item bg-cat-4">
-                    <div class="cat-detail">
-                      <h6 class="cat-name">Temaki</h6>
-                      <div class="cat-desc">Helps to support and boost you through changing and challenging times</div>
-                    </div>
-                    <div class="cat-image"><img src="images/img-cat-4.jpg" alt="img" /></div>
-                  </a>
-                </div>
-                <div class="col-6">
-                  <a href="javascript:void(0);" class="category-item bg-cat-5">
-                    <div class="cat-detail">
-                      <h6 class="cat-name">Narezushi</h6>
-                      <div class="cat-desc">Helps to soothe and create balance when aGives clarity and focus when working, speaking, reading or studying.you need it most.</div>
-                    </div>
-                    <div class="cat-image"><img src="images/img-cat-5.jpg" alt="img" /></div>
-                  </a>
-                </div>
-                <div class="col-6">
-                  <a href="javascript:void(0);" class="category-item bg-cat-6">
-                    <div class="cat-detail">
-                      <h6 class="cat-name">Kakinoha-zushi</h6>
-                      <div class="cat-desc">Helps to support and boost you through changing and challenging times</div>
-                    </div>
-                    <div class="cat-image"><img src="images/img-cat-6.jpg" alt="img" /></div>
-                  </a>
-                </div>
-                <div class="col-6">
-                  <a href="javascript:void(0);" class="category-item bg-cat-7">
-                    <div class="cat-detail">
-                      <h6 class="cat-name">Chirashizushi</h6>
-                      <div class="cat-desc">Helps to soothe and create balance when aGives clarity and focus when working, speaking, reading or studying.you need it most.</div>
-                    </div>
-                    <div class="cat-image"><img src="images/img-cat-7.jpg" alt="img" /></div>
-                  </a>
-                </div>
-                <div class="col-6">
-                  <a href="javascript:void(0);" class="category-item bg-cat-8">
-                    <div class="cat-detail">
-                      <h6 class="cat-name">Abund</h6>
-                      <div class="cat-desc">Aids in releasing negative beliefs, family patterns, sabotage, and poverty consciousness.</div>
-                    </div>
-                    <div class="cat-image"><img src="images/img-cat-8.jpg" alt="img" /></div>
-                  </a>
-                </div>
-                <div class="col-6">
-                  <a href="javascript:void(0);" class="category-item bg-cat-9">
-                    <div class="cat-detail">
-                      <h6 class="cat-name">Creative</h6>
-                      <div class="cat-desc">Inspires creative and emotional expression and gives courage and clarity in public speaking and singing.</div>
-                    </div>
-                    <div class="cat-image"><img src="images/img-cat-9.jpg" alt="img" /></div>
-                  </a>
-                </div>
-                <div class="col-6">
-                  <a href="javascript:void(0);" class="category-item bg-cat-10">
-                    <div class="cat-detail">
-                      <h6 class="cat-name">Oshizushi</h6>
-                      <div class="cat-desc">Helps to soothe and create balance when you need it most. It has a calming effect.</div>
-                    </div>
-                    <div class="cat-image"><img src="images/img-cat-10.jpg" alt="img" /></div>
-                  </a>
-                </div>
+          </div>
+          <div class="product-tabs mb-3">
+            <nav class="mb-3">
+              <div class="nav nav-tabs" id="product-tab" role="tablist">
+                <button class="nav-link active" id="product-description-tab" data-bs-toggle="tab" data-bs-target="#product-description" type="button" role="tab" aria-controls="product-description" aria-selected="true">Product description</button>
+                <button class="nav-link" id="customer-review-tab" data-bs-toggle="tab" data-bs-target="#customer-review" type="button" role="tab" aria-controls="customer-review" aria-selected="false">Customer reviews</button>
+              </div>
+            </nav>
+            <div class="tab-content" id="product-tabContent">
+              <div class="tab-pane fade show active" id="product-description" role="tabpanel" aria-labelledby="product-description-tab">
+                <p>Professional Culinary Chefs use this product many, This is high quality seafood oyster sauce made using real oysters from Japan. Please use as seasoning such as stir-fry, fried rice, yakisoba, or use with soy sauce such as squid, sashimi or even cold tofu. Ingredients Persimmon, sugar, salt, onion / condiment (amino acid etc.), polysaccharide thickener, spices, cocoa pigment. Storage Guidelines Store away from direct sunlight, heat and humidity.</p>
+                <p>This is high quality seafood oyster sauce made using real oysters from Japan. Please use as seasoning such as stir-fry, fried rice, yakisoba, or use with soy sauce such as squid, sashimi or even cold tofu. Ingredients Persimmon, sugar, salt, onion / condiment (amino acid etc.), polysaccharide thickener, spices, cocoa pigment. Storage Guidelines Store away from direct sunlight, heat and humidity.</p>
+                <p>Ingredients Persimmon, sugar, salt, onion / condiment (amino acid etc.), polysaccharide thickener, spices, cocoa pigment. Storage Guidelines Store away from direct sunlight, heat and humidity.</p>
+                <p>Polysaccharide thickener, spices, cocoa pigment. Storage Guidelines Store away from direct sunlight</p>
+              </div>
+              <div class="tab-pane fade" id="customer-review" role="tabpanel" aria-labelledby="customer-review-tab">...</div>
+            </div>
+          </div>
+        </div>
+        <div class="product-related mt-3">
+          <h5>People who purchased this product were also interested in</h5>
+          <div class="product-list">
+            <div class="product-item">
+              <div class="product-thumbnail">
+                <div class="discount">-20%</div>
+                <a href="product.html"><img src="images/img-pro-1.jpg" alt="Product" /></a>
+              </div>
+              <h6 class="product-name"><a href="product.html">Morita Truffle Sauce With Japanese Shoyu Base 100ML</a></h6>
+              <div class="product-price">
+                <span class="price text-danger align-middle fs-6 lh-1">$100</span>
+                <del class="price-old align-middle ms-1">$200</del>
+              </div>
+              <div class="product-rating">
+                <span class="star rated"></span>
+                <span class="star rated"></span>
+                <span class="star rated"></span>
+                <span class="star"></span>
+                <span class="star"></span>
+              </div>
+            </div>
+            <div class="product-item">
+              <div class="product-thumbnail">
+                <a href="product.html"><img src="images/img-pro-2.jpg" alt="Product" /></a>
+              </div>
+              <h6 class="product-name"><a href="product.html">Morita Truffle Sauce With Japanese Shoyu Base 100ML</a></h6>
+              <div class="product-price">
+                <span class="price text-danger align-middle fs-6 lh-1">$100</span>
+                <del class="price-old align-middle ms-1">$200</del>
+              </div>
+              <div class="product-rating">
+                <span class="star rated"></span>
+                <span class="star rated"></span>
+                <span class="star rated"></span>
+                <span class="star"></span>
+                <span class="star"></span>
+              </div>
+            </div>
+            <div class="product-item">
+              <div class="product-thumbnail">
+                <div class="discount">-20%</div>
+                <a href="product.html"><img src="images/img-pro-3.jpg" alt="Product" /></a>
+              </div>
+              <h6 class="product-name"><a href="product.html">Morita Truffle Sauce With Japanese Shoyu Base 100ML</a></h6>
+              <div class="product-price">
+                <span class="price text-danger align-middle fs-6 lh-1">$100</span>
+                <del class="price-old align-middle ms-1">$200</del>
+              </div>
+              <div class="product-rating">
+                <span class="star rated"></span>
+                <span class="star rated"></span>
+                <span class="star rated"></span>
+                <span class="star"></span>
+                <span class="star"></span>
+              </div>
+            </div>
+            <div class="product-item">
+              <div class="product-thumbnail">
+                <a href="product.html"><img src="images/img-pro-4.jpg" alt="Product" /></a>
+              </div>
+              <h6 class="product-name"><a href="product.html">Morita Truffle Sauce With Japanese Shoyu Base 100ML</a></h6>
+              <div class="product-price">
+                <span class="price text-danger align-middle fs-6 lh-1">$100</span>
+                <del class="price-old align-middle ms-1">$200</del>
+              </div>
+              <div class="product-rating">
+                <span class="star rated"></span>
+                <span class="star rated"></span>
+                <span class="star rated"></span>
+                <span class="star"></span>
+                <span class="star"></span>
+              </div>
+            </div>
+            <div class="product-item">
+              <div class="product-thumbnail">
+                <div class="discount">-20%</div>
+                <a href="product.html"><img src="images/img-pro-5.jpg" alt="Product" /></a>
+              </div>
+              <h6 class="product-name"><a href="product.html">Morita Truffle Sauce With Japanese Shoyu Base 100ML</a></h6>
+              <div class="product-price">
+                <span class="price text-danger align-middle fs-6 lh-1">$100</span>
+                <del class="price-old align-middle ms-1">$200</del>
+              </div>
+              <div class="product-rating">
+                <span class="star rated"></span>
+                <span class="star rated"></span>
+                <span class="star rated"></span>
+                <span class="star"></span>
+                <span class="star"></span>
+              </div>
+            </div>
+            <div class="product-item">
+              <div class="product-thumbnail">
+                <a href="product.html"><img src="images/img-pro-6.jpg" alt="Product" /></a>
+              </div>
+              <h6 class="product-name"><a href="product.html">Morita Truffle Sauce With Japanese Shoyu Base 100ML</a></h6>
+              <div class="product-price">
+                <span class="price text-danger align-middle fs-6 lh-1">$100</span>
+                <del class="price-old align-middle ms-1">$200</del>
+              </div>
+              <div class="product-rating">
+                <span class="star rated"></span>
+                <span class="star rated"></span>
+                <span class="star rated"></span>
+                <span class="star"></span>
+                <span class="star"></span>
               </div>
             </div>
           </div>
@@ -406,10 +446,9 @@
         <div class="footer-bottom text-center pt-1 pb-4">&copy; TOKYO FOOD COMPANY LIMITED, New Zealand All Rights Reserved..<a href="javascript:void(0);" title="#">Website Terms and Conditions</a> | <a href="javascript:void(0);" title="#">Privacy Policy</a></div>
       </div>
     </footer>
-    <script src="app.js"></script>
+    <script type="text/javascript" src="app.js"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
-    <script type="text/javascript" src="//cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
-    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script type="text/javascript" src="script.js"></script>
   </body>
 </html>
