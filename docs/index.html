@@ -125,7 +125,7 @@
                     <span class="me-2">English</span>
                     <img src="images/eng.png" alt="English" />
                   </a>
-                  <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdown-language">
+                  <ul class="dropdown-menu shadow dropdown-menu-end" aria-labelledby="dropdown-language">
                     <li>
                       <a class="dropdown-item" href="javascript:void(0);">
                         <span class="me-2">Japanese</span>
@@ -255,463 +255,467 @@
         </div>
       </div>
       <div class="product-list mb-5">
-        <div class="container bg-white py-3">
-          <div class="table-header row">
-            <h5 class="col-auto d-flex align-items-center">
-              <svg width="22" height="18" viewBox="0 0 22 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M20.0591 1.86625C19.5498 1.29542 18.9287 0.835335 18.2342 0.514557C17.5398 0.193778 16.7868 0.0191473 16.022 0.00150064C15.2595 -0.014526 14.5015 0.122905 13.7931 0.405625C13.0847 0.688346 12.4404 1.11059 11.8985 1.64725L11.0005 2.5452L10.2974 1.84281C8.11038 -0.346399 4.55081 -0.530237 2.36819 1.43998C1.7993 1.95028 1.3404 2.5712 1.01955 3.26481C0.698689 3.95843 0.5226 4.71017 0.502036 5.47412C0.481472 6.23808 0.616865 6.9982 0.899944 7.70807C1.18302 8.41794 1.60785 9.06265 2.14846 9.60282L9.93997 17.3943C10.2214 17.6753 10.6028 17.833 11.0005 17.833C11.3982 17.833 11.7796 17.6753 12.0611 17.3943L19.6577 9.79764C21.8462 7.60843 22.0264 4.05033 20.0591 1.86625Z" fill="var(--bs-red)" />
-              </svg>
-              <span class="ms-2">Sushi's favorite product</span>
-            </h5>
-            <div class="table-filter col-auto ms-auto">
-              <ul class="flex-row navbar-nav ms-auto mb-2 mb-lg-0">
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle dropdown-daterange" href="javascript:void(0);" id="dropdown-daterange" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    <span>Last 3 months</span>
-                  </a>
-                  <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdown-daterange">
-                    <li><a class="dropdown-item" href="javascript:void(0);">Last 6 months</a></li>
+        <div class="container py-3">
+          <div class="bg-white px-3">
+            <div class="table-header px-3 pt-2">
+              <div class="row gx-4">
+                <h5 class="col-auto d-flex align-items-center mb-0">
+                  <svg width="22" height="18" viewBox="0 0 22 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M20.0591 1.86625C19.5498 1.29542 18.9287 0.835335 18.2342 0.514557C17.5398 0.193778 16.7868 0.0191473 16.022 0.00150064C15.2595 -0.014526 14.5015 0.122905 13.7931 0.405625C13.0847 0.688346 12.4404 1.11059 11.8985 1.64725L11.0005 2.5452L10.2974 1.84281C8.11038 -0.346399 4.55081 -0.530237 2.36819 1.43998C1.7993 1.95028 1.3404 2.5712 1.01955 3.26481C0.698689 3.95843 0.5226 4.71017 0.502036 5.47412C0.481472 6.23808 0.616865 6.9982 0.899944 7.70807C1.18302 8.41794 1.60785 9.06265 2.14846 9.60282L9.93997 17.3943C10.2214 17.6753 10.6028 17.833 11.0005 17.833C11.3982 17.833 11.7796 17.6753 12.0611 17.3943L19.6577 9.79764C21.8462 7.60843 22.0264 4.05033 20.0591 1.86625Z" fill="var(--bs-red)" />
+                  </svg>
+                  <span class="ms-2">Sushi's favorite product</span>
+                </h5>
+                <div class="table-filter col-auto ms-auto">
+                  <ul class="flex-row navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle dropdown-daterange" href="javascript:void(0);" id="dropdown-daterange" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <span>Last 3 months</span>
+                      </a>
+                      <ul class="dropdown-menu shadow dropdown-menu-end" aria-labelledby="dropdown-daterange">
+                        <li><a class="dropdown-item" href="javascript:void(0);">Last 6 months</a></li>
+                      </ul>
+                    </li>
+                    <li><hr class="dropdown-divider vertical mx-3" /></li>
+                    <li class="nav-item">
+                      <div class="input-group">
+                        <input type="text" class="datepicker form-control" placeholder="12/07/2021 - 06/08/2021" />
+                        <span class="input-group-text">
+                          <svg width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1.57715 7.83688H16.4304" stroke="#81848A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M12.7015 11.0914H12.7092" stroke="#81848A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M9.00372 11.0914H9.01144" stroke="#81848A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M5.29864 11.0914H5.30636" stroke="#81848A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M12.7015 14.3302H12.7092" stroke="#81848A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M9.00372 14.3302H9.01144" stroke="#81848A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M5.29864 14.3302H5.30636" stroke="#81848A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M12.3335 1.66669V4.58335" stroke="#81848A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M5.6665 1.66669V4.58335" stroke="#81848A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M12.5319 3.33337H5.4758C3.02856 3.33337 1.5 4.5915 1.5 6.90413V13.8638C1.5 16.2128 3.02856 17.5 5.4758 17.5H12.5242C14.9791 17.5 16.5 16.2346 16.5 13.922V6.90413C16.5077 4.5915 14.9868 3.33337 12.5319 3.33337Z" stroke="#81848A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                          </svg>
+                        </span>
+                      </div>
+                    </li>
+                    <li><hr class="dropdown-divider vertical mx-3" /></li>
+                    <li class="nav-item dropdown">
+                      <span class="navbar-text">Sort by:</span>
+                      <a class="nav-link dropdown-toggle dropdown-language" href="javascript:void(0);" id="dropdown-language" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <span class="me-2">Code Ascending</span>
+                      </a>
+                      <ul class="dropdown-menu shadow dropdown-menu-end" aria-labelledby="dropdown-language">
+                        <li>
+                          <a class="dropdown-item" href="javascript:void(0);">
+                            <span class="me-2">Code Descending</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="javascript:void(0);">
+                            <span class="me-2">Maker Ascending</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="javascript:void(0);">
+                            <span class="me-2">Maker Descending</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="javascript:void(0);">
+                            <span class="me-2">Item name Ascending</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="javascript:void(0);">
+                            <span class="me-2"> Item name Descending</span>
+                          </a>
+                        </li>
+                      </ul>
+                    </li>
                   </ul>
-                </li>
-                <li><hr class="dropdown-divider vertical mx-3" /></li>
-                <li class="nav-item">
-                  <div class="input-group">
-                    <input type="text" class="datepicker form-control" placeholder="12/07/2021 - 06/08/2021" />
-                    <span class="input-group-text">
-                      <svg width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M1.57715 7.83688H16.4304" stroke="#81848A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                        <path d="M12.7015 11.0914H12.7092" stroke="#81848A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                        <path d="M9.00372 11.0914H9.01144" stroke="#81848A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                        <path d="M5.29864 11.0914H5.30636" stroke="#81848A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                        <path d="M12.7015 14.3302H12.7092" stroke="#81848A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                        <path d="M9.00372 14.3302H9.01144" stroke="#81848A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                        <path d="M5.29864 14.3302H5.30636" stroke="#81848A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                        <path d="M12.3335 1.66669V4.58335" stroke="#81848A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                        <path d="M5.6665 1.66669V4.58335" stroke="#81848A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M12.5319 3.33337H5.4758C3.02856 3.33337 1.5 4.5915 1.5 6.90413V13.8638C1.5 16.2128 3.02856 17.5 5.4758 17.5H12.5242C14.9791 17.5 16.5 16.2346 16.5 13.922V6.90413C16.5077 4.5915 14.9868 3.33337 12.5319 3.33337Z" stroke="#81848A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                      </svg>
-                    </span>
-                  </div>
-                </li>
-                <li><hr class="dropdown-divider vertical mx-3" /></li>
-                <li class="nav-item dropdown">
-                  <span class="navbar-text">Sort by:</span>
-                  <a class="nav-link dropdown-toggle dropdown-language" href="javascript:void(0);" id="dropdown-language" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    <span class="me-2">Code Ascending</span>
-                  </a>
-                  <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdown-language">
-                    <li>
-                      <a class="dropdown-item" href="javascript:void(0);">
-                        <span class="me-2">Code Descending</span>
-                      </a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="javascript:void(0);">
-                        <span class="me-2">Maker Ascending</span>
-                      </a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="javascript:void(0);">
-                        <span class="me-2">Maker Descending</span>
-                      </a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="javascript:void(0);">
-                        <span class="me-2">Item name Ascending</span>
-                      </a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="javascript:void(0);">
-                        <span class="me-2"> Item name Descending</span>
-                      </a>
-                    </li>
-                  </ul>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="table-body">
-            <div class="item row">
-              <div class="col-1">
-                <div class="product-thumbnail">
-                  <a href="product.html">
-                    <img src="images/img-pro-1.jpg" alt="" />
-                  </a>
                 </div>
               </div>
-              <div class="col pt-2">
-                <div class="row">
-                  <div class="col-auto product-code">
-                    <div class="code text-primary">#AA0000</div>
-                    <div class="vendor text-secondary">Mamasan</div>
+            </div>
+            <div class="table-body py-0">
+              <div class="item row">
+                <div class="col-1">
+                  <div class="product-thumbnail">
+                    <a href="product.html">
+                      <img src="images/img-pro-1.jpg" alt="" />
+                    </a>
                   </div>
-                  <div class="col product-name">
-                    <div class="name text-truncate fs-6"><a href="product.html">BBQ PORK BUN300g</a></div>
-                    <div class="detail text-secondary">120g x 6 x12</div>
-                  </div>
-                  <div class="col product-note">
-                    <input type="text" class="form-control" />
-                  </div>
-                  <div class="col-auto product-price">
-                    <span class="price text-danger align-middle fs-6">&dollar;100</span>
-                    <del class="price-old align-middle ms-1">&dollar;200</del>
-                  </div>
-                  <div class="col-auto product-quantity">
-                    <div class="d-flex align-items-center w-100">
-                      <button class="btn btn-minus rounded-circle d-flex align-items-center justify-content-center px-0">-</button>
-                      <input class="form-control quantity mx-2" min="0" name="quantity" value="1" type="number" />
-                      <button class="btn btn-plus rounded-circle d-flex align-items-center justify-content-center px-0">+</button>
+                </div>
+                <div class="col pt-2">
+                  <div class="row">
+                    <div class="col-auto product-code">
+                      <div class="code text-primary">#AA0000</div>
+                      <div class="vendor text-secondary">Mamasan</div>
+                    </div>
+                    <div class="col product-name">
+                      <div class="name text-truncate fs-6"><a href="product.html">BBQ PORK BUN300g</a></div>
+                      <div class="detail text-secondary">120g x 6 x12</div>
+                    </div>
+                    <div class="col product-note">
+                      <input type="text" class="form-control" />
+                    </div>
+                    <div class="col-auto product-price">
+                      <span class="price text-danger align-middle fs-6">&dollar;100</span>
+                      <del class="price-old align-middle ms-1">&dollar;200</del>
+                    </div>
+                    <div class="col-auto product-quantity">
+                      <div class="d-flex align-items-center w-100">
+                        <button class="btn btn-minus rounded-circle d-flex align-items-center justify-content-center px-0">-</button>
+                        <input class="form-control quantity mx-2" min="0" name="quantity" value="1" type="number" />
+                        <button class="btn btn-plus rounded-circle d-flex align-items-center justify-content-center px-0">+</button>
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
-              <div class="col-auto pt-2">
-                <a href="javascript:void(0);" class="btn btn-order btn-primary rounded-pill">
-                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M9.33301 6.74998C9.33301 6.47384 9.55687 6.24998 9.83301 6.24998H12.333C12.6091 6.24998 12.833 6.47384 12.833 6.74998C12.833 7.02613 12.6091 7.24998 12.333 7.24998H9.83301C9.55687 7.24998 9.33301 7.02613 9.33301 6.74998Z" fill="white" />
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0.984863 1.40697C2.01586 1.61317 2.79768 2.45845 2.92295 3.50238L3.70841 10.0479C3.85919 11.3044 4.9251 12.25 6.1906 12.25H12.3952C13.567 12.25 14.5815 11.4362 14.8357 10.2923L15.8839 5.57541C16.0921 4.63864 15.3793 3.75002 14.4196 3.75002H3.95984L3.91583 3.38323C3.73906 1.91014 2.63583 0.717361 1.18098 0.426392L0.984863 1.40697ZM4.70129 9.92873L4.07984 4.75002H14.4196C14.7395 4.75002 14.9771 5.04622 14.9077 5.35848L13.8595 10.0754C13.707 10.7617 13.0983 11.25 12.3952 11.25H6.1906C5.4313 11.25 4.79175 10.6826 4.70129 9.92873Z" fill="white" />
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M6.08339 13.3333C5.5764 13.3333 5.16699 13.745 5.16699 14.2503C5.16699 14.7564 5.57725 15.1666 6.08339 15.1666C6.58867 15.1666 7.00033 14.7572 7.00033 14.2503C7.00033 13.7441 6.58953 13.3333 6.08339 13.3333ZM6.16699 14.2503C6.16699 14.2955 6.13038 14.3333 6.08339 14.3333C6.03724 14.3333 6.00033 14.2964 6.00033 14.2503C6.00033 14.2033 6.03809 14.1666 6.08339 14.1666C6.12953 14.1666 6.16699 14.2041 6.16699 14.2503Z" fill="white" />
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M11.9164 13.3333C11.4094 13.3333 11 13.745 11 14.2503C11 14.7564 11.4103 15.1667 11.9164 15.1667C12.4217 15.1667 12.8333 14.7573 12.8333 14.2503C12.8333 13.7441 12.4225 13.3333 11.9164 13.3333ZM12 14.2503C12 14.2956 11.9634 14.3333 11.9164 14.3333C11.8702 14.3333 11.8333 14.2964 11.8333 14.2503C11.8333 14.2033 11.8711 14.1667 11.9164 14.1667C11.9625 14.1667 12 14.2041 12 14.2503Z" fill="white" />
-                  </svg>
-                  <span class="ms-1">Order now</span>
-                </a>
-              </div>
-            </div>
-
-            <hr class="m-0" />
-
-            <div class="item row">
-              <div class="col-1">
-                <div class="product-thumbnail">
-                  <a href="product.html">
-                    <img src="images/img-pro-2.jpg" alt="" />
+                <div class="col-auto pt-2">
+                  <a href="javascript:void(0);" class="btn btn-order btn-primary rounded-pill">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M9.33301 6.74998C9.33301 6.47384 9.55687 6.24998 9.83301 6.24998H12.333C12.6091 6.24998 12.833 6.47384 12.833 6.74998C12.833 7.02613 12.6091 7.24998 12.333 7.24998H9.83301C9.55687 7.24998 9.33301 7.02613 9.33301 6.74998Z" fill="white" />
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M0.984863 1.40697C2.01586 1.61317 2.79768 2.45845 2.92295 3.50238L3.70841 10.0479C3.85919 11.3044 4.9251 12.25 6.1906 12.25H12.3952C13.567 12.25 14.5815 11.4362 14.8357 10.2923L15.8839 5.57541C16.0921 4.63864 15.3793 3.75002 14.4196 3.75002H3.95984L3.91583 3.38323C3.73906 1.91014 2.63583 0.717361 1.18098 0.426392L0.984863 1.40697ZM4.70129 9.92873L4.07984 4.75002H14.4196C14.7395 4.75002 14.9771 5.04622 14.9077 5.35848L13.8595 10.0754C13.707 10.7617 13.0983 11.25 12.3952 11.25H6.1906C5.4313 11.25 4.79175 10.6826 4.70129 9.92873Z" fill="white" />
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M6.08339 13.3333C5.5764 13.3333 5.16699 13.745 5.16699 14.2503C5.16699 14.7564 5.57725 15.1666 6.08339 15.1666C6.58867 15.1666 7.00033 14.7572 7.00033 14.2503C7.00033 13.7441 6.58953 13.3333 6.08339 13.3333ZM6.16699 14.2503C6.16699 14.2955 6.13038 14.3333 6.08339 14.3333C6.03724 14.3333 6.00033 14.2964 6.00033 14.2503C6.00033 14.2033 6.03809 14.1666 6.08339 14.1666C6.12953 14.1666 6.16699 14.2041 6.16699 14.2503Z" fill="white" />
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M11.9164 13.3333C11.4094 13.3333 11 13.745 11 14.2503C11 14.7564 11.4103 15.1667 11.9164 15.1667C12.4217 15.1667 12.8333 14.7573 12.8333 14.2503C12.8333 13.7441 12.4225 13.3333 11.9164 13.3333ZM12 14.2503C12 14.2956 11.9634 14.3333 11.9164 14.3333C11.8702 14.3333 11.8333 14.2964 11.8333 14.2503C11.8333 14.2033 11.8711 14.1667 11.9164 14.1667C11.9625 14.1667 12 14.2041 12 14.2503Z" fill="white" />
+                    </svg>
+                    <span class="ms-1">Order now</span>
                   </a>
                 </div>
               </div>
-              <div class="col pt-2">
-                <div class="row">
-                  <div class="col-auto product-code">
-                    <div class="code text-primary">#AA0000</div>
-                    <div class="vendor text-secondary">Mamasan</div>
+
+              <hr class="m-0" />
+
+              <div class="item row">
+                <div class="col-1">
+                  <div class="product-thumbnail">
+                    <a href="product.html">
+                      <img src="images/img-pro-2.jpg" alt="" />
+                    </a>
                   </div>
-                  <div class="col product-name">
-                    <div class="name text-truncate fs-6"><a href="product.html">BBQ PORK BUN300g</a></div>
-                    <div class="detail text-secondary">120g x 6 x12</div>
-                  </div>
-                  <div class="col product-note">
-                    <input type="text" class="form-control" />
-                  </div>
-                  <div class="col-auto product-price">
-                    <span class="price text-danger align-middle fs-6">&dollar;100</span>
-                    <del class="price-old align-middle ms-1">&dollar;200</del>
-                  </div>
-                  <div class="col-auto product-quantity">
-                    <div class="d-flex align-items-center w-100">
-                      <button class="btn btn-minus rounded-circle d-flex align-items-center justify-content-center px-0">-</button>
-                      <input class="form-control quantity mx-2" min="0" name="quantity" value="1" type="number" />
-                      <button class="btn btn-plus rounded-circle d-flex align-items-center justify-content-center px-0">+</button>
+                </div>
+                <div class="col pt-2">
+                  <div class="row">
+                    <div class="col-auto product-code">
+                      <div class="code text-primary">#AA0000</div>
+                      <div class="vendor text-secondary">Mamasan</div>
+                    </div>
+                    <div class="col product-name">
+                      <div class="name text-truncate fs-6"><a href="product.html">BBQ PORK BUN300g</a></div>
+                      <div class="detail text-secondary">120g x 6 x12</div>
+                    </div>
+                    <div class="col product-note">
+                      <input type="text" class="form-control" />
+                    </div>
+                    <div class="col-auto product-price">
+                      <span class="price text-danger align-middle fs-6">&dollar;100</span>
+                      <del class="price-old align-middle ms-1">&dollar;200</del>
+                    </div>
+                    <div class="col-auto product-quantity">
+                      <div class="d-flex align-items-center w-100">
+                        <button class="btn btn-minus rounded-circle d-flex align-items-center justify-content-center px-0">-</button>
+                        <input class="form-control quantity mx-2" min="0" name="quantity" value="1" type="number" />
+                        <button class="btn btn-plus rounded-circle d-flex align-items-center justify-content-center px-0">+</button>
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
-              <div class="col-auto pt-2">
-                <a href="javascript:void(0);" class="btn btn-order btn-primary rounded-pill">
-                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M9.33301 6.74998C9.33301 6.47384 9.55687 6.24998 9.83301 6.24998H12.333C12.6091 6.24998 12.833 6.47384 12.833 6.74998C12.833 7.02613 12.6091 7.24998 12.333 7.24998H9.83301C9.55687 7.24998 9.33301 7.02613 9.33301 6.74998Z" fill="white" />
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0.984863 1.40697C2.01586 1.61317 2.79768 2.45845 2.92295 3.50238L3.70841 10.0479C3.85919 11.3044 4.9251 12.25 6.1906 12.25H12.3952C13.567 12.25 14.5815 11.4362 14.8357 10.2923L15.8839 5.57541C16.0921 4.63864 15.3793 3.75002 14.4196 3.75002H3.95984L3.91583 3.38323C3.73906 1.91014 2.63583 0.717361 1.18098 0.426392L0.984863 1.40697ZM4.70129 9.92873L4.07984 4.75002H14.4196C14.7395 4.75002 14.9771 5.04622 14.9077 5.35848L13.8595 10.0754C13.707 10.7617 13.0983 11.25 12.3952 11.25H6.1906C5.4313 11.25 4.79175 10.6826 4.70129 9.92873Z" fill="white" />
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M6.08339 13.3333C5.5764 13.3333 5.16699 13.745 5.16699 14.2503C5.16699 14.7564 5.57725 15.1666 6.08339 15.1666C6.58867 15.1666 7.00033 14.7572 7.00033 14.2503C7.00033 13.7441 6.58953 13.3333 6.08339 13.3333ZM6.16699 14.2503C6.16699 14.2955 6.13038 14.3333 6.08339 14.3333C6.03724 14.3333 6.00033 14.2964 6.00033 14.2503C6.00033 14.2033 6.03809 14.1666 6.08339 14.1666C6.12953 14.1666 6.16699 14.2041 6.16699 14.2503Z" fill="white" />
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M11.9164 13.3333C11.4094 13.3333 11 13.745 11 14.2503C11 14.7564 11.4103 15.1667 11.9164 15.1667C12.4217 15.1667 12.8333 14.7573 12.8333 14.2503C12.8333 13.7441 12.4225 13.3333 11.9164 13.3333ZM12 14.2503C12 14.2956 11.9634 14.3333 11.9164 14.3333C11.8702 14.3333 11.8333 14.2964 11.8333 14.2503C11.8333 14.2033 11.8711 14.1667 11.9164 14.1667C11.9625 14.1667 12 14.2041 12 14.2503Z" fill="white" />
-                  </svg>
-                  <span class="ms-1">Order now</span>
-                </a>
-              </div>
-            </div>
-
-            <hr class="m-0" />
-            <div class="item row">
-              <div class="col-1">
-                <div class="product-thumbnail">
-                  <a href="product.html">
-                    <img src="images/img-pro-3.jpg" alt="" />
+                <div class="col-auto pt-2">
+                  <a href="javascript:void(0);" class="btn btn-order btn-primary rounded-pill">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M9.33301 6.74998C9.33301 6.47384 9.55687 6.24998 9.83301 6.24998H12.333C12.6091 6.24998 12.833 6.47384 12.833 6.74998C12.833 7.02613 12.6091 7.24998 12.333 7.24998H9.83301C9.55687 7.24998 9.33301 7.02613 9.33301 6.74998Z" fill="white" />
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M0.984863 1.40697C2.01586 1.61317 2.79768 2.45845 2.92295 3.50238L3.70841 10.0479C3.85919 11.3044 4.9251 12.25 6.1906 12.25H12.3952C13.567 12.25 14.5815 11.4362 14.8357 10.2923L15.8839 5.57541C16.0921 4.63864 15.3793 3.75002 14.4196 3.75002H3.95984L3.91583 3.38323C3.73906 1.91014 2.63583 0.717361 1.18098 0.426392L0.984863 1.40697ZM4.70129 9.92873L4.07984 4.75002H14.4196C14.7395 4.75002 14.9771 5.04622 14.9077 5.35848L13.8595 10.0754C13.707 10.7617 13.0983 11.25 12.3952 11.25H6.1906C5.4313 11.25 4.79175 10.6826 4.70129 9.92873Z" fill="white" />
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M6.08339 13.3333C5.5764 13.3333 5.16699 13.745 5.16699 14.2503C5.16699 14.7564 5.57725 15.1666 6.08339 15.1666C6.58867 15.1666 7.00033 14.7572 7.00033 14.2503C7.00033 13.7441 6.58953 13.3333 6.08339 13.3333ZM6.16699 14.2503C6.16699 14.2955 6.13038 14.3333 6.08339 14.3333C6.03724 14.3333 6.00033 14.2964 6.00033 14.2503C6.00033 14.2033 6.03809 14.1666 6.08339 14.1666C6.12953 14.1666 6.16699 14.2041 6.16699 14.2503Z" fill="white" />
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M11.9164 13.3333C11.4094 13.3333 11 13.745 11 14.2503C11 14.7564 11.4103 15.1667 11.9164 15.1667C12.4217 15.1667 12.8333 14.7573 12.8333 14.2503C12.8333 13.7441 12.4225 13.3333 11.9164 13.3333ZM12 14.2503C12 14.2956 11.9634 14.3333 11.9164 14.3333C11.8702 14.3333 11.8333 14.2964 11.8333 14.2503C11.8333 14.2033 11.8711 14.1667 11.9164 14.1667C11.9625 14.1667 12 14.2041 12 14.2503Z" fill="white" />
+                    </svg>
+                    <span class="ms-1">Order now</span>
                   </a>
                 </div>
               </div>
-              <div class="col pt-2">
-                <div class="row">
-                  <div class="col-auto product-code">
-                    <div class="code text-primary">#AA0000</div>
-                    <div class="vendor text-secondary">Mamasan</div>
+
+              <hr class="m-0" />
+              <div class="item row">
+                <div class="col-1">
+                  <div class="product-thumbnail">
+                    <a href="product.html">
+                      <img src="images/img-pro-3.jpg" alt="" />
+                    </a>
                   </div>
-                  <div class="col product-name">
-                    <div class="name text-truncate fs-6"><a href="product.html">BBQ PORK BUN300g</a></div>
-                    <div class="detail text-secondary">120g x 6 x12</div>
-                  </div>
-                  <div class="col product-note">
-                    <input type="text" class="form-control" />
-                  </div>
-                  <div class="col-auto product-price">
-                    <span class="price text-danger align-middle fs-6">&dollar;100</span>
-                    <del class="price-old align-middle ms-1">&dollar;200</del>
-                  </div>
-                  <div class="col-auto product-quantity">
-                    <div class="d-flex align-items-center w-100">
-                      <button class="btn btn-minus rounded-circle d-flex align-items-center justify-content-center px-0">-</button>
-                      <input class="form-control quantity mx-2" min="0" name="quantity" value="1" type="number" />
-                      <button class="btn btn-plus rounded-circle d-flex align-items-center justify-content-center px-0">+</button>
+                </div>
+                <div class="col pt-2">
+                  <div class="row">
+                    <div class="col-auto product-code">
+                      <div class="code text-primary">#AA0000</div>
+                      <div class="vendor text-secondary">Mamasan</div>
+                    </div>
+                    <div class="col product-name">
+                      <div class="name text-truncate fs-6"><a href="product.html">BBQ PORK BUN300g</a></div>
+                      <div class="detail text-secondary">120g x 6 x12</div>
+                    </div>
+                    <div class="col product-note">
+                      <input type="text" class="form-control" />
+                    </div>
+                    <div class="col-auto product-price">
+                      <span class="price text-danger align-middle fs-6">&dollar;100</span>
+                      <del class="price-old align-middle ms-1">&dollar;200</del>
+                    </div>
+                    <div class="col-auto product-quantity">
+                      <div class="d-flex align-items-center w-100">
+                        <button class="btn btn-minus rounded-circle d-flex align-items-center justify-content-center px-0">-</button>
+                        <input class="form-control quantity mx-2" min="0" name="quantity" value="1" type="number" />
+                        <button class="btn btn-plus rounded-circle d-flex align-items-center justify-content-center px-0">+</button>
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
-              <div class="col-auto pt-2">
-                <a href="javascript:void(0);" class="btn btn-order btn-primary rounded-pill">
-                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M9.33301 6.74998C9.33301 6.47384 9.55687 6.24998 9.83301 6.24998H12.333C12.6091 6.24998 12.833 6.47384 12.833 6.74998C12.833 7.02613 12.6091 7.24998 12.333 7.24998H9.83301C9.55687 7.24998 9.33301 7.02613 9.33301 6.74998Z" fill="white" />
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0.984863 1.40697C2.01586 1.61317 2.79768 2.45845 2.92295 3.50238L3.70841 10.0479C3.85919 11.3044 4.9251 12.25 6.1906 12.25H12.3952C13.567 12.25 14.5815 11.4362 14.8357 10.2923L15.8839 5.57541C16.0921 4.63864 15.3793 3.75002 14.4196 3.75002H3.95984L3.91583 3.38323C3.73906 1.91014 2.63583 0.717361 1.18098 0.426392L0.984863 1.40697ZM4.70129 9.92873L4.07984 4.75002H14.4196C14.7395 4.75002 14.9771 5.04622 14.9077 5.35848L13.8595 10.0754C13.707 10.7617 13.0983 11.25 12.3952 11.25H6.1906C5.4313 11.25 4.79175 10.6826 4.70129 9.92873Z" fill="white" />
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M6.08339 13.3333C5.5764 13.3333 5.16699 13.745 5.16699 14.2503C5.16699 14.7564 5.57725 15.1666 6.08339 15.1666C6.58867 15.1666 7.00033 14.7572 7.00033 14.2503C7.00033 13.7441 6.58953 13.3333 6.08339 13.3333ZM6.16699 14.2503C6.16699 14.2955 6.13038 14.3333 6.08339 14.3333C6.03724 14.3333 6.00033 14.2964 6.00033 14.2503C6.00033 14.2033 6.03809 14.1666 6.08339 14.1666C6.12953 14.1666 6.16699 14.2041 6.16699 14.2503Z" fill="white" />
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M11.9164 13.3333C11.4094 13.3333 11 13.745 11 14.2503C11 14.7564 11.4103 15.1667 11.9164 15.1667C12.4217 15.1667 12.8333 14.7573 12.8333 14.2503C12.8333 13.7441 12.4225 13.3333 11.9164 13.3333ZM12 14.2503C12 14.2956 11.9634 14.3333 11.9164 14.3333C11.8702 14.3333 11.8333 14.2964 11.8333 14.2503C11.8333 14.2033 11.8711 14.1667 11.9164 14.1667C11.9625 14.1667 12 14.2041 12 14.2503Z" fill="white" />
-                  </svg>
-                  <span class="ms-1">Order now</span>
-                </a>
-              </div>
-            </div>
-
-            <hr class="m-0" />
-            <div class="item row">
-              <div class="col-1">
-                <div class="product-thumbnail">
-                  <a href="product.html">
-                    <img src="images/img-pro-4.jpg" alt="" />
+                <div class="col-auto pt-2">
+                  <a href="javascript:void(0);" class="btn btn-order btn-primary rounded-pill">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M9.33301 6.74998C9.33301 6.47384 9.55687 6.24998 9.83301 6.24998H12.333C12.6091 6.24998 12.833 6.47384 12.833 6.74998C12.833 7.02613 12.6091 7.24998 12.333 7.24998H9.83301C9.55687 7.24998 9.33301 7.02613 9.33301 6.74998Z" fill="white" />
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M0.984863 1.40697C2.01586 1.61317 2.79768 2.45845 2.92295 3.50238L3.70841 10.0479C3.85919 11.3044 4.9251 12.25 6.1906 12.25H12.3952C13.567 12.25 14.5815 11.4362 14.8357 10.2923L15.8839 5.57541C16.0921 4.63864 15.3793 3.75002 14.4196 3.75002H3.95984L3.91583 3.38323C3.73906 1.91014 2.63583 0.717361 1.18098 0.426392L0.984863 1.40697ZM4.70129 9.92873L4.07984 4.75002H14.4196C14.7395 4.75002 14.9771 5.04622 14.9077 5.35848L13.8595 10.0754C13.707 10.7617 13.0983 11.25 12.3952 11.25H6.1906C5.4313 11.25 4.79175 10.6826 4.70129 9.92873Z" fill="white" />
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M6.08339 13.3333C5.5764 13.3333 5.16699 13.745 5.16699 14.2503C5.16699 14.7564 5.57725 15.1666 6.08339 15.1666C6.58867 15.1666 7.00033 14.7572 7.00033 14.2503C7.00033 13.7441 6.58953 13.3333 6.08339 13.3333ZM6.16699 14.2503C6.16699 14.2955 6.13038 14.3333 6.08339 14.3333C6.03724 14.3333 6.00033 14.2964 6.00033 14.2503C6.00033 14.2033 6.03809 14.1666 6.08339 14.1666C6.12953 14.1666 6.16699 14.2041 6.16699 14.2503Z" fill="white" />
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M11.9164 13.3333C11.4094 13.3333 11 13.745 11 14.2503C11 14.7564 11.4103 15.1667 11.9164 15.1667C12.4217 15.1667 12.8333 14.7573 12.8333 14.2503C12.8333 13.7441 12.4225 13.3333 11.9164 13.3333ZM12 14.2503C12 14.2956 11.9634 14.3333 11.9164 14.3333C11.8702 14.3333 11.8333 14.2964 11.8333 14.2503C11.8333 14.2033 11.8711 14.1667 11.9164 14.1667C11.9625 14.1667 12 14.2041 12 14.2503Z" fill="white" />
+                    </svg>
+                    <span class="ms-1">Order now</span>
                   </a>
                 </div>
               </div>
-              <div class="col pt-2">
-                <div class="row">
-                  <div class="col-auto product-code">
-                    <div class="code text-primary">#AA0000</div>
-                    <div class="vendor text-secondary">Mamasan</div>
+
+              <hr class="m-0" />
+              <div class="item row">
+                <div class="col-1">
+                  <div class="product-thumbnail">
+                    <a href="product.html">
+                      <img src="images/img-pro-4.jpg" alt="" />
+                    </a>
                   </div>
-                  <div class="col product-name">
-                    <div class="name text-truncate fs-6"><a href="product.html">BBQ PORK BUN300g</a></div>
-                    <div class="detail text-secondary">120g x 6 x12</div>
-                  </div>
-                  <div class="col product-note">
-                    <input type="text" class="form-control" />
-                  </div>
-                  <div class="col-auto product-price">
-                    <span class="price text-danger align-middle fs-6">&dollar;100</span>
-                    <del class="price-old align-middle ms-1">&dollar;200</del>
-                  </div>
-                  <div class="col-auto product-quantity">
-                    <div class="d-flex align-items-center w-100">
-                      <button class="btn btn-minus rounded-circle d-flex align-items-center justify-content-center px-0">-</button>
-                      <input class="form-control quantity mx-2" min="0" name="quantity" value="1" type="number" />
-                      <button class="btn btn-plus rounded-circle d-flex align-items-center justify-content-center px-0">+</button>
+                </div>
+                <div class="col pt-2">
+                  <div class="row">
+                    <div class="col-auto product-code">
+                      <div class="code text-primary">#AA0000</div>
+                      <div class="vendor text-secondary">Mamasan</div>
+                    </div>
+                    <div class="col product-name">
+                      <div class="name text-truncate fs-6"><a href="product.html">BBQ PORK BUN300g</a></div>
+                      <div class="detail text-secondary">120g x 6 x12</div>
+                    </div>
+                    <div class="col product-note">
+                      <input type="text" class="form-control" />
+                    </div>
+                    <div class="col-auto product-price">
+                      <span class="price text-danger align-middle fs-6">&dollar;100</span>
+                      <del class="price-old align-middle ms-1">&dollar;200</del>
+                    </div>
+                    <div class="col-auto product-quantity">
+                      <div class="d-flex align-items-center w-100">
+                        <button class="btn btn-minus rounded-circle d-flex align-items-center justify-content-center px-0">-</button>
+                        <input class="form-control quantity mx-2" min="0" name="quantity" value="1" type="number" />
+                        <button class="btn btn-plus rounded-circle d-flex align-items-center justify-content-center px-0">+</button>
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
-              <div class="col-auto pt-2">
-                <a href="javascript:void(0);" class="btn btn-order btn-primary rounded-pill">
-                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M9.33301 6.74998C9.33301 6.47384 9.55687 6.24998 9.83301 6.24998H12.333C12.6091 6.24998 12.833 6.47384 12.833 6.74998C12.833 7.02613 12.6091 7.24998 12.333 7.24998H9.83301C9.55687 7.24998 9.33301 7.02613 9.33301 6.74998Z" fill="white" />
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0.984863 1.40697C2.01586 1.61317 2.79768 2.45845 2.92295 3.50238L3.70841 10.0479C3.85919 11.3044 4.9251 12.25 6.1906 12.25H12.3952C13.567 12.25 14.5815 11.4362 14.8357 10.2923L15.8839 5.57541C16.0921 4.63864 15.3793 3.75002 14.4196 3.75002H3.95984L3.91583 3.38323C3.73906 1.91014 2.63583 0.717361 1.18098 0.426392L0.984863 1.40697ZM4.70129 9.92873L4.07984 4.75002H14.4196C14.7395 4.75002 14.9771 5.04622 14.9077 5.35848L13.8595 10.0754C13.707 10.7617 13.0983 11.25 12.3952 11.25H6.1906C5.4313 11.25 4.79175 10.6826 4.70129 9.92873Z" fill="white" />
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M6.08339 13.3333C5.5764 13.3333 5.16699 13.745 5.16699 14.2503C5.16699 14.7564 5.57725 15.1666 6.08339 15.1666C6.58867 15.1666 7.00033 14.7572 7.00033 14.2503C7.00033 13.7441 6.58953 13.3333 6.08339 13.3333ZM6.16699 14.2503C6.16699 14.2955 6.13038 14.3333 6.08339 14.3333C6.03724 14.3333 6.00033 14.2964 6.00033 14.2503C6.00033 14.2033 6.03809 14.1666 6.08339 14.1666C6.12953 14.1666 6.16699 14.2041 6.16699 14.2503Z" fill="white" />
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M11.9164 13.3333C11.4094 13.3333 11 13.745 11 14.2503C11 14.7564 11.4103 15.1667 11.9164 15.1667C12.4217 15.1667 12.8333 14.7573 12.8333 14.2503C12.8333 13.7441 12.4225 13.3333 11.9164 13.3333ZM12 14.2503C12 14.2956 11.9634 14.3333 11.9164 14.3333C11.8702 14.3333 11.8333 14.2964 11.8333 14.2503C11.8333 14.2033 11.8711 14.1667 11.9164 14.1667C11.9625 14.1667 12 14.2041 12 14.2503Z" fill="white" />
-                  </svg>
-                  <span class="ms-1">Order now</span>
-                </a>
-              </div>
-            </div>
-
-            <hr class="m-0" />
-            <div class="item row">
-              <div class="col-1">
-                <div class="product-thumbnail">
-                  <a href="product.html">
-                    <img src="images/img-pro-6.jpg" alt="" />
+                <div class="col-auto pt-2">
+                  <a href="javascript:void(0);" class="btn btn-order btn-primary rounded-pill">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M9.33301 6.74998C9.33301 6.47384 9.55687 6.24998 9.83301 6.24998H12.333C12.6091 6.24998 12.833 6.47384 12.833 6.74998C12.833 7.02613 12.6091 7.24998 12.333 7.24998H9.83301C9.55687 7.24998 9.33301 7.02613 9.33301 6.74998Z" fill="white" />
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M0.984863 1.40697C2.01586 1.61317 2.79768 2.45845 2.92295 3.50238L3.70841 10.0479C3.85919 11.3044 4.9251 12.25 6.1906 12.25H12.3952C13.567 12.25 14.5815 11.4362 14.8357 10.2923L15.8839 5.57541C16.0921 4.63864 15.3793 3.75002 14.4196 3.75002H3.95984L3.91583 3.38323C3.73906 1.91014 2.63583 0.717361 1.18098 0.426392L0.984863 1.40697ZM4.70129 9.92873L4.07984 4.75002H14.4196C14.7395 4.75002 14.9771 5.04622 14.9077 5.35848L13.8595 10.0754C13.707 10.7617 13.0983 11.25 12.3952 11.25H6.1906C5.4313 11.25 4.79175 10.6826 4.70129 9.92873Z" fill="white" />
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M6.08339 13.3333C5.5764 13.3333 5.16699 13.745 5.16699 14.2503C5.16699 14.7564 5.57725 15.1666 6.08339 15.1666C6.58867 15.1666 7.00033 14.7572 7.00033 14.2503C7.00033 13.7441 6.58953 13.3333 6.08339 13.3333ZM6.16699 14.2503C6.16699 14.2955 6.13038 14.3333 6.08339 14.3333C6.03724 14.3333 6.00033 14.2964 6.00033 14.2503C6.00033 14.2033 6.03809 14.1666 6.08339 14.1666C6.12953 14.1666 6.16699 14.2041 6.16699 14.2503Z" fill="white" />
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M11.9164 13.3333C11.4094 13.3333 11 13.745 11 14.2503C11 14.7564 11.4103 15.1667 11.9164 15.1667C12.4217 15.1667 12.8333 14.7573 12.8333 14.2503C12.8333 13.7441 12.4225 13.3333 11.9164 13.3333ZM12 14.2503C12 14.2956 11.9634 14.3333 11.9164 14.3333C11.8702 14.3333 11.8333 14.2964 11.8333 14.2503C11.8333 14.2033 11.8711 14.1667 11.9164 14.1667C11.9625 14.1667 12 14.2041 12 14.2503Z" fill="white" />
+                    </svg>
+                    <span class="ms-1">Order now</span>
                   </a>
                 </div>
               </div>
-              <div class="col pt-2">
-                <div class="row">
-                  <div class="col-auto product-code">
-                    <div class="code text-primary">#AA0000</div>
-                    <div class="vendor text-secondary">Mamasan</div>
+
+              <hr class="m-0" />
+              <div class="item row">
+                <div class="col-1">
+                  <div class="product-thumbnail">
+                    <a href="product.html">
+                      <img src="images/img-pro-6.jpg" alt="" />
+                    </a>
                   </div>
-                  <div class="col product-name">
-                    <div class="name text-truncate fs-6"><a href="product.html">BBQ PORK BUN300g</a></div>
-                    <div class="detail text-secondary">120g x 6 x12</div>
-                  </div>
-                  <div class="col product-note">
-                    <input type="text" class="form-control" />
-                  </div>
-                  <div class="col-auto product-price">
-                    <span class="price text-danger align-middle fs-6">&dollar;100</span>
-                    <del class="price-old align-middle ms-1">&dollar;200</del>
-                  </div>
-                  <div class="col-auto product-quantity">
-                    <div class="d-flex align-items-center w-100">
-                      <button class="btn btn-minus rounded-circle d-flex align-items-center justify-content-center px-0">-</button>
-                      <input class="form-control quantity mx-2" min="0" name="quantity" value="1" type="number" />
-                      <button class="btn btn-plus rounded-circle d-flex align-items-center justify-content-center px-0">+</button>
+                </div>
+                <div class="col pt-2">
+                  <div class="row">
+                    <div class="col-auto product-code">
+                      <div class="code text-primary">#AA0000</div>
+                      <div class="vendor text-secondary">Mamasan</div>
+                    </div>
+                    <div class="col product-name">
+                      <div class="name text-truncate fs-6"><a href="product.html">BBQ PORK BUN300g</a></div>
+                      <div class="detail text-secondary">120g x 6 x12</div>
+                    </div>
+                    <div class="col product-note">
+                      <input type="text" class="form-control" />
+                    </div>
+                    <div class="col-auto product-price">
+                      <span class="price text-danger align-middle fs-6">&dollar;100</span>
+                      <del class="price-old align-middle ms-1">&dollar;200</del>
+                    </div>
+                    <div class="col-auto product-quantity">
+                      <div class="d-flex align-items-center w-100">
+                        <button class="btn btn-minus rounded-circle d-flex align-items-center justify-content-center px-0">-</button>
+                        <input class="form-control quantity mx-2" min="0" name="quantity" value="1" type="number" />
+                        <button class="btn btn-plus rounded-circle d-flex align-items-center justify-content-center px-0">+</button>
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
-              <div class="col-auto pt-2">
-                <a href="javascript:void(0);" class="btn btn-order btn-primary rounded-pill">
-                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M9.33301 6.74998C9.33301 6.47384 9.55687 6.24998 9.83301 6.24998H12.333C12.6091 6.24998 12.833 6.47384 12.833 6.74998C12.833 7.02613 12.6091 7.24998 12.333 7.24998H9.83301C9.55687 7.24998 9.33301 7.02613 9.33301 6.74998Z" fill="white" />
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0.984863 1.40697C2.01586 1.61317 2.79768 2.45845 2.92295 3.50238L3.70841 10.0479C3.85919 11.3044 4.9251 12.25 6.1906 12.25H12.3952C13.567 12.25 14.5815 11.4362 14.8357 10.2923L15.8839 5.57541C16.0921 4.63864 15.3793 3.75002 14.4196 3.75002H3.95984L3.91583 3.38323C3.73906 1.91014 2.63583 0.717361 1.18098 0.426392L0.984863 1.40697ZM4.70129 9.92873L4.07984 4.75002H14.4196C14.7395 4.75002 14.9771 5.04622 14.9077 5.35848L13.8595 10.0754C13.707 10.7617 13.0983 11.25 12.3952 11.25H6.1906C5.4313 11.25 4.79175 10.6826 4.70129 9.92873Z" fill="white" />
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M6.08339 13.3333C5.5764 13.3333 5.16699 13.745 5.16699 14.2503C5.16699 14.7564 5.57725 15.1666 6.08339 15.1666C6.58867 15.1666 7.00033 14.7572 7.00033 14.2503C7.00033 13.7441 6.58953 13.3333 6.08339 13.3333ZM6.16699 14.2503C6.16699 14.2955 6.13038 14.3333 6.08339 14.3333C6.03724 14.3333 6.00033 14.2964 6.00033 14.2503C6.00033 14.2033 6.03809 14.1666 6.08339 14.1666C6.12953 14.1666 6.16699 14.2041 6.16699 14.2503Z" fill="white" />
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M11.9164 13.3333C11.4094 13.3333 11 13.745 11 14.2503C11 14.7564 11.4103 15.1667 11.9164 15.1667C12.4217 15.1667 12.8333 14.7573 12.8333 14.2503C12.8333 13.7441 12.4225 13.3333 11.9164 13.3333ZM12 14.2503C12 14.2956 11.9634 14.3333 11.9164 14.3333C11.8702 14.3333 11.8333 14.2964 11.8333 14.2503C11.8333 14.2033 11.8711 14.1667 11.9164 14.1667C11.9625 14.1667 12 14.2041 12 14.2503Z" fill="white" />
-                  </svg>
-                  <span class="ms-1">Order now</span>
-                </a>
-              </div>
-            </div>
-
-            <hr class="m-0" />
-            <div class="item row">
-              <div class="col-1">
-                <div class="product-thumbnail">
-                  <a href="product.html">
-                    <img src="images/img-pro-7.jpg" alt="" />
+                <div class="col-auto pt-2">
+                  <a href="javascript:void(0);" class="btn btn-order btn-primary rounded-pill">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M9.33301 6.74998C9.33301 6.47384 9.55687 6.24998 9.83301 6.24998H12.333C12.6091 6.24998 12.833 6.47384 12.833 6.74998C12.833 7.02613 12.6091 7.24998 12.333 7.24998H9.83301C9.55687 7.24998 9.33301 7.02613 9.33301 6.74998Z" fill="white" />
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M0.984863 1.40697C2.01586 1.61317 2.79768 2.45845 2.92295 3.50238L3.70841 10.0479C3.85919 11.3044 4.9251 12.25 6.1906 12.25H12.3952C13.567 12.25 14.5815 11.4362 14.8357 10.2923L15.8839 5.57541C16.0921 4.63864 15.3793 3.75002 14.4196 3.75002H3.95984L3.91583 3.38323C3.73906 1.91014 2.63583 0.717361 1.18098 0.426392L0.984863 1.40697ZM4.70129 9.92873L4.07984 4.75002H14.4196C14.7395 4.75002 14.9771 5.04622 14.9077 5.35848L13.8595 10.0754C13.707 10.7617 13.0983 11.25 12.3952 11.25H6.1906C5.4313 11.25 4.79175 10.6826 4.70129 9.92873Z" fill="white" />
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M6.08339 13.3333C5.5764 13.3333 5.16699 13.745 5.16699 14.2503C5.16699 14.7564 5.57725 15.1666 6.08339 15.1666C6.58867 15.1666 7.00033 14.7572 7.00033 14.2503C7.00033 13.7441 6.58953 13.3333 6.08339 13.3333ZM6.16699 14.2503C6.16699 14.2955 6.13038 14.3333 6.08339 14.3333C6.03724 14.3333 6.00033 14.2964 6.00033 14.2503C6.00033 14.2033 6.03809 14.1666 6.08339 14.1666C6.12953 14.1666 6.16699 14.2041 6.16699 14.2503Z" fill="white" />
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M11.9164 13.3333C11.4094 13.3333 11 13.745 11 14.2503C11 14.7564 11.4103 15.1667 11.9164 15.1667C12.4217 15.1667 12.8333 14.7573 12.8333 14.2503C12.8333 13.7441 12.4225 13.3333 11.9164 13.3333ZM12 14.2503C12 14.2956 11.9634 14.3333 11.9164 14.3333C11.8702 14.3333 11.8333 14.2964 11.8333 14.2503C11.8333 14.2033 11.8711 14.1667 11.9164 14.1667C11.9625 14.1667 12 14.2041 12 14.2503Z" fill="white" />
+                    </svg>
+                    <span class="ms-1">Order now</span>
                   </a>
                 </div>
               </div>
-              <div class="col pt-2">
-                <div class="row">
-                  <div class="col-auto product-code">
-                    <div class="code text-primary">#AA0000</div>
-                    <div class="vendor text-secondary">Mamasan</div>
+
+              <hr class="m-0" />
+              <div class="item row">
+                <div class="col-1">
+                  <div class="product-thumbnail">
+                    <a href="product.html">
+                      <img src="images/img-pro-7.jpg" alt="" />
+                    </a>
                   </div>
-                  <div class="col product-name">
-                    <div class="name text-truncate fs-6"><a href="product.html">BBQ PORK BUN300g</a></div>
-                    <div class="detail text-secondary">120g x 6 x12</div>
-                  </div>
-                  <div class="col product-note">
-                    <input type="text" class="form-control" />
-                  </div>
-                  <div class="col-auto product-price">
-                    <span class="price text-danger align-middle fs-6">&dollar;100</span>
-                    <del class="price-old align-middle ms-1">&dollar;200</del>
-                  </div>
-                  <div class="col-auto product-quantity">
-                    <div class="d-flex align-items-center w-100">
-                      <button class="btn btn-minus rounded-circle d-flex align-items-center justify-content-center px-0">-</button>
-                      <input class="form-control quantity mx-2" min="0" name="quantity" value="1" type="number" />
-                      <button class="btn btn-plus rounded-circle d-flex align-items-center justify-content-center px-0">+</button>
+                </div>
+                <div class="col pt-2">
+                  <div class="row">
+                    <div class="col-auto product-code">
+                      <div class="code text-primary">#AA0000</div>
+                      <div class="vendor text-secondary">Mamasan</div>
+                    </div>
+                    <div class="col product-name">
+                      <div class="name text-truncate fs-6"><a href="product.html">BBQ PORK BUN300g</a></div>
+                      <div class="detail text-secondary">120g x 6 x12</div>
+                    </div>
+                    <div class="col product-note">
+                      <input type="text" class="form-control" />
+                    </div>
+                    <div class="col-auto product-price">
+                      <span class="price text-danger align-middle fs-6">&dollar;100</span>
+                      <del class="price-old align-middle ms-1">&dollar;200</del>
+                    </div>
+                    <div class="col-auto product-quantity">
+                      <div class="d-flex align-items-center w-100">
+                        <button class="btn btn-minus rounded-circle d-flex align-items-center justify-content-center px-0">-</button>
+                        <input class="form-control quantity mx-2" min="0" name="quantity" value="1" type="number" />
+                        <button class="btn btn-plus rounded-circle d-flex align-items-center justify-content-center px-0">+</button>
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
-              <div class="col-auto pt-2">
-                <a href="javascript:void(0);" class="btn btn-order btn-primary rounded-pill">
-                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M9.33301 6.74998C9.33301 6.47384 9.55687 6.24998 9.83301 6.24998H12.333C12.6091 6.24998 12.833 6.47384 12.833 6.74998C12.833 7.02613 12.6091 7.24998 12.333 7.24998H9.83301C9.55687 7.24998 9.33301 7.02613 9.33301 6.74998Z" fill="white" />
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0.984863 1.40697C2.01586 1.61317 2.79768 2.45845 2.92295 3.50238L3.70841 10.0479C3.85919 11.3044 4.9251 12.25 6.1906 12.25H12.3952C13.567 12.25 14.5815 11.4362 14.8357 10.2923L15.8839 5.57541C16.0921 4.63864 15.3793 3.75002 14.4196 3.75002H3.95984L3.91583 3.38323C3.73906 1.91014 2.63583 0.717361 1.18098 0.426392L0.984863 1.40697ZM4.70129 9.92873L4.07984 4.75002H14.4196C14.7395 4.75002 14.9771 5.04622 14.9077 5.35848L13.8595 10.0754C13.707 10.7617 13.0983 11.25 12.3952 11.25H6.1906C5.4313 11.25 4.79175 10.6826 4.70129 9.92873Z" fill="white" />
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M6.08339 13.3333C5.5764 13.3333 5.16699 13.745 5.16699 14.2503C5.16699 14.7564 5.57725 15.1666 6.08339 15.1666C6.58867 15.1666 7.00033 14.7572 7.00033 14.2503C7.00033 13.7441 6.58953 13.3333 6.08339 13.3333ZM6.16699 14.2503C6.16699 14.2955 6.13038 14.3333 6.08339 14.3333C6.03724 14.3333 6.00033 14.2964 6.00033 14.2503C6.00033 14.2033 6.03809 14.1666 6.08339 14.1666C6.12953 14.1666 6.16699 14.2041 6.16699 14.2503Z" fill="white" />
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M11.9164 13.3333C11.4094 13.3333 11 13.745 11 14.2503C11 14.7564 11.4103 15.1667 11.9164 15.1667C12.4217 15.1667 12.8333 14.7573 12.8333 14.2503C12.8333 13.7441 12.4225 13.3333 11.9164 13.3333ZM12 14.2503C12 14.2956 11.9634 14.3333 11.9164 14.3333C11.8702 14.3333 11.8333 14.2964 11.8333 14.2503C11.8333 14.2033 11.8711 14.1667 11.9164 14.1667C11.9625 14.1667 12 14.2041 12 14.2503Z" fill="white" />
-                  </svg>
-                  <span class="ms-1">Order now</span>
-                </a>
-              </div>
-            </div>
-
-            <hr class="m-0" />
-            <div class="item row">
-              <div class="col-1">
-                <div class="product-thumbnail">
-                  <a href="product.html">
-                    <img src="images/img-pro-8.jpg" alt="" />
+                <div class="col-auto pt-2">
+                  <a href="javascript:void(0);" class="btn btn-order btn-primary rounded-pill">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M9.33301 6.74998C9.33301 6.47384 9.55687 6.24998 9.83301 6.24998H12.333C12.6091 6.24998 12.833 6.47384 12.833 6.74998C12.833 7.02613 12.6091 7.24998 12.333 7.24998H9.83301C9.55687 7.24998 9.33301 7.02613 9.33301 6.74998Z" fill="white" />
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M0.984863 1.40697C2.01586 1.61317 2.79768 2.45845 2.92295 3.50238L3.70841 10.0479C3.85919 11.3044 4.9251 12.25 6.1906 12.25H12.3952C13.567 12.25 14.5815 11.4362 14.8357 10.2923L15.8839 5.57541C16.0921 4.63864 15.3793 3.75002 14.4196 3.75002H3.95984L3.91583 3.38323C3.73906 1.91014 2.63583 0.717361 1.18098 0.426392L0.984863 1.40697ZM4.70129 9.92873L4.07984 4.75002H14.4196C14.7395 4.75002 14.9771 5.04622 14.9077 5.35848L13.8595 10.0754C13.707 10.7617 13.0983 11.25 12.3952 11.25H6.1906C5.4313 11.25 4.79175 10.6826 4.70129 9.92873Z" fill="white" />
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M6.08339 13.3333C5.5764 13.3333 5.16699 13.745 5.16699 14.2503C5.16699 14.7564 5.57725 15.1666 6.08339 15.1666C6.58867 15.1666 7.00033 14.7572 7.00033 14.2503C7.00033 13.7441 6.58953 13.3333 6.08339 13.3333ZM6.16699 14.2503C6.16699 14.2955 6.13038 14.3333 6.08339 14.3333C6.03724 14.3333 6.00033 14.2964 6.00033 14.2503C6.00033 14.2033 6.03809 14.1666 6.08339 14.1666C6.12953 14.1666 6.16699 14.2041 6.16699 14.2503Z" fill="white" />
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M11.9164 13.3333C11.4094 13.3333 11 13.745 11 14.2503C11 14.7564 11.4103 15.1667 11.9164 15.1667C12.4217 15.1667 12.8333 14.7573 12.8333 14.2503C12.8333 13.7441 12.4225 13.3333 11.9164 13.3333ZM12 14.2503C12 14.2956 11.9634 14.3333 11.9164 14.3333C11.8702 14.3333 11.8333 14.2964 11.8333 14.2503C11.8333 14.2033 11.8711 14.1667 11.9164 14.1667C11.9625 14.1667 12 14.2041 12 14.2503Z" fill="white" />
+                    </svg>
+                    <span class="ms-1">Order now</span>
                   </a>
                 </div>
               </div>
-              <div class="col pt-2">
-                <div class="row">
-                  <div class="col-auto product-code">
-                    <div class="code text-primary">#AA0000</div>
-                    <div class="vendor text-secondary">Mamasan</div>
+
+              <hr class="m-0" />
+              <div class="item row">
+                <div class="col-1">
+                  <div class="product-thumbnail">
+                    <a href="product.html">
+                      <img src="images/img-pro-8.jpg" alt="" />
+                    </a>
                   </div>
-                  <div class="col product-name">
-                    <div class="name text-truncate fs-6"><a href="product.html">BBQ PORK BUN300g</a></div>
-                    <div class="detail text-secondary">120g x 6 x12</div>
-                  </div>
-                  <div class="col product-note">
-                    <input type="text" class="form-control" />
-                  </div>
-                  <div class="col-auto product-price">
-                    <span class="price text-danger align-middle fs-6">&dollar;100</span>
-                    <del class="price-old align-middle ms-1">&dollar;200</del>
-                  </div>
-                  <div class="col-auto product-quantity">
-                    <div class="d-flex align-items-center w-100">
-                      <button class="btn btn-minus rounded-circle d-flex align-items-center justify-content-center px-0">-</button>
-                      <input class="form-control quantity mx-2" min="0" name="quantity" value="1" type="number" />
-                      <button class="btn btn-plus rounded-circle d-flex align-items-center justify-content-center px-0">+</button>
+                </div>
+                <div class="col pt-2">
+                  <div class="row">
+                    <div class="col-auto product-code">
+                      <div class="code text-primary">#AA0000</div>
+                      <div class="vendor text-secondary">Mamasan</div>
+                    </div>
+                    <div class="col product-name">
+                      <div class="name text-truncate fs-6"><a href="product.html">BBQ PORK BUN300g</a></div>
+                      <div class="detail text-secondary">120g x 6 x12</div>
+                    </div>
+                    <div class="col product-note">
+                      <input type="text" class="form-control" />
+                    </div>
+                    <div class="col-auto product-price">
+                      <span class="price text-danger align-middle fs-6">&dollar;100</span>
+                      <del class="price-old align-middle ms-1">&dollar;200</del>
+                    </div>
+                    <div class="col-auto product-quantity">
+                      <div class="d-flex align-items-center w-100">
+                        <button class="btn btn-minus rounded-circle d-flex align-items-center justify-content-center px-0">-</button>
+                        <input class="form-control quantity mx-2" min="0" name="quantity" value="1" type="number" />
+                        <button class="btn btn-plus rounded-circle d-flex align-items-center justify-content-center px-0">+</button>
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
-              <div class="col-auto pt-2">
-                <a href="javascript:void(0);" class="btn btn-order btn-primary rounded-pill">
-                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M9.33301 6.74998C9.33301 6.47384 9.55687 6.24998 9.83301 6.24998H12.333C12.6091 6.24998 12.833 6.47384 12.833 6.74998C12.833 7.02613 12.6091 7.24998 12.333 7.24998H9.83301C9.55687 7.24998 9.33301 7.02613 9.33301 6.74998Z" fill="white" />
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0.984863 1.40697C2.01586 1.61317 2.79768 2.45845 2.92295 3.50238L3.70841 10.0479C3.85919 11.3044 4.9251 12.25 6.1906 12.25H12.3952C13.567 12.25 14.5815 11.4362 14.8357 10.2923L15.8839 5.57541C16.0921 4.63864 15.3793 3.75002 14.4196 3.75002H3.95984L3.91583 3.38323C3.73906 1.91014 2.63583 0.717361 1.18098 0.426392L0.984863 1.40697ZM4.70129 9.92873L4.07984 4.75002H14.4196C14.7395 4.75002 14.9771 5.04622 14.9077 5.35848L13.8595 10.0754C13.707 10.7617 13.0983 11.25 12.3952 11.25H6.1906C5.4313 11.25 4.79175 10.6826 4.70129 9.92873Z" fill="white" />
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M6.08339 13.3333C5.5764 13.3333 5.16699 13.745 5.16699 14.2503C5.16699 14.7564 5.57725 15.1666 6.08339 15.1666C6.58867 15.1666 7.00033 14.7572 7.00033 14.2503C7.00033 13.7441 6.58953 13.3333 6.08339 13.3333ZM6.16699 14.2503C6.16699 14.2955 6.13038 14.3333 6.08339 14.3333C6.03724 14.3333 6.00033 14.2964 6.00033 14.2503C6.00033 14.2033 6.03809 14.1666 6.08339 14.1666C6.12953 14.1666 6.16699 14.2041 6.16699 14.2503Z" fill="white" />
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M11.9164 13.3333C11.4094 13.3333 11 13.745 11 14.2503C11 14.7564 11.4103 15.1667 11.9164 15.1667C12.4217 15.1667 12.8333 14.7573 12.8333 14.2503C12.8333 13.7441 12.4225 13.3333 11.9164 13.3333ZM12 14.2503C12 14.2956 11.9634 14.3333 11.9164 14.3333C11.8702 14.3333 11.8333 14.2964 11.8333 14.2503C11.8333 14.2033 11.8711 14.1667 11.9164 14.1667C11.9625 14.1667 12 14.2041 12 14.2503Z" fill="white" />
-                  </svg>
-                  <span class="ms-1">Order now</span>
-                </a>
-              </div>
-            </div>
-
-            <hr class="m-0" />
-            <div class="item row">
-              <div class="col-1">
-                <div class="product-thumbnail">
-                  <a href="product.html">
-                    <img src="images/img-pro-9.jpg" alt="" />
+                <div class="col-auto pt-2">
+                  <a href="javascript:void(0);" class="btn btn-order btn-primary rounded-pill">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M9.33301 6.74998C9.33301 6.47384 9.55687 6.24998 9.83301 6.24998H12.333C12.6091 6.24998 12.833 6.47384 12.833 6.74998C12.833 7.02613 12.6091 7.24998 12.333 7.24998H9.83301C9.55687 7.24998 9.33301 7.02613 9.33301 6.74998Z" fill="white" />
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M0.984863 1.40697C2.01586 1.61317 2.79768 2.45845 2.92295 3.50238L3.70841 10.0479C3.85919 11.3044 4.9251 12.25 6.1906 12.25H12.3952C13.567 12.25 14.5815 11.4362 14.8357 10.2923L15.8839 5.57541C16.0921 4.63864 15.3793 3.75002 14.4196 3.75002H3.95984L3.91583 3.38323C3.73906 1.91014 2.63583 0.717361 1.18098 0.426392L0.984863 1.40697ZM4.70129 9.92873L4.07984 4.75002H14.4196C14.7395 4.75002 14.9771 5.04622 14.9077 5.35848L13.8595 10.0754C13.707 10.7617 13.0983 11.25 12.3952 11.25H6.1906C5.4313 11.25 4.79175 10.6826 4.70129 9.92873Z" fill="white" />
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M6.08339 13.3333C5.5764 13.3333 5.16699 13.745 5.16699 14.2503C5.16699 14.7564 5.57725 15.1666 6.08339 15.1666C6.58867 15.1666 7.00033 14.7572 7.00033 14.2503C7.00033 13.7441 6.58953 13.3333 6.08339 13.3333ZM6.16699 14.2503C6.16699 14.2955 6.13038 14.3333 6.08339 14.3333C6.03724 14.3333 6.00033 14.2964 6.00033 14.2503C6.00033 14.2033 6.03809 14.1666 6.08339 14.1666C6.12953 14.1666 6.16699 14.2041 6.16699 14.2503Z" fill="white" />
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M11.9164 13.3333C11.4094 13.3333 11 13.745 11 14.2503C11 14.7564 11.4103 15.1667 11.9164 15.1667C12.4217 15.1667 12.8333 14.7573 12.8333 14.2503C12.8333 13.7441 12.4225 13.3333 11.9164 13.3333ZM12 14.2503C12 14.2956 11.9634 14.3333 11.9164 14.3333C11.8702 14.3333 11.8333 14.2964 11.8333 14.2503C11.8333 14.2033 11.8711 14.1667 11.9164 14.1667C11.9625 14.1667 12 14.2041 12 14.2503Z" fill="white" />
+                    </svg>
+                    <span class="ms-1">Order now</span>
                   </a>
                 </div>
               </div>
-              <div class="col pt-2">
-                <div class="row">
-                  <div class="col-auto product-code">
-                    <div class="code text-primary">#AA0000</div>
-                    <div class="vendor text-secondary">Mamasan</div>
+
+              <hr class="m-0" />
+              <div class="item row">
+                <div class="col-1">
+                  <div class="product-thumbnail">
+                    <a href="product.html">
+                      <img src="images/img-pro-9.jpg" alt="" />
+                    </a>
                   </div>
-                  <div class="col product-name">
-                    <div class="name text-truncate fs-6"><a href="product.html">BBQ PORK BUN300g</a></div>
-                    <div class="detail text-secondary">120g x 6 x12</div>
-                  </div>
-                  <div class="col product-note">
-                    <input type="text" class="form-control" />
-                  </div>
-                  <div class="col-auto product-price">
-                    <span class="price text-danger align-middle fs-6">&dollar;100</span>
-                    <del class="price-old align-middle ms-1">&dollar;200</del>
-                  </div>
-                  <div class="col-auto product-quantity">
-                    <div class="d-flex align-items-center w-100">
-                      <button class="btn btn-minus rounded-circle d-flex align-items-center justify-content-center px-0">-</button>
-                      <input class="form-control quantity mx-2" min="0" name="quantity" value="1" type="number" />
-                      <button class="btn btn-plus rounded-circle d-flex align-items-center justify-content-center px-0">+</button>
+                </div>
+                <div class="col pt-2">
+                  <div class="row">
+                    <div class="col-auto product-code">
+                      <div class="code text-primary">#AA0000</div>
+                      <div class="vendor text-secondary">Mamasan</div>
+                    </div>
+                    <div class="col product-name">
+                      <div class="name text-truncate fs-6"><a href="product.html">BBQ PORK BUN300g</a></div>
+                      <div class="detail text-secondary">120g x 6 x12</div>
+                    </div>
+                    <div class="col product-note">
+                      <input type="text" class="form-control" />
+                    </div>
+                    <div class="col-auto product-price">
+                      <span class="price text-danger align-middle fs-6">&dollar;100</span>
+                      <del class="price-old align-middle ms-1">&dollar;200</del>
+                    </div>
+                    <div class="col-auto product-quantity">
+                      <div class="d-flex align-items-center w-100">
+                        <button class="btn btn-minus rounded-circle d-flex align-items-center justify-content-center px-0">-</button>
+                        <input class="form-control quantity mx-2" min="0" name="quantity" value="1" type="number" />
+                        <button class="btn btn-plus rounded-circle d-flex align-items-center justify-content-center px-0">+</button>
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
-              <div class="col-auto pt-2">
-                <a href="javascript:void(0);" class="btn btn-order btn-primary rounded-pill">
-                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M9.33301 6.74998C9.33301 6.47384 9.55687 6.24998 9.83301 6.24998H12.333C12.6091 6.24998 12.833 6.47384 12.833 6.74998C12.833 7.02613 12.6091 7.24998 12.333 7.24998H9.83301C9.55687 7.24998 9.33301 7.02613 9.33301 6.74998Z" fill="white" />
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0.984863 1.40697C2.01586 1.61317 2.79768 2.45845 2.92295 3.50238L3.70841 10.0479C3.85919 11.3044 4.9251 12.25 6.1906 12.25H12.3952C13.567 12.25 14.5815 11.4362 14.8357 10.2923L15.8839 5.57541C16.0921 4.63864 15.3793 3.75002 14.4196 3.75002H3.95984L3.91583 3.38323C3.73906 1.91014 2.63583 0.717361 1.18098 0.426392L0.984863 1.40697ZM4.70129 9.92873L4.07984 4.75002H14.4196C14.7395 4.75002 14.9771 5.04622 14.9077 5.35848L13.8595 10.0754C13.707 10.7617 13.0983 11.25 12.3952 11.25H6.1906C5.4313 11.25 4.79175 10.6826 4.70129 9.92873Z" fill="white" />
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M6.08339 13.3333C5.5764 13.3333 5.16699 13.745 5.16699 14.2503C5.16699 14.7564 5.57725 15.1666 6.08339 15.1666C6.58867 15.1666 7.00033 14.7572 7.00033 14.2503C7.00033 13.7441 6.58953 13.3333 6.08339 13.3333ZM6.16699 14.2503C6.16699 14.2955 6.13038 14.3333 6.08339 14.3333C6.03724 14.3333 6.00033 14.2964 6.00033 14.2503C6.00033 14.2033 6.03809 14.1666 6.08339 14.1666C6.12953 14.1666 6.16699 14.2041 6.16699 14.2503Z" fill="white" />
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M11.9164 13.3333C11.4094 13.3333 11 13.745 11 14.2503C11 14.7564 11.4103 15.1667 11.9164 15.1667C12.4217 15.1667 12.8333 14.7573 12.8333 14.2503C12.8333 13.7441 12.4225 13.3333 11.9164 13.3333ZM12 14.2503C12 14.2956 11.9634 14.3333 11.9164 14.3333C11.8702 14.3333 11.8333 14.2964 11.8333 14.2503C11.8333 14.2033 11.8711 14.1667 11.9164 14.1667C11.9625 14.1667 12 14.2041 12 14.2503Z" fill="white" />
-                  </svg>
-                  <span class="ms-1">Order now</span>
-                </a>
+                <div class="col-auto pt-2">
+                  <a href="javascript:void(0);" class="btn btn-order btn-primary rounded-pill">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M9.33301 6.74998C9.33301 6.47384 9.55687 6.24998 9.83301 6.24998H12.333C12.6091 6.24998 12.833 6.47384 12.833 6.74998C12.833 7.02613 12.6091 7.24998 12.333 7.24998H9.83301C9.55687 7.24998 9.33301 7.02613 9.33301 6.74998Z" fill="white" />
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M0.984863 1.40697C2.01586 1.61317 2.79768 2.45845 2.92295 3.50238L3.70841 10.0479C3.85919 11.3044 4.9251 12.25 6.1906 12.25H12.3952C13.567 12.25 14.5815 11.4362 14.8357 10.2923L15.8839 5.57541C16.0921 4.63864 15.3793 3.75002 14.4196 3.75002H3.95984L3.91583 3.38323C3.73906 1.91014 2.63583 0.717361 1.18098 0.426392L0.984863 1.40697ZM4.70129 9.92873L4.07984 4.75002H14.4196C14.7395 4.75002 14.9771 5.04622 14.9077 5.35848L13.8595 10.0754C13.707 10.7617 13.0983 11.25 12.3952 11.25H6.1906C5.4313 11.25 4.79175 10.6826 4.70129 9.92873Z" fill="white" />
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M6.08339 13.3333C5.5764 13.3333 5.16699 13.745 5.16699 14.2503C5.16699 14.7564 5.57725 15.1666 6.08339 15.1666C6.58867 15.1666 7.00033 14.7572 7.00033 14.2503C7.00033 13.7441 6.58953 13.3333 6.08339 13.3333ZM6.16699 14.2503C6.16699 14.2955 6.13038 14.3333 6.08339 14.3333C6.03724 14.3333 6.00033 14.2964 6.00033 14.2503C6.00033 14.2033 6.03809 14.1666 6.08339 14.1666C6.12953 14.1666 6.16699 14.2041 6.16699 14.2503Z" fill="white" />
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M11.9164 13.3333C11.4094 13.3333 11 13.745 11 14.2503C11 14.7564 11.4103 15.1667 11.9164 15.1667C12.4217 15.1667 12.8333 14.7573 12.8333 14.2503C12.8333 13.7441 12.4225 13.3333 11.9164 13.3333ZM12 14.2503C12 14.2956 11.9634 14.3333 11.9164 14.3333C11.8702 14.3333 11.8333 14.2964 11.8333 14.2503C11.8333 14.2033 11.8711 14.1667 11.9164 14.1667C11.9625 14.1667 12 14.2041 12 14.2503Z" fill="white" />
+                    </svg>
+                    <span class="ms-1">Order now</span>
+                  </a>
+                </div>
               </div>
             </div>
           </div>

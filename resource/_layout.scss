@@ -21,6 +21,8 @@ main {
   }
 }
 .datepicker {
+  padding-right: 0.5rem !important;
+  text-align: right;
   &:focus {
     box-shadow: none;
   }
@@ -29,7 +31,6 @@ main {
     border: 0;
     background-color: transparent;
     padding: 0.5rem 0;
-    // top: -2px;
     position: relative;
   }
 }
@@ -114,5 +115,19 @@ main {
       text-decoration: none;
       color: #1c1c1c;
     }
+  }
+}
+.modal-dialog.modal-dialog-centered .btn-close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translate(50%, -50%);
+  border-radius: 50%;
+  padding: 0.5rem;
+  background: $gray-900 escape-svg($btn-close) center / $btn-close-width auto no-repeat;
+  opacity: 1;
+  z-index: 1;
+  &:hover {
+    opacity: 0.75;
   }
 }

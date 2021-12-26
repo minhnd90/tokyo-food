@@ -3519,7 +3519,7 @@ textarea.form-control-lg {
   list-style: none;
   background-color: #fff;
   background-clip: padding-box;
-  border: 1px solid rgba(0, 0, 0, 0.15);
+  border: 1px solid #cfd7e8;
   border-radius: 0.25rem;
 }
 .dropdown-menu[data-bs-popper] {
@@ -3661,7 +3661,7 @@ textarea.form-control-lg {
   height: 0;
   margin: 0.5rem 0;
   overflow: hidden;
-  border-top: 1px solid rgba(0, 0, 0, 0.15);
+  border-top: 1px solid #cfd7e8;
 }
 
 .dropdown-item {
@@ -3714,7 +3714,7 @@ textarea.form-control-lg {
 .dropdown-menu-dark {
   color: #dee2e6;
   background-color: #343a40;
-  border-color: rgba(0, 0, 0, 0.15);
+  border-color: #cfd7e8;
 }
 .dropdown-menu-dark .dropdown-item {
   color: #dee2e6;
@@ -3731,7 +3731,7 @@ textarea.form-control-lg {
   color: #9ba0ac;
 }
 .dropdown-menu-dark .dropdown-divider {
-  border-color: rgba(0, 0, 0, 0.15);
+  border-color: #cfd7e8;
 }
 .dropdown-menu-dark .dropdown-item-text {
   color: #dee2e6;
@@ -11572,19 +11572,6 @@ textarea.form-control-lg {
 .video-modal .modal-body {
   display: flex;
 }
-.video-modal .btn-close {
-  position: absolute;
-  top: 0;
-  right: 0;
-  transform: translate(50%, -50%);
-  border-radius: 50%;
-  padding: 0.5rem;
-  background: #2b2b2b url("data:image/svg+xml,%3csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 16 16%27 fill=%27%23fff%27%3e%3cpath d=%27M.293.293a1 1 0 011.414 0L8 6.586 14.293.293a1 1 0 111.414 1.414L9.414 8l6.293 6.293a1 1 0 01-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 01-1.414-1.414L6.586 8 .293 1.707a1 1 0 010-1.414z%27/%3e%3c/svg%3e") center/1em auto no-repeat;
-  opacity: 1;
-}
-.video-modal .btn-close:hover {
-  opacity: 0.75;
-}
 
 .video-rating .star {
   width: 15px;
@@ -11609,12 +11596,6 @@ textarea.form-control-lg {
 
 .table {
   font-size: 0.875rem;
-}
-
-.form-select,
-.form-control {
-  border: 0;
-  background-color: #e8ebf1;
 }
 
 .accordion {
@@ -11713,6 +11694,10 @@ main {
   color: var(--bs-body-color);
 }
 
+.datepicker {
+  padding-right: 0.5rem !important;
+  text-align: right;
+}
 .datepicker:focus {
   box-shadow: none;
 }
@@ -11822,6 +11807,21 @@ main {
 .breadcrumb .breadcrumb-item a {
   text-decoration: none;
   color: #1c1c1c;
+}
+
+.modal-dialog.modal-dialog-centered .btn-close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translate(50%, -50%);
+  border-radius: 50%;
+  padding: 0.5rem;
+  background: #2b2b2b url("data:image/svg+xml,%3csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 16 16%27 fill=%27%23fff%27%3e%3cpath d=%27M.293.293a1 1 0 011.414 0L8 6.586 14.293.293a1 1 0 111.414 1.414L9.414 8l6.293 6.293a1 1 0 01-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 01-1.414-1.414L6.586 8 .293 1.707a1 1 0 010-1.414z%27/%3e%3c/svg%3e") center/1em auto no-repeat;
+  opacity: 1;
+  z-index: 1;
+}
+.modal-dialog.modal-dialog-centered .btn-close:hover {
+  opacity: 0.75;
 }
 
 .navbar-top .navbar-brand img {
