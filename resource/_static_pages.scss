@@ -29,3 +29,39 @@
   border: 0;
   background-color: #e8ebf1;
 }
+.accordion {
+  counter-reset: index;
+}
+.accordion-item {
+  border: 0;
+}
+.accordion-button {
+  box-shadow: none !important;
+  font-weight: 500;
+  padding-left: 0;
+  padding-right: 0;
+  &:not(.collapsed) {
+    background-color: transparent;
+    &::before {
+      background-color: $primary;
+      color: white;
+    }
+  }
+  &::before {
+    content: counter(index);
+    counter-increment: index;
+    display: flex;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+    background-color: $border-color;
+    transition: background-color 0.15s ease-in-out;
+  }
+}
+.accordion-body {
+  background-color: $main-bg;
+}
