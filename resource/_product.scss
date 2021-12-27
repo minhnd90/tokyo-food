@@ -22,6 +22,9 @@ $caret: url("data:image/svg+xml,<svg viewBox='0 0 12 7' fill='none' xmlns='http:
     &:hover {
       background-color: $body-bg;
     }
+    .product-thumbnail {
+      width: 80px;
+    }
     .product-note,
     .product-quantity {
       display: flex;
@@ -29,6 +32,10 @@ $caret: url("data:image/svg+xml,<svg viewBox='0 0 12 7' fill='none' xmlns='http:
       flex-wrap: wrap;
       justify-content: flex-start;
       flex-direction: column;
+      @include media-breakpoint-down(md) {
+        align-items: center;
+        flex-direction: row;
+      }
     }
   }
 }
@@ -39,7 +46,6 @@ $caret: url("data:image/svg+xml,<svg viewBox='0 0 12 7' fill='none' xmlns='http:
   border-radius: 5px;
   height: 0;
   overflow: hidden;
-  width: 80px;
   a {
     position: absolute;
     inset: -1px;
@@ -118,11 +124,6 @@ $caret: url("data:image/svg+xml,<svg viewBox='0 0 12 7' fill='none' xmlns='http:
   }
 }
 .product-item {
-  &.slick-slide {
-    .product-thumbnail {
-      width: auto;
-    }
-  }
   .product-thumbnail {
     margin-bottom: 10px;
     border: $border-width solid $border-color;
