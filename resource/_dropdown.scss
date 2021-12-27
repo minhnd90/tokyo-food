@@ -14,9 +14,6 @@
     background: escape-svg($caret-icon) no-repeat;
     width: 10px;
     height: 10px;
-    @include media-breakpoint-down(lg) {
-      display: none;
-    }
   }
 }
 .dropdown-category {

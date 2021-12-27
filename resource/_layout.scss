@@ -23,6 +23,9 @@ main {
 .datepicker {
   padding-right: 0.5rem !important;
   text-align: right;
+  @include media-breakpoint-down(md) {
+    text-align: left;
+  }
   &:focus {
     box-shadow: none;
   }
@@ -129,5 +132,13 @@ main {
   z-index: 1;
   &:hover {
     opacity: 0.75;
+  }
+}
+.top-brand {
+  .row.g-4 {
+    @include media-breakpoint-down(md) {
+      --bs-gutter-x: 1rem;
+      --bs-gutter-y: 1rem;
+    }
   }
 }

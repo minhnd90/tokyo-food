@@ -7,6 +7,14 @@ $star-hover: url("data:image/svg+xml,#{$svg-string} #{$svg-path} stroke='#{$rate
 $rated: url("data:image/svg+xml,#{$svg-string} #{$svg-path} stroke='#{$rated-color}' fill='#{$rated-color}' /></svg>") !default;
 $caret: url("data:image/svg+xml,<svg viewBox='0 0 12 7' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M11 1L6 6L1 1' stroke='#{$border-color}' stroke-width='1'/></svg>") !default;
 
+.product-list {
+  > .container {
+    @include media-breakpoint-down(md) {
+      --bs-gutter-x: 0;
+    }
+  }
+}
+
 .table-body {
   padding: 0.875rem;
   .item {
@@ -31,6 +39,7 @@ $caret: url("data:image/svg+xml,<svg viewBox='0 0 12 7' fill='none' xmlns='http:
   border-radius: 5px;
   height: 0;
   overflow: hidden;
+  width: 80px;
   a {
     position: absolute;
     inset: -1px;
@@ -45,6 +54,7 @@ $caret: url("data:image/svg+xml,<svg viewBox='0 0 12 7' fill='none' xmlns='http:
 .product-name a {
   text-decoration: none;
   color: var(--bs-body-color);
+  font-weight: 500;
   &:hover {
     color: var(--bs-primary);
   }
@@ -73,6 +83,15 @@ $caret: url("data:image/svg+xml,<svg viewBox='0 0 12 7' fill='none' xmlns='http:
     color: #9297a0;
   }
 }
+.product-code {
+  @include media-breakpoint-down(md) {
+    display: flex;
+    align-items: center;
+    .code {
+      margin-right: 0.5rem;
+    }
+  }
+}
 .product-code .code,
 .product-name .name,
 .product-price .price,
@@ -99,6 +118,11 @@ $caret: url("data:image/svg+xml,<svg viewBox='0 0 12 7' fill='none' xmlns='http:
   }
 }
 .product-item {
+  &.slick-slide {
+    .product-thumbnail {
+      width: auto;
+    }
+  }
   .product-thumbnail {
     margin-bottom: 10px;
     border: $border-width solid $border-color;
@@ -182,14 +206,26 @@ $caret: url("data:image/svg+xml,<svg viewBox='0 0 12 7' fill='none' xmlns='http:
     font-size: 0.875rem;
   }
 }
+
+.main-thumbnail {
+  @include media-breakpoint-down(md) {
+    height: auto !important;
+  }
+}
 .thumbnail-list {
-  width: calc(60px + var(--bs-gutter-x));
+  @include media-breakpoint-up(md) {
+    width: calc(60px + var(--bs-gutter-x));
+  }
   .img-thumbnail {
     padding: 0;
     border: 1px solid $border-color;
     border-radius: 5px;
     &.slick-current {
       border-color: $primary;
+    }
+    @include media-breakpoint-down(md) {
+      margin-left: 0.25rem;
+      margin-right: 0.25rem;
     }
   }
   .slick-arrow {
@@ -206,9 +242,64 @@ $caret: url("data:image/svg+xml,<svg viewBox='0 0 12 7' fill='none' xmlns='http:
     &.slick-next {
       margin-top: -0.5rem;
     }
+    @include media-breakpoint-down(md) {
+      position: absolute;
+      top: 12px;
+      z-index: 1;
+      &.slick-prev {
+        transform: rotate(90deg);
+        left: -16px;
+      }
+      &.slick-next {
+        transform: rotate(-90deg);
+        right: -16px;
+        margin: 0;
+      }
+    }
   }
 }
 
 .thumbnailModal .modal-dialog {
   max-width: 80vh;
+}
+.table-filter {
+  // .dropdown-toggle {
+  //   @include media-breakpoint-down(md) {
+  //     position: absolute;
+  //     right: 0;
+  //   }
+  // }
+  .navbar-collapse {
+    @include media-breakpoint-down(md) {
+      position: absolute;
+      background-color: #fff;
+      border-radius: 5px;
+      border: 1px solid $border-color;
+      right: 0;
+      top: 100%;
+      box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+      margin-top: 2px;
+      width: 320px;
+      z-index: 1;
+      .navbar-nav {
+        padding: 0.25rem 1rem;
+        flex-direction: column !important;
+        .nav-item {
+          display: flex;
+          align-items: center;
+          .nav-link {
+            white-space: nowrap;
+            flex-grow: 1;
+          }
+          .dropdown-toggle::after {
+            position: absolute;
+            right: 0;
+          }
+          .dropdown-menu {
+            position: absolute;
+          }
+        }
+      }
+    }
+  }
 }

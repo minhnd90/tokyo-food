@@ -24,7 +24,13 @@ jQuery(function () {
                 { breakpoint: 768, settings: { slidesToShow: 2 } },
                 { breakpoint: 576, settings: { slidesToShow: 1 } }
             ]
-        }
+        };
+        related.on('init', function (event, slick) {
+            var height = slick.$slider.find('.product-thumbnail').outerHeight();
+            slick.$prevArrow.css({ top: height / 2 - slick.$prevArrow.outerHeight() / 2});
+            slick.$nextArrow.css({ top: height / 2 - slick.$nextArrow.outerHeight() / 2});
+            console.log(height, slick.$prevArrow.outerHeight());
+        });
         related.slick(relatedOptions);
     }
     const thumnails = $('.product-detail .thumbnail-list');
@@ -32,7 +38,10 @@ jQuery(function () {
         const mainThumbnail = $('.main-thumbnail');
         const thumnailOptions = {
             vertical: true,
-            slidesToShow: 5
+            slidesToShow: 5,
+            responsive: [
+                { breakpoint: 768, settings: { vertical: false } }
+            ]
         }
         thumnails.on('init beforeChange', function (event, slick, currentSlide, nextSlide) {
             var src = slick.$slides[nextSlide ?? 0].src;
