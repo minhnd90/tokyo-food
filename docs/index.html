@@ -70,7 +70,7 @@
           <div class="navbar-expand me-auto">
             <ul class="navbar-nav">
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle dropdown-category me-2" href="javascript:void(0);" id="dropdown-category" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <a class="nav-link dropdown-toggle dropdown-category me-2" href="javascript:void(0);" id="dropdown-category" role="button" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
                   <svg xmlns="http://www.w3.org/2000/svg" class="icon-hamburger" width="16" height="12" viewBox="0 0 16 12" fill-rule="evenodd" clip-rule="evenodd">
                     <path d="M0.5 6C0.5 5.58579 0.835786 5.25 1.25 5.25H14.75C15.1642 5.25 15.5 5.58579 15.5 6C15.5 6.41421 15.1642 6.75 14.75 6.75H1.25C0.835786 6.75 0.5 6.41421 0.5 6Z" />
                     <path d="M0.5 1.5C0.5 1.08579 0.835786 0.75 1.25 0.75H14.75C15.1642 0.75 15.5 1.08579 15.5 1.5C15.5 1.91421 15.1642 2.25 14.75 2.25H1.25C0.835786 2.25 0.5 1.91421 0.5 1.5Z" />
@@ -78,17 +78,53 @@
                   </svg>
                   <span class="d-none d-lg-block">Categories</span>
                 </a>
-                <ul class="dropdown-menu" aria-labelledby="dropdown-category">
-                  <li><a class="dropdown-item" href="javascript:void(0);">Categories 1</a></li>
-                  <li><a class="dropdown-item" href="javascript:void(0);">Categories 2</a></li>
-                  <li><a class="dropdown-item" href="javascript:void(0);">Categories 3</a></li>
-                  <li><a class="dropdown-item" href="javascript:void(0);">Categories 4</a></li>
-                  <li><a class="dropdown-item" href="javascript:void(0);">Categories 5</a></li>
-                  <li><a class="dropdown-item" href="javascript:void(0);">Categories 6</a></li>
-                  <li><a class="dropdown-item" href="javascript:void(0);">Categories 7</a></li>
-                  <li><a class="dropdown-item" href="javascript:void(0);">Categories 8</a></li>
-                  <li><a class="dropdown-item" href="javascript:void(0);">Categories 9</a></li>
-                </ul>
+                <div class="dropdown-menu" aria-labelledby="dropdown-category">
+                  <ul class="list-group category">
+
+                    <li class="list-group-item active">
+                      <a href="categories.html">
+                        <span>Categories 1</span>
+                      </a>
+                      <a class="caret" data-bs-toggle="collapse" href="#category_1" aria-expanded="true" aria-controls="category_1"></a>
+                      <ul id="category_1" class="list-group sub-category show">
+                        <li class="list-group-item"><a href="products-list.html">Categories 1.1</a></li>
+                        <li class="list-group-item"><a href="products-list.html">Categories 1.2</a></li>
+                        <li class="list-group-item"><a href="products-list.html">Categories 1.3</a></li>
+                      </ul>
+                    </li>
+
+                    <li class="list-group-item">
+                      <a href="categories.html">Categories 2</a>
+                      <a class="caret collapsed" data-bs-toggle="collapse" href="#category_2" aria-expanded="false" aria-controls="category_2"></a>
+                      <ul id="category_2" class="list-group sub-category collapse">
+                        <li class="list-group-item"><a href="products-list.html">Categories 2.1</a></li>
+                        <li class="list-group-item"><a href="products-list.html">Categories 2.2</a></li>
+                        <li class="list-group-item"><a href="products-list.html">Categories 2.3</a></li>
+                      </ul>
+                    </li>
+
+                    <li class="list-group-item">
+                      <a href="categories.html">Categories 3</a>
+                      <a class="caret collapsed" data-bs-toggle="collapse" href="#category_3" aria-expanded="false" aria-controls="category_3"></a>
+                      <ul id="category_3" class="list-group sub-category collapse">
+                        <li class="list-group-item"><a href="products-list.html">Categories 3.1</a></li>
+                        <li class="list-group-item"><a href="products-list.html">Categories 3.2</a></li>
+                        <li class="list-group-item"><a href="products-list.html">Categories 3.3</a></li>
+                      </ul>
+                    </li>
+
+                    <li class="list-group-item">
+                      <a href="categories.html">Categories 4</a>
+                      <a class="caret collapsed" data-bs-toggle="collapse" href="#category_4" aria-expanded="false" aria-controls="category_4"></a>
+                      <ul id="category_4" class="list-group sub-category collapse">
+                        <li class="list-group-item"><a href="products-list.html">Categories 4.1</a></li>
+                        <li class="list-group-item"><a href="products-list.html">Categories 4.2</a></li>
+                        <li class="list-group-item"><a href="products-list.html">Categories 4.3</a></li>
+                      </ul>
+                    </li>
+                    
+                  </ul>
+                </div>
               </li>
               <li><hr class="dropdown-divider vertical mx-lg-2" /></li>
               <li class="nav-item">
@@ -102,10 +138,10 @@
                   </svg>
                 </a>
               </li>
-              <li class="nav-item d-none d-md-block">
+              <li class="nav-item d-none d-md-flex">
                 <a class="nav-link" href="video.html">Video</a>
               </li>
-              <li class="nav-item d-none d-md-block">
+              <li class="nav-item d-none d-md-flex">
                 <a class="nav-link" href="javascript:void(0);">International Distributors</a>
               </li>
             </ul>
@@ -166,7 +202,7 @@
             <div class="row g-4">
               <div class="col">
                 <a class="btn btn-order-red patern-1" href="/">
-                  <svg class="mb-2 mb-lg-0" width="22" height="18" viewBox="0 0 22 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <svg class="mb-2 mb-md-0 me-0 me-md-2" width="22" height="18" viewBox="0 0 22 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M20.0591 1.86625C19.5498 1.29542 18.9287 0.835335 18.2342 0.514557C17.5398 0.193778 16.7868 0.0191473 16.022 0.00150064C15.2595 -0.014526 14.5015 0.122905 13.7931 0.405625C13.0847 0.688346 12.4404 1.11059 11.8985 1.64725L11.0005 2.5452L10.2974 1.84281C8.11038 -0.346399 4.55081 -0.530237 2.36819 1.43998C1.7993 1.95028 1.3404 2.5712 1.01955 3.26481C0.698689 3.95843 0.5226 4.71017 0.502036 5.47412C0.481472 6.23808 0.616865 6.9982 0.899944 7.70807C1.18302 8.41794 1.60785 9.06265 2.14846 9.60282L9.93997 17.3943C10.2214 17.6753 10.6028 17.833 11.0005 17.833C11.3982 17.833 11.7796 17.6753 12.0611 17.3943L19.6577 9.79764C21.8462 7.60843 22.0264 4.05033 20.0591 1.86625Z" fill="white" />
                   </svg>
                   <span class="ms-0 ms-lg-2">Order from Wishlish</span>
@@ -174,7 +210,7 @@
               </div>
               <div class="col">
                 <a class="btn btn-order-orange patern-2" href="order-history.html">
-                  <svg class="mb-2 mb-lg-0" width="18" height="20" viewBox="0 0 18 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <svg class="mb-2 mb-md-0 me-0 me-md-2" width="18" height="20" viewBox="0 0 18 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M4.81 0H13.191C16.28 0 18 1.78 18 4.83V15.16C18 18.26 16.28 20 13.191 20H4.81C1.77 20 0 18.26 0 15.16V4.83C0 1.78 1.77 0 4.81 0ZM5.08002 4.65999V4.64999H8.06902C8.50002 4.64999 8.85002 4.99999 8.85002 5.42899C8.85002 5.86999 8.50002 6.21999 8.06902 6.21999H5.08002C4.64902 6.21999 4.30002 5.86999 4.30002 5.43999C4.30002 5.00999 4.64902 4.65999 5.08002 4.65999ZM5.08002 10.74H12.92C13.35 10.74 13.7 10.39 13.7 9.95999C13.7 9.52999 13.35 9.17899 12.92 9.17899H5.08002C4.64902 9.17899 4.30002 9.52999 4.30002 9.95999C4.30002 10.39 4.64902 10.74 5.08002 10.74ZM5.08002 15.31H12.92C13.319 15.27 13.62 14.929 13.62 14.53C13.62 14.12 13.319 13.78 12.92 13.74H5.08002C4.78002 13.71 4.49002 13.85 4.33002 14.11C4.17002 14.36 4.17002 14.69 4.33002 14.95C4.49002 15.2 4.78002 15.35 5.08002 15.31Z" fill="white" />
                   </svg>
                   <span class="ms-0 ms-lg-2">Order from History</span>
@@ -182,7 +218,7 @@
               </div>
               <div class="col">
                 <a class="btn btn-order-brown patern-3" href="categories.html">
-                  <svg class="mb-2 mb-lg-0" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <svg class="mb-2 mb-md-0 me-0 me-md-2" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M2.54 0H5.92C7.33 0 8.46 1.15 8.46 2.561V5.97C8.46 7.39 7.33 8.53 5.92 8.53H2.54C1.14 8.53 0 7.39 0 5.97V2.561C0 1.15 1.14 0 2.54 0ZM2.54 11.4697H5.92C7.33 11.4697 8.46 12.6107 8.46 14.0307V17.4397C8.46 18.8497 7.33 19.9997 5.92 19.9997H2.54C1.14 19.9997 0 18.8497 0 17.4397V14.0307C0 12.6107 1.14 11.4697 2.54 11.4697ZM17.4601 0H14.0801C12.6701 0 11.5401 1.15 11.5401 2.561V5.97C11.5401 7.39 12.6701 8.53 14.0801 8.53H17.4601C18.8601 8.53 20.0001 7.39 20.0001 5.97V2.561C20.0001 1.15 18.8601 0 17.4601 0ZM14.0801 11.4697H17.4601C18.8601 11.4697 20.0001 12.6107 20.0001 14.0307V17.4397C20.0001 18.8497 18.8601 19.9997 17.4601 19.9997H14.0801C12.6701 19.9997 11.5401 18.8497 11.5401 17.4397V14.0307C11.5401 12.6107 12.6701 11.4697 14.0801 11.4697Z" fill="white" />
                   </svg>
                   <span class="ms-0 ms-lg-2">Order from Category</span>
