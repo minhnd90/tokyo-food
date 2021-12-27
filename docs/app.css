@@ -11211,6 +11211,13 @@ textarea.form-control-lg {
 [class*=btn-order-]:hover {
   color: #fff;
 }
+@media (max-width: 767.98px) {
+  [class*=btn-order-] {
+    flex-direction: column;
+    font-size: 12px;
+    text-transform: none;
+  }
+}
 
 .btn-order-red {
   background-color: #ea4553;
@@ -11268,6 +11275,29 @@ textarea.form-control-lg {
   display: flex;
   padding: 1rem;
 }
+@media (max-width: 767.98px) {
+  .banner-infomation {
+    background-color: #f4dfa7;
+  }
+  .banner-infomation .infomation {
+    position: relative;
+    height: auto !important;
+    flex-direction: column;
+  }
+  .banner-infomation img {
+    display: none;
+  }
+  .banner-infomation .btn-banner-cta {
+    margin-right: auto !important;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .banner.container .g-4 {
+    --bs-gutter-x: 1rem;
+    --bs-gutter-y: 1rem;
+  }
+}
 
 .banner-infomation,
 .banner-1,
@@ -11282,8 +11312,13 @@ textarea.form-control-lg {
   height: 280px;
   object-fit: cover;
 }
+@media (max-width: 767.98px) {
+  .banner-1 img {
+    height: 200px;
+  }
+}
 
-.banner-2 {
+.banner-2 img {
   height: 240px;
   object-fit: cover;
 }
@@ -11292,10 +11327,20 @@ textarea.form-control-lg {
   height: 90px;
   object-fit: cover;
 }
+@media (max-width: 767.98px) {
+  .banner-3 img {
+    height: 110px;
+  }
+}
 
 .banner-4 img {
   height: 100px;
   object-fit: cover;
+}
+@media (max-width: 767.98px) {
+  .banner-4 img {
+    height: 110px;
+  }
 }
 
 .banner-infomation > img,
@@ -11307,21 +11352,40 @@ textarea.form-control-lg {
 .card-user {
   height: 214px;
 }
-
-.profile {
+@media (max-width: 767.98px) {
+  .card-user {
+    height: 244px;
+  }
+}
+.card-user .cover img {
+  height: 90px;
+  object-fit: cover;
+}
+@media (min-width: 768px) {
+  .card-user .cover img {
+    height: 68px;
+  }
+}
+.card-user .profile {
   transform: translateY(-37.5px);
   flex: 1 1 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
-
-.profile .avatar {
+.card-user .profile .cart {
+  margin-left: auto;
+  margin-right: auto;
+  flex-direction: column;
+}
+.card-user .profile .cart .btn {
+  margin-top: 0.5rem;
+}
+.card-user .profile .avatar {
   width: 75px;
   height: 75px;
 }
-
-.profile .quantity {
+.card-user .profile .quantity {
   font-weight: 500;
 }
 
@@ -11826,6 +11890,11 @@ main {
 
 .navbar-top .navbar-brand img {
   height: 3rem;
+}
+@media (max-width: 991.98px) {
+  .navbar-top .navbar-brand img {
+    height: 2rem;
+  }
 }
 .navbar-top .header-search .input-group .form-control,
 .navbar-top .header-search .input-group .btn {

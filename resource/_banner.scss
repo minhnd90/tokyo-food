@@ -11,6 +11,11 @@
   &:hover {
     color: $white;
   }
+  @include media-breakpoint-down(md) {
+    flex-direction: column;
+    font-size: 12px;
+    text-transform: none;
+  }
 }
 .btn-order-red {
   background-color: $btn-red;
@@ -60,8 +65,30 @@
     display: flex;
     padding: 1rem;
   }
-}
 
+  @include media-breakpoint-down(md) {
+    background-color: #f4dfa7;
+    .infomation {
+      position: relative;
+      height: auto !important;
+      flex-direction: column;
+    }
+    img {
+      display: none;
+    }
+    .btn-banner-cta {
+      margin-right: auto !important;
+    }
+  }
+}
+.banner.container {
+  .g-4 {
+    @include media-breakpoint-down(md) {
+      --bs-gutter-x: 1rem;
+      --bs-gutter-y: 1rem;
+    }
+  }
+}
 .banner-infomation,
 .banner-1,
 .banner-2,
@@ -74,18 +101,27 @@
 .banner-1 img {
   height: 280px;
   object-fit: cover;
+  @include media-breakpoint-down(md) {
+    height: 200px;
+  }
 }
-.banner-2 {
+.banner-2 img {
   height: 240px;
   object-fit: cover;
 }
 .banner-3 img {
   height: 90px;
   object-fit: cover;
+  @include media-breakpoint-down(md) {
+    height: 110px;
+  }
 }
 .banner-4 img {
   height: 100px;
   object-fit: cover;
+  @include media-breakpoint-down(md) {
+    height: 110px;
+  }
 }
 .banner-infomation > img,
 .banner-infomation .infomation {
@@ -94,19 +130,38 @@
 }
 .card-user {
   height: 214px;
-}
-
-.profile {
-  transform: translateY(-37.5px);
-  flex: 1 1 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-.profile .avatar {
-  width: 75px;
-  height: 75px;
-}
-.profile .quantity {
-  font-weight: 500;
+  @include media-breakpoint-down(md) {
+    height: 244px;
+  }
+  .cover {
+    img {
+      height: 90px;
+      object-fit: cover;
+      @include media-breakpoint-up(md) {
+        height: 68px;
+      }
+    }
+  }
+  .profile {
+    transform: translateY(-37.5px);
+    flex: 1 1 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    .cart {
+      margin-left: auto;
+      margin-right: auto;
+      flex-direction: column;
+      .btn {
+        margin-top: 0.5rem;
+      }
+    }
+    .avatar {
+      width: 75px;
+      height: 75px;
+    }
+    .quantity {
+      font-weight: 500;
+    }
+  }
 }

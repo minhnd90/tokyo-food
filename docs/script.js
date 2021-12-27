@@ -59,5 +59,7 @@ jQuery(function () {
         e.preventDefault();
         headerSearchForm.toggleClass('toggled');
     });
-    $(window).on('resize', function () {})
+    $(window).on('resize', function () {
+        headerSearchForm.removeClass('toggled');
+    })
 })
