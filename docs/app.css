@@ -11831,6 +11831,7 @@ main {
 .navbar-top .header-search .input-group .btn {
   border-radius: 50rem;
   padding: 0.6875rem 1rem;
+  box-shadow: none !important;
 }
 .navbar-top .header-search .input-group .btn {
   font-size: 0.75rem;
@@ -11838,6 +11839,24 @@ main {
 .navbar-top .header-search .input-group .btn .icon-search {
   margin-right: 0.21875rem;
   stroke: currentColor;
+}
+@media (max-width: 991.98px) {
+  .navbar-top .header-search {
+    display: block !important;
+    position: absolute;
+    margin: 0 !important;
+    inset: 50% 0 auto;
+    overflow: hidden;
+    opacity: 0;
+    z-index: 1;
+    pointer-events: none;
+    transition: top 0.3s, opacity 0.3s;
+  }
+  .navbar-top .header-search.toggled {
+    top: calc(100% + 0.5rem);
+    opacity: 1;
+    pointer-events: initial;
+  }
 }
 .navbar-top .navbar-nav .nav-link {
   display: flex;

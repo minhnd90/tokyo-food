@@ -10,6 +10,7 @@
       .btn {
         border-radius: 50rem;
         padding: #{$input-padding-y + 0.3125} 1rem;
+        box-shadow: none !important;
       }
       .btn {
         font-size: $font-size-sm;
@@ -17,6 +18,22 @@
           margin-right: #{$font-size-base - $font-size-base * $line-height-base * 0.5};
           stroke: currentColor;
         }
+      }
+    }
+    @include media-breakpoint-down(lg) {
+      display: block !important;
+      position: absolute;
+      margin: 0 !important;
+      inset: 50% 0 auto;
+      overflow: hidden;
+      opacity: 0;
+      z-index: 1;
+      pointer-events: none;
+      transition: top 0.3s, opacity 0.3s;
+      &.toggled {
+        top: calc(100% + $navbar-padding-y);
+        opacity: 1;
+        pointer-events: initial;
       }
     }
   }

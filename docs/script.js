@@ -53,7 +53,11 @@ jQuery(function () {
 });
 
 jQuery(function () {
-    $(window).on('resize', function () {
-
-    })
+    const toggleSearch = $('.toggle-search');
+    const headerSearchForm = $('.header-search');
+    toggleSearch.on('click', function (e) {
+        e.preventDefault();
+        headerSearchForm.toggleClass('toggled');
+    });
+    $(window).on('resize', function () {})
 })
