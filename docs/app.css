@@ -11394,7 +11394,7 @@ textarea.form-control-lg {
 }
 @media (max-width: 767.98px) {
   .card-user {
-    height: 244px;
+    height: 236px;
   }
 }
 .card-user .cover img {
@@ -12190,7 +12190,8 @@ main {
     bottom: 0;
     border-radius: 0;
     margin: 0;
-    min-width: 200px;
+    min-width: 240px;
+    overflow: auto;
   }
 }
 .navbar-main .navbar-nav .nav-item {
