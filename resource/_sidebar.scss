@@ -24,6 +24,9 @@
     .navbar-collapse {
       @include box-shadow($box-shadow);
     }
+    &.border-end {
+      border: none !important;
+    }
   }
 }
 .list-group {
