@@ -118,10 +118,10 @@
         border-radius: 5px;
         border: 1px solid $border-color;
         right: 0;
-        top: 100%;
-        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
         margin-top: 2px;
-        z-index: 1;
+        top: 100%;
+        z-index: 3;
+        @include box-shadow($box-shadow);
         .navbar-nav {
           padding: 0.25rem 1rem;
           .nav-text {

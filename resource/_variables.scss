@@ -3,6 +3,7 @@ $min-contrast-ratio: 2.5 !default;
 
 //Options
 $enable-caret: false !default;
+$enable-shadows: true !default;
 
 //Colors
 
@@ -64,3 +65,13 @@ $caret-color: #747474;
 $form-select-indicator-color: $caret-color;
 $caret-icon: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><path fill='none' stroke='#{$caret-color}' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M2 5l6 6 6-6'/></svg>") !default;
 $dot: url("data:image/svg+xml,<svg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M12 15.75C12.8284 15.75 13.5 16.4216 13.5 17.25C13.5 18.0784 12.8284 18.75 12 18.75C11.1716 18.75 10.5 18.0784 10.5 17.25C10.5 16.4216 11.1716 15.75 12 15.75Z' fill='#555555'/><path d='M12 10.5C12.8284 10.5 13.5 11.1716 13.5 12C13.5 12.8284 12.8284 13.5 12 13.5C11.1716 13.5 10.5 12.8284 10.5 12C10.5 11.1716 11.1716 10.5 12 10.5Z' fill='#555555'/><path d='M12 5.25C12.8284 5.25 13.5 5.92157 13.5 6.75C13.5 7.57843 12.8284 8.25 12 8.25C11.1716 8.25 10.5 7.57843 10.5 6.75C10.5 5.92157 11.1716 5.25 12 5.25Z' fill='#555555'/></svg>");
+
+$unrated-color: $border-color;
+$rated-color: #ffb920;
+$svg-string: "<svg viewBox='0 0 12 12' xmlns='http://www.w3.org/2000/svg'>";
+$svg-path: "<path d='M6 1.61803L6.87156 4.30041L6.98381 4.6459H7.34708H10.1675L7.88573 6.3037L7.59184 6.51722L7.7041 6.86271L8.57565 9.54508L6.29389 7.88729L6 7.67376L5.70611 7.88729L3.42435 9.54508L4.2959 6.86271L4.40816 6.51722L4.11426 6.3037L1.8325 4.6459H4.65292H5.01619L5.12844 4.30041L6 1.61803Z'";
+$star: url("data:image/svg+xml,#{$svg-string} #{$svg-path} stroke='#{$unrated-color}' fill='none' /></svg>") !default;
+$star-hover: url("data:image/svg+xml,#{$svg-string} #{$svg-path} stroke='#{$rated-color}' fill='none' /></svg>") !default;
+$rated: url("data:image/svg+xml,#{$svg-string} #{$svg-path} stroke='#{$rated-color}' fill='#{$rated-color}' /></svg>") !default;
+$caret: url("data:image/svg+xml,<svg viewBox='0 0 12 7' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M11 1L6 6L1 1' stroke='#{$border-color}' stroke-width='1'/></svg>") !default;
+$category-bg: url("data:image/svg+xml,<svg width='128' height='124' viewBox='0 0 128 124' fill='none' xmlns='http://www.w3.org/2000/svg'><path opacity='0.25' d='M104.32 13.1644L88.32 28.6644L79.36 37.3699C89.1733 43.1027 95.7867 53.0822 95.7867 64.5479C95.7867 82.3836 79.7867 97.0342 59.9467 97.0342C46.2933 97.0342 34.3467 90.2397 28.3733 80.048C27.9467 79.411 27.52 78.5616 27.3067 77.9247C26.88 77.2877 26.6667 76.4384 26.24 75.8014C24.7467 72.4041 24.1067 68.5822 24.1067 64.7603C24.1067 50.7466 30.08 36.3082 45.8667 26.9658C43.0933 27.8151 38.8267 29.5137 33.4933 33.3356C40.5333 25.4795 46.72 19.3219 60.3733 14.6507C33.0667 16.137 11.7333 37.1575 11.7333 62.637C11.7333 74.5274 16.4267 85.5685 24.1067 93.8493C14.2933 84.9315 8.10667 72.4041 8.10667 58.3904C8.10667 34.1849 29.8667 12.1027 55.04 7.43151H55.2533C59.7333 6.36986 66.9867 5.94521 66.9867 5.94521C39.68 5.30822 18.3467 17.8356 8.53333 37.5822C17.7067 16.137 43.52 0.636986 69.9733 0.636986C69.9733 0.636986 69.12 0.212329 67.6267 0C66.3467 0 65.28 0 64 0C28.5867 0 0 27.1781 0 61.5753C0 95.9726 28.5867 124 64 124C99.4133 124 128 95.9726 128 61.5753C128 42.0411 118.827 24.6301 104.32 13.1644Z' fill='white'/></svg>");
